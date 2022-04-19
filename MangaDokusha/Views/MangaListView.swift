@@ -11,16 +11,16 @@ struct MangaListView: View {
     @StateObject var vm: HomeViewModel = HomeViewModel()
     var body: some View {
         List {
-            LazyVStack {
-                ForEach(vm.mangaList) { manga in
-                    NavigationLink {
-                        ContentView(mangaId: manga.id)
-                    } label: {
-                        MangaListCard(model: manga)
-                    }
+            //            VStack {
+            ForEach(vm.mangaList) { manga in
+                NavigationLink {
+                    ContentView(mangaModel: manga)
+                } label: {
+                    MangaListCard(model: manga)
                 }
-                Text("ASD")
             }
+            //                Text("ASD")
+            //            }
         }.refreshable {
             print("REFRESH")
         }
@@ -43,6 +43,23 @@ struct MangaListCard: View {
     let model: MangaDetailModel
     
     var body: some View {
-        Text("TITLE")
+        HStack {
+            customAsyncImage(url: model.coverUrl ?? "")
+//                .aspectRatio(contentMode: .fill)
+                .clipped()
+                .frame(width: 200, height: 200, alignment: .center)
+                .cornerRadius(5)
+            VStack {
+//                Spacer()
+                Text(model.title)
+                    .shadow(radius: 10)
+            }
+            Spacer()
+        }
+//        .frame(width: 400, height: 200, alignment: .top)
+//        .clipped()
+//        .cornerRadius(5)
+        
+//        .padding()
     }
 }

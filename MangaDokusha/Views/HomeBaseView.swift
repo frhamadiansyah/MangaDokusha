@@ -11,6 +11,9 @@ struct HomeBaseView: View {
     var body: some View {
         NavigationView {
             List {
+                Link(destination: URL(string: "https://api.mangadex.org/docs/")!) {
+                    Text("Mangadex")
+                }
                 ForEach(mangaIds, id: \.self) { id in
                     NavigationLink {
                         ContentView(mangaId: id)
@@ -33,6 +36,8 @@ struct HomeBaseView_Previews: PreviewProvider {
 
 let mangaIds = [
     "a04d4899-54c7-4f2e-a0a9-2338999ad6ac",
+    "f4b350ca-3f00-4f0f-8dce-a3b80e593200",
+    "1c5f98e8-9516-468f-8b64-2bac7e257709",
     "8847f905-550d-4fe6-bcda-ac2b896789c7",
     "c196dcc8-d942-4abf-987f-bfa244650585",
     "8a1ca2e4-d83b-4ce6-a074-4102231bebb5",

@@ -25,16 +25,19 @@ struct MangaDetailModel: Decodable, Identifiable {
     var coverFileName: String?
     var coverUrl: String?
     let contentRating: ContentRating
+    let status: String
     
     init(from decoder: Decoder) throws {
         let rawResponse = try RawMangaDetailModel(from: decoder)
         
-        id = rawResponse.data.id
-        let titleEn = rawResponse.data.attributes.title.en
+        id = rawResponse.id
+        let titleEn = rawResponse.attributes.title.en
         title = titleEn ?? "No English Title"
-        contentRating = ContentRating.init(rawValue: rawResponse.data.attributes.contentRating) ?? .safeContent
-        description = rawResponse.data.attributes.description.en ?? "No English Description"
-        for item in rawResponse.data.relationships {
+        contentRating = ContentRating.init(rawValue: rawResponse.attributes.contentRating) ?? .safeContent
+        description = rawResponse.attributes.description?.en ?? "No English Description"
+        status = rawResponse.attributes.status
+        guard let relationship = rawResponse.relationships else { return }
+        for item in relationship {
             
             if item.type == "cover_art" {
                 coverId = item.id
@@ -55,46 +58,72 @@ struct MangaDetailModel: Decodable, Identifiable {
         self.title = title
         self.description = description
         self.coverId = coverId
-        self.author = nil
-        self.artist = nil
-        self.coverFileName = nil
-        self.coverUrl = nil
         self.contentRating = contentRating
+        self.status = ""
     }
     
 }
 
+struct MangaDetailResponse: Decodable {
+    let result: String
+    let response: String
+    let data: MangaDetailModel
+    
+}
+
+struct ListMangaDetailResponse: Decodable {
+    let result: String
+    let response: String
+    let data: [MangaDetailModel]
+    
+}
+
 fileprivate struct RawMangaDetailModel: Decodable {
-    struct RawMangaData: Decodable {
-        let id: String
-        var attributes: RawMangaAttributes
-        let relationships: [RawMangaRelationship]
-    }
-    
+
     struct RawMangaAttributes: Decodable {
-        let title: RawMultiLanguageText
-        let description: RawMultiLanguageText
+        let title: MultiLanguageText
+        let description: MultiLanguageText?
         let contentRating: String
+        let status: String
     }
-    
+
     struct RawMangaRelationship: Decodable {
         let id: String
         let type: String
         let attributes: RawExpandedAttributes?
     }
-    
+
     struct RawExpandedAttributes: Decodable {
         let name: String?
         let fileName: String?
 
     }
-    
+
     struct RawMultiLanguageText: Decodable {
         let en: String?
         let jp: String?
+        
     }
     
-    let data: RawMangaData
-    
+    struct MultiLanguageText: Decodable {
+        let en: String?
+        let jp: String?
+        
+        init(from decoder: Decoder) throws {
+            do {
+                let result = try RawMultiLanguageText(from: decoder)
+                en = result.en
+                jp = result.jp
+            } catch {
+                en = "NO VALUE"
+                jp = "NO VALUE"
+            }
+        }
+    }
+
+    let id: String
+    var attributes: RawMangaAttributes
+    let relationships: [RawMangaRelationship]?
+
 }
 

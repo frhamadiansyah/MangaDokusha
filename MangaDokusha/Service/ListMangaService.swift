@@ -1,88 +1,72 @@
-////
-////  ListMangaService.swift
-////  MangaDokusha
-////
-////  Created by Fandrian Rhamadiansyah on 11/04/22.
-////
 //
-//import Foundation
-//import Combine
+//  ListMangaService.swift
+//  MangaDokusha
 //
+//  Created by Fandrian Rhamadiansyah on 11/04/22.
 //
-//struct ListMangaService {
-//    
-//    let apiService: Requestable
-//    
-//    func generateBaseRequest(mangaId: String, limit: Int = queryLimit, offset: Int = 0) -> URLComponents {
-//        var components = URLComponents()
-//        components.scheme = "https"
-//        components.host = "api.mangadex.org"
-//        components.path = "/chapter"
-//        components.queryItems = [
-//            URLQueryItem(name: "manga", value: mangaId),
-//            URLQueryItem(name: "limit", value: "\(limit)"),
-//            URLQueryItem(name: "offset", value: "\(offset)"),
-//            
-//            // add all contentRating
-//            URLQueryItem(name: "contentRating[]", value: ContentRating.pornographic.rawValue),
-//            URLQueryItem(name: "contentRating[]", value: ContentRating.suggestive.rawValue),
-//            URLQueryItem(name: "contentRating[]", value: ContentRating.erotica.rawValue),
-//            URLQueryItem(name: "contentRating[]", value: ContentRating.safeContent.rawValue),
-//            
-//            // add all include
-//            URLQueryItem(name: "includes[]", value: "scanlation_group"),
-//            URLQueryItem(name: "includes[]", value: "manga"),
-//            URLQueryItem(name: "includes[]", value: "user"),
-//            
-//            URLQueryItem(name: "translatedLanguage[]", value: "en"),
-//            
-//        ]
-//        return components
-//    }
-//    
-//    func generateListChapterRequest(mangaId: String, limit: Int = queryLimit, offset: Int = 0, ascending: Bool = true) -> URLRequest {
-//        var components = generateBaseRequest(mangaId: mangaId, limit: limit, offset: offset)
-//        
-//        if ascending {
-//            components.queryItems?.append(URLQueryItem(name: "order[chapter]", value: "asc"))
-//        } else {
-//            components.queryItems?.append(URLQueryItem(name: "order[chapter]", value: "desc"))
-//        }
-//        
-//        let url = components.url
-//        print(url)
-//        return URLRequest(url: url!)
-//    }
-//    
-//    func generateNextOrPreviousChapterRequest(mangaId: String, currentChapter: String, nextChapter: Bool) -> URLRequest {
-//        var components = generateBaseRequest(mangaId: mangaId)
-//        
-//        guard let chapter = Float(currentChapter) else { return URLRequest(url: components.url!) }
-//        let chapterInt = Int(chapter)
-//        
-//        if nextChapter {
-//            components.queryItems?.append(URLQueryItem(name: "chapter", value: "\(chapterInt + 1)"))
-//        } else {
-//            components.queryItems?.append(URLQueryItem(name: "chapter", value: "\(chapterInt - 1)"))
-//        }
-//        let url = components.url
-//        return URLRequest(url: url!)
-//    }
-//    
-//    func getListChapter(request: URLRequest) -> AnyPublisher<ListChapterModel, Error> {
-//        apiService.make(request: request, decoder: JSONDecoder())
-//        
-//    }
-//    
-//    func getListChapter(mangaId: String, limit: Int = 50, offset: Int = 0, ascending: Bool = true) -> AnyPublisher<ListChapterModel, Error> {
-//        let request = generateListChapterRequest(mangaId: mangaId, limit: limit, offset: offset, ascending: ascending)
-//        return apiService.make(request: request, decoder: JSONDecoder())
-//        
-//    }
-//    
-//    func getNextOrPreviousChapter(mangaId: String, currentChapter: String, nextChapter: Bool) -> AnyPublisher<ListChapterModel, Error> {
-//        let request = generateNextOrPreviousChapterRequest(mangaId: mangaId, currentChapter: currentChapter, nextChapter: nextChapter)
-//        return apiService.make(request: request, decoder: JSONDecoder())
-//        
-//    }
-//}
+
+import Foundation
+import Combine
+
+
+struct ListMangaService {
+    
+    let apiService: Requestable
+    
+    func generateBaseRequest(limit: Int = queryLimit, offset: Int = 0) -> URLComponents {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.mangadex.org"
+        components.path = "/manga"
+        components.queryItems = [
+            URLQueryItem(name: "limit", value: "\(limit)"),
+            URLQueryItem(name: "offset", value: "\(offset)"),
+            
+            // add all contentRating
+            URLQueryItem(name: "contentRating[]", value: ContentRating.pornographic.rawValue),
+            URLQueryItem(name: "contentRating[]", value: ContentRating.suggestive.rawValue),
+            URLQueryItem(name: "contentRating[]", value: ContentRating.erotica.rawValue),
+            URLQueryItem(name: "contentRating[]", value: ContentRating.safeContent.rawValue),
+            
+            // add all include
+            URLQueryItem(name: "includes[]", value: "cover_art"),
+            URLQueryItem(name: "includes[]", value: "author"),
+            URLQueryItem(name: "includes[]", value: "artist"),
+
+        ]
+        return components
+    }
+    
+    func generateListMangaRequest(mangaIds: [String], limit: Int = queryLimit, offset: Int = 0) -> URLRequest {
+        var components = generateBaseRequest(limit: limit, offset: offset)
+        
+        for item in mangaIds {
+            components.queryItems?.append(URLQueryItem(name: "ids[]", value: item))
+        }
+        
+        let url = components.url
+        return URLRequest(url: url!)
+    }
+    
+    func searchMangaRequest(title: String, limit: Int = queryLimit, offset: Int = 0) -> URLRequest {
+        var components = generateBaseRequest(limit: limit, offset: offset)
+        
+        components.queryItems?.append(URLQueryItem(name: "title", value: title))
+        
+        let url = components.url
+        return URLRequest(url: url!)
+    }
+
+    func getSearchMangaList(title: String, limit: Int = queryLimit, offset: Int = 0) -> AnyPublisher<ListMangaDetailResponse, Error> {
+        let request = searchMangaRequest(title: title, limit: limit, offset: offset)
+        return apiService.make(request: request, decoder: JSONDecoder())
+        
+    }
+    
+    func getMangaList(mangaIds: [String], limit: Int = queryLimit, offset: Int = 0) -> AnyPublisher<ListMangaDetailResponse, Error> {
+        let request = generateListMangaRequest(mangaIds: mangaIds, limit: limit, offset: offset)
+        return apiService.make(request: request, decoder: JSONDecoder())
+        
+    }
+
+}

@@ -32,6 +32,10 @@ struct ContentView: View {
                     
                     authorAndArtistView(author: detail.author ?? "NIL", artist: detail.artist ?? "NIL")
                     Text("rating: \(detail.contentRating.rawValue)")
+                        .padding(5)
+                    
+                    Text("status: \(detail.status)")
+                        .padding(5)
                     goToListChapterView(mangaDetail: detail)
                     
                     Text(detail.description)

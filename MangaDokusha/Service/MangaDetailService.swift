@@ -27,12 +27,12 @@ struct MangaDetailService {
         return URLRequest(url: url!)
     }
     
-    func getMangaDetail(request: URLRequest) -> AnyPublisher<MangaDetailModel, Error> {
+    func getMangaDetail(request: URLRequest) -> AnyPublisher<MangaDetailResponse, Error> {
         apiService.make(request: request, decoder: JSONDecoder())
    
     }
     
-    func getMangaDetail(mangaId: String) -> AnyPublisher<MangaDetailModel, Error> {
+    func getMangaDetail(mangaId: String) -> AnyPublisher<MangaDetailResponse, Error> {
         apiService.make(request: getMangaRequest(mangaId: mangaId), decoder: JSONDecoder())
             
    

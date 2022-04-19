@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+//import SwiftyJSON
 
 let baseUrl = "https://api.mangadex.org"
 let imageBaseUrl = "https://uploads.mangadex.org"
@@ -16,7 +17,7 @@ let baseUrlHost = "api.mangadex.org"
 
 
 protocol Requestable {
-    func make<T: Decodable>( request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error>
+    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error>
 }
 
 struct APIService: Requestable {
@@ -35,9 +36,8 @@ struct APIService: Requestable {
                 return MangaDokushaError.networkError(urlError)
             })
             .tryMap { data, response -> T in
-                
-                let decoder = JSONDecoder()
-
+//                let test = try decoder.decode([String: String].self, from: data)
+//                print(test)
                 do {
                     let result = try decoder.decode(T.self, from: data)
                     return result
@@ -47,24 +47,10 @@ struct APIService: Requestable {
                 }
 
             }
-//            .catch({ error in
-//                return MangaDokushaError.networkError(error)
-//            })
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
         
     }
-}
-struct BackendError: Decodable, Error {
-    let result: String
-    let errors: [BackendErrorMessage]
-}
-
-struct BackendErrorMessage: Decodable, Identifiable {
-    let id: String
-    let status: Int
-    let title: String
-    let detail: String
 }
 
 struct Res: Decodable {

@@ -11,8 +11,8 @@ import SwiftUI
 struct MangaDokushaApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeBaseView()
-//            HomeView()
+//            HomeBaseView()
+            TabBarView()
         }
     }
 }

@@ -13,11 +13,7 @@ class ContentViewModel: ObservableObject {
     let detailService: MangaDetailService = MangaDetailService(apiService: APIService())
     let listChapterService: ListChapterService = ListChapterService(apiService: APIService())
     
-    @Published var mangaDetail: MangaDetailModel? {
-        didSet {
-            print(mangaDetail)
-        }
-    }
+    @Published var mangaDetail: MangaDetailModel? 
     
     var cancel = Set<AnyCancellable>()
     
@@ -47,7 +43,7 @@ class ContentViewModel: ObservableObject {
             }
         } receiveValue: { [weak self] data in
 
-            self?.mangaDetail = data
+            self?.mangaDetail = data.data
             print("GET")
             print(data)
         }.store(in: &cancel)
