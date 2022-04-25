@@ -29,8 +29,8 @@ struct ContentView: View {
                         .frame(width: 200, height: 400, alignment: .center)
                         .cornerRadius(5)
 
-                    
-                    authorAndArtistView(author: detail.author ?? "NIL", artist: detail.artist ?? "NIL")
+                    authorAndArtistView(author: detail.author ?? "", authorId: detail.authorId ?? "", artist: detail.artist ?? "", artistId: detail.artistId ?? "")
+//                    authorAndArtistView(author: detail.author ?? "NIL", artist: detail.artist ?? "NIL")
                     Text("rating: \(detail.contentRating.rawValue)")
                         .padding(5)
                     
@@ -60,21 +60,31 @@ struct ContentView: View {
         }
     }
     
-    func authorAndArtistView(author: String, artist: String) -> some View {
+    func authorAndArtistView(author: String, authorId: String, artist: String, artistId: String) -> some View {
         HStack {
             VStack {
                 Text("Author")
                     .font(.headline)
-                Text(author)
-                    .font(.subheadline)
+                NavigationLink {
+                    MangaListView(vm: MangaListViewModel(authorId: authorId))
+                } label: {
+                    Text(author)
+                        .font(.subheadline)
+                }
+
             }
             .padding(.horizontal)
             Spacer()
             VStack {
                 Text("Artist")
                     .font(.headline)
-                Text(artist)
-                    .font(.subheadline)
+                NavigationLink {
+                    MangaListView(vm: MangaListViewModel(artistId: artistId))
+                } label: {
+                    Text(artist)
+                        .font(.subheadline)
+                }
+
             }
             .padding(.horizontal)
         }.padding()

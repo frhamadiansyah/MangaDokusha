@@ -36,7 +36,7 @@ class ListChapterViewModel: ObservableObject {
     init(mangaDetail: MangaDetailModel) {
         self.mangaDetail = mangaDetail
         
-        loadInitialChapterList()
+//        loadInitialChapterList()
         
     }
     

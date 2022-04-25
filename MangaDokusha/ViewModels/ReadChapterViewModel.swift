@@ -63,7 +63,7 @@ class ReadChapterViewModel: ObservableObject {
                 print("finished")
             }
         } receiveValue: { [unowned self] mod in
-            if !mod.data.isEmpty {
+            if !mod.data.isEmpty && mod.data.count > 1 {
                 let nextChapter = mod.data[1] // based on createdAt
                 currentChapter = nextChapter
                 chapterId = nextChapter.id

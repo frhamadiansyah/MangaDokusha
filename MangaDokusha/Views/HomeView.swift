@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView {
-            MangaListView()
+            MangaListView(vm: MangaListViewModel(mangaIds: mangaIds))
             .navigationTitle("Home")
         }
         

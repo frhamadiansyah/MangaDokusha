@@ -19,7 +19,9 @@ struct MangaDetailModel: Decodable, Identifiable {
     let id: String
     let title: String
     let description: String
+    var artistId: String?
     var artist: String?
+    var authorId: String?
     var author: String?
     var coverId: String?
     var coverFileName: String?
@@ -46,8 +48,10 @@ struct MangaDetailModel: Decodable, Identifiable {
                     coverUrl = "\(imageBaseUrl)/covers/\(id)/\(fileName)"
                 }
             } else if item.type == "artist" {
+                artistId = item.id
                 artist = item.attributes?.name
             } else if item.type == "author" {
+                authorId = item.id
                 author = item.attributes?.name
             }
         }

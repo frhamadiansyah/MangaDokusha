@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MangaListView: View {
-    @StateObject var vm: HomeViewModel = HomeViewModel()
+    @ObservedObject var vm: MangaListViewModel
     var body: some View {
         List {
             //            VStack {
@@ -24,6 +24,11 @@ struct MangaListView: View {
         }.refreshable {
             print("REFRESH")
         }
+        .onAppear(perform: {
+            if let request = vm.currentRequest {
+                vm.getMangaList(request: request)
+            }
+        })
         .background {
             errorHandling(error: vm.error, showError: $vm.showError) {
                 
@@ -34,7 +39,7 @@ struct MangaListView: View {
 
 struct MangaListView_Previews: PreviewProvider {
     static var previews: some View {
-        MangaListView()
+        MangaListView(vm: MangaListViewModel())
     }
 }
 

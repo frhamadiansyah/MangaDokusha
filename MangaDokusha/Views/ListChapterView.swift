@@ -43,6 +43,9 @@ struct ListChapterView: View {
                 
             }
         }
+        .onAppear {
+            vm.loadInitialChapterList()
+        }
     }
     
     func chapterCard(chapter: String, title: String, group: String) -> some View {

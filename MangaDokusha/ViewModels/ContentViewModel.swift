@@ -34,8 +34,6 @@ class ContentViewModel: ObservableObject {
         detailService.getMangaDetail(mangaId: mangaId).sink { [unowned self] error in
             switch error {
             case .failure(let err):
-                print("___>>>>>")
-                print(err)
                 self.error = err as? MangaDokushaError
                 self.showError.toggle()
             case .finished:
@@ -44,8 +42,6 @@ class ContentViewModel: ObservableObject {
         } receiveValue: { [weak self] data in
 
             self?.mangaDetail = data.data
-            print("GET")
-            print(data)
         }.store(in: &cancel)
     }
     

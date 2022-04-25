@@ -23,6 +23,7 @@ struct SearchView: View {
                         Spacer()
                         Button {
                             vm.searchKeyword = ""
+                            vm.mangaList = []
                         } label: {
                             Image(systemName: "x.circle")
                         }
@@ -65,7 +66,12 @@ struct SearchView: View {
                 }
             }
             .onSubmit {
-                vm.searchManga()
+                if vm.searchKeyword.isEmpty {
+                    vm.mangaList = []
+                } else {
+                    vm.searchManga()
+                }
+                
             }
             .navigationTitle("Search")
             .navigationBarTitleDisplayMode(.inline)

@@ -48,6 +48,28 @@ struct ListMangaService {
         return URLRequest(url: url!)
     }
     
+    func generateListMangaRequestByAuthor(authorIds: [String], limit: Int = queryLimit, offset: Int = 0) -> URLRequest {
+        var components = generateBaseRequest(limit: limit, offset: offset)
+        
+        for item in authorIds {
+            components.queryItems?.append(URLQueryItem(name: "authors[]", value: item))
+        }
+        
+        let url = components.url
+        return URLRequest(url: url!)
+    }
+    
+    func generateListMangaRequestByArtist(artistIds: [String], limit: Int = queryLimit, offset: Int = 0) -> URLRequest {
+        var components = generateBaseRequest(limit: limit, offset: offset)
+        
+        for item in artistIds {
+            components.queryItems?.append(URLQueryItem(name: "artists[]", value: item))
+        }
+        
+        let url = components.url
+        return URLRequest(url: url!)
+    }
+    
     func searchMangaRequest(title: String, limit: Int = queryLimit, offset: Int = 0) -> URLRequest {
         var components = generateBaseRequest(limit: limit, offset: offset)
         
@@ -66,7 +88,10 @@ struct ListMangaService {
     func getMangaList(mangaIds: [String], limit: Int = queryLimit, offset: Int = 0) -> AnyPublisher<ListMangaDetailResponse, Error> {
         let request = generateListMangaRequest(mangaIds: mangaIds, limit: limit, offset: offset)
         return apiService.make(request: request, decoder: JSONDecoder())
-        
+    }
+    
+    func getMangaList(request: URLRequest) -> AnyPublisher<ListMangaDetailResponse, Error> {
+        apiService.make(request: request, decoder: JSONDecoder())
     }
 
 }

@@ -22,32 +22,40 @@ class SearchViewModel: ObservableObject {
     var cancel = Set<AnyCancellable>()
     
     private var offset = 0
-    private var limit = 10
+    private var limit = 50
+    
+    var currentRequest: URLRequest?
     
     init() {
         
     }
     
-    func searchManga() {
-        mangaList = []
-        offset = 0
-        
-        listMangaService.getSearchMangaList(title: searchKeyword, limit: limit, offset: offset)
+    func getMangaList(request: URLRequest) {
+        listMangaService.getMangaList(request: request)
             .sink(receiveCompletion: { error in
                 switch error {
                 case .failure(let err):
-                    print("___>>>>>")
-                    print(err)
                     self.error = err as? MangaDokushaError
                     self.showError.toggle()
                 case .finished:
                     print("finished")
                 }
             }, receiveValue: { response in
-                print("GET UEY")
                 self.mangaList.append(contentsOf: response.data)
             })
             .store(in: &cancel)
+    }
+    
+    
+    func searchManga() {
+        mangaList = []
+        offset = 0
+        
+        currentRequest = listMangaService.searchMangaRequest(title: searchKeyword, limit: limit, offset: offset)
+        
+        guard let request = currentRequest else { return }
+        
+        getMangaList(request: request)
         
     }
     
@@ -57,7 +65,7 @@ class SearchViewModel: ObservableObject {
             return
         }
         
-        let thresholdIndex = mangaList.index(mangaList.endIndex, offsetBy: -5)
+        let thresholdIndex = mangaList.index(mangaList.endIndex, offsetBy: -2)
             if mangaList.firstIndex(where: { $0.id == item.id }) == thresholdIndex {
               loadMoreManga()
             }
@@ -70,22 +78,10 @@ class SearchViewModel: ObservableObject {
 
         offset += limit
         isLoading = true
+        currentRequest = listMangaService.searchMangaRequest(title: searchKeyword, limit: limit, offset: offset)
         
-        listMangaService.getSearchMangaList(title: searchKeyword, limit: limit, offset: offset)
-            .sink(receiveCompletion: { error in
-                switch error {
-                case .failure(let err):
-                    print("___>>>>>")
-                    print(err)
-                    self.error = err as? MangaDokushaError
-                    self.showError.toggle()
-                case .finished:
-                    print("finished")
-                }
-            }, receiveValue: { response in
-                print("GET UEY")
-                self.mangaList.append(contentsOf: response.data)
-            })
-            .store(in: &cancel)
+        guard let request = currentRequest else { return }
+        
+        getMangaList(request: request)
     }
 }
