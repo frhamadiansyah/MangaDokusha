@@ -11,7 +11,6 @@ struct MangaListView: View {
     @ObservedObject var vm: MangaListViewModel
     var body: some View {
         List {
-            //            VStack {
             ForEach(vm.mangaList) { manga in
                 NavigationLink {
                     ContentView(mangaModel: manga)
@@ -19,8 +18,6 @@ struct MangaListView: View {
                     MangaListCard(model: manga)
                 }
             }
-            //                Text("ASD")
-            //            }
         }.refreshable {
             print("REFRESH")
         }

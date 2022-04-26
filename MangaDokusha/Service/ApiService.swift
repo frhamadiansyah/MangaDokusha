@@ -47,7 +47,7 @@ struct APIService: Requestable {
                     let errorResponse = try decoder.decode(BackendError.self, from: data)
                     ("❌ Backend Error : \(errorResponse)")
                     throw MangaDokushaError.backendError(errorResponse)
-                } 
+                }
 
             }
             .receive(on: DispatchQueue.main)

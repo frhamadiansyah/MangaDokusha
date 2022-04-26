@@ -13,6 +13,7 @@ enum MangaDokushaError: Error {
     case backendError(BackendError)
     case otherError(Error)
     case noChapter
+    case noMangaFound
 }
 
 

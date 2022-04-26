@@ -21,7 +21,9 @@ extension View {
         case .backendError(let backendError):
             return AnyView(handlingBackendError(backendError: backendError, showError: showError, completion: completion))
         case .noChapter:
-            return AnyView(handlingDefaultError(title: "No Chapter Found", message: "Sorry, co chapter found. please return to chapter selection view",showError: showError, completion: completion))
+            return AnyView(handlingDefaultError(title: "No Chapter Found", message: "Sorry, no chapter found. please return to chapter selection view",showError: showError, completion: completion))
+        case .noMangaFound:
+            return AnyView(handlingDefaultError(title: "No Manga Found", message: "Sorry, no Manga found. please search other keyword",showError: showError, completion: completion))
         default:
             return AnyView(handlingDefaultError(showError: showError, completion: completion))
         }

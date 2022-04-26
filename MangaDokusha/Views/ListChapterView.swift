@@ -31,6 +31,7 @@ struct ListChapterView: View {
                 Button {
                     print("Ascend Descend")
                     vm.isAscending.toggle()
+                    vm.listChapter = []
                     vm.loadInitialChapterList()
                 } label: {
                     Image(systemName: "arrow.up.arrow.down")

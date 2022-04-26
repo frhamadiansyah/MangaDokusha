@@ -41,7 +41,13 @@ class SearchViewModel: ObservableObject {
                     print("finished")
                 }
             }, receiveValue: { response in
-                self.mangaList.append(contentsOf: response.data)
+                if !response.data.isEmpty {
+                    self.mangaList.append(contentsOf: response.data)
+                } else {
+                    self.error = .noMangaFound
+                    self.showError.toggle()
+                    self.searchKeyword = ""
+                }
             })
             .store(in: &cancel)
     }
