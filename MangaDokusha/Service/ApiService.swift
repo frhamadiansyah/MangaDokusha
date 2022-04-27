@@ -36,17 +36,17 @@ struct APIService: Requestable {
                 return MangaDokushaError.networkError(urlError)
             })
             .tryMap { data, response -> T in
-//                let test = try decoder.decode([String: String].self, from: data)
-//                print(test)
                 print("📶 URL : \(response.url?.absoluteString)")
                 do {
                     let result = try decoder.decode(T.self, from: data)
                     print("✅ Response Complete : \(result)")
                     return result
-                } catch {
+                } catch is DecodingError {
                     let errorResponse = try decoder.decode(BackendError.self, from: data)
                     ("❌ Backend Error : \(errorResponse)")
                     throw MangaDokushaError.backendError(errorResponse)
+                } catch let error {
+                    throw MangaDokushaError.otherError(error)
                 }
 
             }

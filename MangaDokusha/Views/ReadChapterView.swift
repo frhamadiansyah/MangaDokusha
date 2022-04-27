@@ -33,16 +33,9 @@ struct ReadChapterView: View {
                     changeChapter(value: value)
                     
                     ForEach(vm.imageUrl, id:\.self) { image in
-                        customAsyncImage(url: image)
-//                        AsyncImage(url: URL(string: image)) { result in
-//                            result.resizable().aspectRatio(contentMode: .fit)
-//                        } placeholder: {
-//                            imagePlaceholder
-//                        }
-                            
+                        customAsyncImage(url: image)      
                     }
                     changeChapter(value: value)
-//                    alert
                 }
             }
         }.onAppear(perform: {

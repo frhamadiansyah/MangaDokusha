@@ -14,7 +14,6 @@ extension View {
     @ViewBuilder
     func errorHandling(error: MangaDokushaError?, showError: Binding<Bool>, completion: @escaping () -> Void) -> some View {
         
-        //        VStack {
         switch error {
         case .networkError(let networkError):
             return AnyView(handlingNetworkError(networkError: networkError, showError: showError, completion: completion))
@@ -27,8 +26,6 @@ extension View {
         default:
             return AnyView(handlingDefaultError(showError: showError, completion: completion))
         }
-        //        }
-        //        handlingDefaultError(showError: showError, completion: completion)
         
         
     }
@@ -80,7 +77,12 @@ extension View {
         ) { phase in
             switch phase {
             case .empty:
-                ProgressView()
+                ZStack{
+                    Image(systemName: "photo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    ProgressView()
+                }
             case .success(let image):
                 image
                     .resizable()
@@ -94,12 +96,4 @@ extension View {
         }
     }
     
-    var imagePlaceholder: some View {
-        ZStack{
-            Image(systemName: "photo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            ProgressView()
-        }
-    }
 }

@@ -10,19 +10,8 @@ import SwiftUI
 struct HomeBaseView: View {
     var body: some View {
         NavigationView {
-            List {
-                Link(destination: URL(string: "https://api.mangadex.org/docs/")!) {
-                    Text("Mangadex")
-                }
-                ForEach(mangaIds, id: \.self) { id in
-                    NavigationLink {
-                        ContentView(mangaId: id)
-                    } label: {
-                        Text(id)
-                    }
-                }
-
-            }
+            MangaListView(vm: MangaListViewModel(mangaIds: mangaIds))
+            .navigationTitle("Home")
         }
     }
 }
