@@ -17,7 +17,7 @@ struct ListChapterView: View {
                 NavigationLink {
                     ReadChapterView(chapter: chapter, mangaDetail: vm.mangaDetail)
                 } label: {
-                    chapterCard(chapter: chapter.chapter, title: chapter.chapterTitle, group: chapter.scanlation)
+                    ChapterCard(chapter: chapter)
                 }.onAppear {
                         vm.loadMoreIfNeeded(currentChapter: chapter)
                     }
@@ -48,22 +48,7 @@ struct ListChapterView: View {
             vm.loadInitialChapterList()
         }
     }
-    
-    func chapterCard(chapter: String, title: String, group: String) -> some View {
-        HStack {
-            VStack {
-                Text("\(chapter):")
-                    .font(.headline)
-                Spacer()
-            }
-            VStack(alignment: .leading, spacing: 5) {
-                Text("\(title)")
-                    .font(.headline)
-                Text(group)
-                    .font(.subheadline)
-            }
-        }
-    }
+
 }
 
 struct ListChapterView_Previews: PreviewProvider {
