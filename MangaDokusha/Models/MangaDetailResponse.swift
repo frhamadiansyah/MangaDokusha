@@ -7,13 +7,6 @@
 
 import Foundation
 
-enum ContentRating: String {
-    case safeContent = "safe"
-    case suggestive = "suggestive"
-    case erotica = "erotica"
-    case pornographic = "pornographic"
-}
-
 
 struct MangaDetailModel: Decodable, Identifiable {
     let id: String

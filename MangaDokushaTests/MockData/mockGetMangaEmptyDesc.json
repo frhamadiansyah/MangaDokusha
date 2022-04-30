@@ -1,0 +1,1744 @@
+{
+    "result": "ok",
+    "response": "collection",
+    "data": [
+        {
+            "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kunoichi Tsubaki no Mune no Uchi"
+                },
+                "altTitles": [
+                    {
+                        "ru": "В сердце куноичи Цубаки"
+                    },
+                    {
+                        "ja": "くノ一ツバキの胸の内"
+                    },
+                    {
+                        "zh": "女忍者椿的心事"
+                    },
+                    {
+                        "en": "In the Heart of Kunoichi Tsubaki"
+                    }
+                ],
+                "description": {
+                    "en": "The isolationist Akane Clan, composed of an all-girls body mainly consisting of young kunoichi in training, has a code to which they all must adhere:  \r\n  \r\nAs men are beings of danger, to exchange with them is forbidden.  \r\n  \r\nKunoichi Tsubaki, the leader of the Dog Squad, is an excellent trainee with a promising future, but she has started to experience a strange feeling in her heart… whenever the subject of boys is brought up."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "100930",
+                    "ap": "kunoichi-tsubaki-no-mune-no-uchi",
+                    "bw": "series/166312/",
+                    "kt": "40838",
+                    "mu": "146595",
+                    "amz": "https://www.amazon.co.jp/dp/B07QLNXRX8",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/465777/",
+                    "mal": "112089",
+                    "raw": "https://gekkansunday.net/work/405/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2018,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "2d1f5d56-a1e5-4d0d-a961-2193588b08ec",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Loli"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-03-11T23:15:03+00:00",
+                "updatedAt": "2022-04-16T18:05:19+00:00",
+                "version": 10,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "ru",
+                    "es-la",
+                    "it",
+                    "es"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "dd9cdbd1-9bb1-419b-9f84-797729b9ffc5",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "7",
+                        "fileName": "c095945e-6b4f-4651-8469-568343ae9278.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-04-13T00:57:41+00:00",
+                        "updatedAt": "2022-04-13T00:57:41+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "3ac9fd03-e3de-4520-90aa-d9fc002eac0a",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "b3d3727b-d22e-4719-acd2-cf34510b1bb8",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "f7556f3f-428f-4ee0-91dd-ff6123add767",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "fb8eac2f-3f65-4602-afb6-9a7724227364",
+                    "type": "manga",
+                    "related": "shared_universe"
+                }
+            ]
+        },
+        {
+            "id": "6b9658ff-f346-4f25-9060-31c76cb0b847",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Neet Kunoichi to Nazeka Dousei Hajimemashita"
+                },
+                "altTitles": [
+                    {
+                        "ja": "ニートくノ一となぜか同棲はじめました"
+                    },
+                    {
+                        "en": "Somehow, I started Living with a NEET Kunoichi"
+                    }
+                ],
+                "description": {
+                    "en": "Otaku Kunoichi ≒ Otaku NEET ≒ Girl with Zero Romantic Experience!\r\n\r\nA normal salaryman, Tsukasa, is attacked by a Youma and is gallantly saved by the appearance of the genius kunoichi, Shizuri. However, when she is not working, she becomes an otaku NEET... Today, Tsukasa's househusband skills will continue to spoil Shizuri. A prescription delivered directly to you♪\r\n\r\nThe Comic Walker version of \"NEET de Otaku na Kunoichi to naze ka Dousei hajimemashita\". The story is almost 1 to 1 with the doujinshi excluding chapter 1."
+                },
+                "isLocked": false,
+                "links": {
+                    "mu": "186538",
+                    "raw": "https://comic-walker.com/contents/detail/KDCW_AM07202445010000_68/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2021,
+                "contentRating": "suggestive",
+                "tags": [
+                    {
+                        "id": "320831a8-4026-470b-94f6-8353740e6f04",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Official Colored"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "36fd93ea-e8b8-445e-b836-358f02b3d33d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Monsters"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Web Comic"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Supernatural"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Full Color"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2021-10-10T16:45:33+00:00",
+                "updatedAt": "2022-04-25T05:40:08+00:00",
+                "version": 7,
+                "availableTranslatedLanguages": [
+                    "en"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "08d882f4-7655-41ec-8645-1594ca8d5b31",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kotatsu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kotatsu358",
+                        "pixiv": "https://www.pixiv.net/en/users/8780063",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-20T04:53:41+00:00",
+                        "version": 3
+                    }
+                },
+                {
+                    "id": "08d882f4-7655-41ec-8645-1594ca8d5b31",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Kotatsu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kotatsu358",
+                        "pixiv": "https://www.pixiv.net/en/users/8780063",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-20T04:53:41+00:00",
+                        "version": 3
+                    }
+                },
+                {
+                    "id": "c08d59e9-3019-4fc4-bdea-caa7246f0a76",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "1",
+                        "fileName": "58a874b1-4b32-429d-ab02-81a69aa3fa2a.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-10-10T16:45:38+00:00",
+                        "updatedAt": "2021-10-10T16:45:38+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "22e2af18-0469-4e91-9947-dd68b767664a",
+                    "type": "manga",
+                    "related": "preserialization"
+                }
+            ]
+        },
+        {
+            "id": "851ca5ed-36cd-4825-81b8-a96c9ba61dcd",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Oideyo! Kunoichi no Sato"
+                },
+                "altTitles": [
+                    {
+                        "en": "おいでよ! くのいちの里"
+                    }
+                ],
+                "description": [],
+                "isLocked": false,
+                "links": {
+                    "al": "119627"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "1",
+                "lastChapter": "4",
+                "publicationDemographic": null,
+                "status": "completed",
+                "year": 2020,
+                "contentRating": "pornographic",
+                "tags": [
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "aafb99c1-7f60-43fa-b75f-fc9502ce29c7",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Harem"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "b13b2a48-c720-44a9-9c77-39c9979373fb",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Doujinshi"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2020-02-10T01:39:54+00:00",
+                "updatedAt": "2022-03-30T20:04:51+00:00",
+                "version": 3,
+                "availableTranslatedLanguages": [
+                    "en"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "4fcccb2c-1945-4c8a-b520-9c6e1787d9eb",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kougi Anmitsu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4a7a938a-828a-40ab-8094-f5c3d32f6eca",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Ichiren Takushou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "ea5a4009-338b-449d-9806-bae2183ea82a",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "5",
+                        "fileName": "82dd6dbc-9e34-4fd0-bfa1-44bd4e9a2192.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-03-30T20:04:50+00:00",
+                        "updatedAt": "2022-03-30T20:04:50+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "4fbc0e1c-6eef-49fe-8a82-b09186601643",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kunoichi no Ichi!"
+                },
+                "altTitles": [
+                    {
+                        "ja-ro": "Kunoichi no Ichi"
+                    },
+                    {
+                        "ja": "クノイチノイチ"
+                    },
+                    {
+                        "ja": "クノイチノイチ!"
+                    },
+                    {
+                        "ko": "쿠노이치노이치"
+                    },
+                    {
+                        "en": "#1 Kunoichi"
+                    }
+                ],
+                "description": {
+                    "en": "On a school trip to shinobi-themed Ninjatown, a young man named Ichi Kuno accidentally springs a mystical ninja trap which sends him back to the Age of the Ninja. Having no other path, he must pose as a girl and infiltrate an Kurenai Academy, a school of kunoichi students, to retrieve a mystical scroll that can return him to the future. But when everyone around him is already far better at stealth and infiltration than he could ever imagine being, it's not going to be easy.  \n  \nHe'll need to employ his own special bag of tricks, and have a lot of luck, if he's going to last more than 5 minutes surrounded by hot kunoichi girls, every one of whom would happily kill him in a moment if he's discovered."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "99878",
+                    "ap": "kunoichi-no-ichi",
+                    "bw": "series/96396",
+                    "kt": "39828",
+                    "mu": "137283",
+                    "amz": "https://www.amazon.co.jp/gp/product/B074CFCX98",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/457623/",
+                    "mal": "102675"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "5",
+                "lastChapter": "48",
+                "publicationDemographic": "seinen",
+                "status": "completed",
+                "year": null,
+                "contentRating": "suggestive",
+                "tags": [
+                    {
+                        "id": "292e862b-2d17-4062-90a2-0356caa4ae27",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Time Travel"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "33771934-028e-4cb3-8744-691e866a923e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Historical"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "391b0423-d847-456f-aff0-8b0cfc03066b",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Action"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "9ab53f92-3eed-4e9b-903a-917c86035ee3",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Crossdressing"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "aafb99c1-7f60-43fa-b75f-fc9502ce29c7",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Harem"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Supernatural"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-02-20T02:45:12+00:00",
+                "updatedAt": "2022-04-01T13:28:23+00:00",
+                "version": 4,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "pt-br",
+                    "ru"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "f7bd687b-ce62-4886-b832-4a7199c11389",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kanazawa Shinnosuke",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "f7bd687b-ce62-4886-b832-4a7199c11389",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Kanazawa Shinnosuke",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "12657ebc-a6a5-4fc8-8986-86fe992fccf8",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "ca955c2a-baf8-49f1-bfa9-c9c4b59d0438.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:01:57+00:00",
+                        "updatedAt": "2021-05-24T17:01:57+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "58ba3237-83a5-4be2-b170-ce9a2ba43bad",
+                    "type": "manga",
+                    "related": "sequel"
+                }
+            ]
+        },
+        {
+            "id": "22e2af18-0469-4e91-9947-dd68b767664a",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Somehow, I Started Living With a NEET Otaku Kunoichi"
+                },
+                "altTitles": [
+                    {
+                        "ja-ro": "NEET de Otaku na Kunoichi to naze ka Dousei hajimemashita"
+                    },
+                    {
+                        "ja": "ニートでオタクなくノ一となぜか同棲はじめました"
+                    }
+                ],
+                "description": {
+                    "en": "A man is the target of a kunoichi's mission, and a lot of blood was spilled for him to learn this.  \n  \nHowever, said kunoichi is taking some \"liberties\" with the mission… Or are those part of the mission too?  \n  \nApproved scanlation by [@kotatsu358](https://twitter.com/kotatsu358)"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "127143",
+                    "ap": "neet-de-otaku-na-kunoichi-to-naze-ka-dousei-hajimemashita",
+                    "kt": "56050",
+                    "mu": "164040",
+                    "mal": "132161",
+                    "raw": "https://www.pixiv.net/user/8780063/series/75232"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": null,
+                "contentRating": "suggestive",
+                "tags": [
+                    {
+                        "id": "36fd93ea-e8b8-445e-b836-358f02b3d33d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Monsters"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Web Comic"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Supernatural"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2020-05-29T01:23:20+00:00",
+                "updatedAt": "2022-02-01T16:15:48+00:00",
+                "version": 5,
+                "availableTranslatedLanguages": [
+                    "pt-br",
+                    "en",
+                    "ru",
+                    "es-la"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "08d882f4-7655-41ec-8645-1594ca8d5b31",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kotatsu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kotatsu358",
+                        "pixiv": "https://www.pixiv.net/en/users/8780063",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-20T04:53:41+00:00",
+                        "version": 3
+                    }
+                },
+                {
+                    "id": "08d882f4-7655-41ec-8645-1594ca8d5b31",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Kotatsu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kotatsu358",
+                        "pixiv": "https://www.pixiv.net/en/users/8780063",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-20T04:53:41+00:00",
+                        "version": 3
+                    }
+                },
+                {
+                    "id": "a3103b46-e54b-4f3a-9dc3-f87f40d72b06",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "c0897030-4eac-4f3a-84e2-e00a8f5a3493.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:57:32+00:00",
+                        "updatedAt": "2021-05-24T17:57:32+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "6b9658ff-f346-4f25-9060-31c76cb0b847",
+                    "type": "manga",
+                    "related": "serialization"
+                }
+            ]
+        },
+        {
+            "id": "c46c6299-76c0-4bd3-9dcd-240a068fb7af",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "A Female Ninja's Camouflage no Jutsu"
+                },
+                "altTitles": [
+                    {
+                        "ja-ro": "Kakuremi no Jutsu Kunoichi"
+                    },
+                    {
+                        "ja": "隠れみの術くノ一"
+                    }
+                ],
+                "description": [],
+                "isLocked": false,
+                "links": [],
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": null,
+                "status": "completed",
+                "year": 2022,
+                "contentRating": "suggestive",
+                "tags": [
+                    {
+                        "id": "0234a31e-a729-4e28-9d6a-3f87c4966b9e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Oneshot"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Full Color"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2022-02-23T13:03:27+00:00",
+                "updatedAt": "2022-02-23T13:04:15+00:00",
+                "version": 2,
+                "availableTranslatedLanguages": [
+                    "en"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "d9b697d1-f2c0-4550-8bd8-c9255f9f78b5",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Tomioka Sena",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2022-02-23T12:58:40+00:00",
+                        "updatedAt": "2022-02-23T12:58:40+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "d9b697d1-f2c0-4550-8bd8-c9255f9f78b5",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Tomioka Sena",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2022-02-23T12:58:40+00:00",
+                        "updatedAt": "2022-02-23T12:58:40+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "e05a93ee-ad46-44e5-9236-b52b317a883e",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "62ed4189-43c6-4c28-9fdc-1d6a8efd2fce.png",
+                        "locale": "ja",
+                        "createdAt": "2022-02-23T13:03:33+00:00",
+                        "updatedAt": "2022-02-23T13:03:33+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "b4450306-6cc3-4ce2-bb09-81853c7e9fa3",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kunoichi, and"
+                },
+                "altTitles": [
+                    {
+                        "ja": "くのいちと、、"
+                    }
+                ],
+                "description": {
+                    "en": "A Kunoichi faces the detective again in her attempt to steal some treasure, thus she shows off her new technique against the detective."
+                },
+                "isLocked": false,
+                "links": {
+                    "raw": "https://www.twitter.com/shimizumanga/status/1352550411761111042"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": null,
+                "status": "completed",
+                "year": 2021,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "0234a31e-a729-4e28-9d6a-3f87c4966b9e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Oneshot"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "391b0423-d847-456f-aff0-8b0cfc03066b",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Action"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Web Comic"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2021-12-24T23:59:18+00:00",
+                "updatedAt": "2022-02-10T20:18:49+00:00",
+                "version": 5,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "pt-br"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "2c093a1b-c20b-4f4f-b48b-1fce9bddcd3f",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Shimizu Hironori",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/shimizumanga",
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-11-09T20:28:09+00:00",
+                        "updatedAt": "2022-01-25T15:41:52+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "2c093a1b-c20b-4f4f-b48b-1fce9bddcd3f",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Shimizu Hironori",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/shimizumanga",
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-11-09T20:28:09+00:00",
+                        "updatedAt": "2022-01-25T15:41:52+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "e27cd2f0-7d9a-4272-bb1f-c57bc9cc9268",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "0",
+                        "fileName": "5713b7ff-aac8-4385-bb5c-833cfc2f5e48.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-12-24T23:59:21+00:00",
+                        "updatedAt": "2021-12-24T23:59:21+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "d02d59cf-444f-4f90-9cd4-0172b26233c6",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kunoichi Hazukashi"
+                },
+                "altTitles": [
+                    {
+                        "ja": "くのいちはずかしい"
+                    }
+                ],
+                "description": [],
+                "isLocked": false,
+                "links": {
+                    "al": "131188",
+                    "ap": "kunoichi-hazukashii",
+                    "bw": "series/332913/",
+                    "mu": "176949",
+                    "mal": "133149",
+                    "raw": "https://comic-walker.com/contents/detail/KDCW_MF06202420010000_68/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2021,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2021-11-25T19:13:18+00:00",
+                "updatedAt": "2021-12-27T21:53:09+00:00",
+                "version": 9,
+                "availableTranslatedLanguages": [
+                    "en"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "522730a4-9766-4e62-88b3-ec68f4e88b0b",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Nakajima Chizuna",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-12-01T21:36:15+00:00",
+                        "updatedAt": "2021-12-01T21:36:15+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "522730a4-9766-4e62-88b3-ec68f4e88b0b",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Nakajima Chizuna",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-12-01T21:36:15+00:00",
+                        "updatedAt": "2021-12-01T21:36:15+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "8f4d0ac4-6fdf-4fd4-8c18-166ec36b507a",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "1",
+                        "fileName": "7487c76c-5ca9-41c9-998a-5749901f45bb.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-12-27T21:53:11+00:00",
+                        "updatedAt": "2021-12-27T21:53:11+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "aeb1eeac-d166-46d9-be1f-33eeb569268c",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "JK Kunoichi wa subete o sasagetai"
+                },
+                "altTitles": [
+                    {
+                        "en": "JKくのいちは全てを捧げたい"
+                    },
+                    {
+                        "en": "女子高中生想奉献自己的一切"
+                    }
+                ],
+                "description": {
+                    "en": "Kohana gets manipulated into \"sexual training\" by her childhood friend Tora who tells her that the experience is necessary for her to be assigned to a mission where she gets to play lovers with her master who she loves. Will she be able to resist as Tora's demands gradually increase? The answer is no."
+                },
+                "isLocked": false,
+                "links": {
+                    "mu": "155805",
+                    "raw": "https://renta.papy.co.jp/renta/sc/frm/item/213101/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": null,
+                "lastChapter": null,
+                "publicationDemographic": "shoujo",
+                "status": "ongoing",
+                "year": null,
+                "contentRating": "erotica",
+                "tags": [
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2021-03-11T15:44:05+00:00",
+                "updatedAt": "2021-05-25T15:46:25+00:00",
+                "version": 2,
+                "availableTranslatedLanguages": [
+                    "zh"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "024693e1-124c-454b-8bb1-f2b560e8fc6d",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Umechazuke",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "024693e1-124c-454b-8bb1-f2b560e8fc6d",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Umechazuke",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "9d6d4f96-9aee-4f08-9f90-99a3a99ae865",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "ecf3405c-1bbb-4ab8-b417-ed6c1ed8ee58.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T18:34:35+00:00",
+                        "updatedAt": "2021-05-24T18:34:35+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "9634ae86-0f69-4231-b2fc-30374d7eeb1d",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Torokeru Kunoichi"
+                },
+                "altTitles": [
+                    {
+                        "en": "The Bewitched Kunoichi"
+                    },
+                    {
+                        "en": "とろけるくのいち"
+                    }
+                ],
+                "description": {
+                    "en": "~Yukemuri Hen~ (~Steamy Incident~, ～湯煙変～) : COMIC Penguin Club 2020-01  \n~Adauchi Hen~ (~Retaliation Incident~, ～仇討変～) : COMIC Penguin Club 2018-05"
+                },
+                "isLocked": false,
+                "links": null,
+                "originalLanguage": "ja",
+                "lastVolume": null,
+                "lastChapter": null,
+                "publicationDemographic": null,
+                "status": "ongoing",
+                "year": null,
+                "contentRating": "pornographic",
+                "tags": [],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2020-05-27T04:00:30+00:00",
+                "updatedAt": "2021-05-25T15:45:20+00:00",
+                "version": 2,
+                "availableTranslatedLanguages": [
+                    "en"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "9ed90028-fa1d-4f48-98ca-604cd58ee53b",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kon-Kit",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kon_kit",
+                        "pixiv": "http://www.pixiv.net/member.php?id=229782",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-01-28T16:28:14+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "9ed90028-fa1d-4f48-98ca-604cd58ee53b",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Kon-Kit",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kon_kit",
+                        "pixiv": "http://www.pixiv.net/member.php?id=229782",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-01-28T16:28:14+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "71b226b6-6578-4f6d-bcd9-0939c7e7844d",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "505be950-6699-497c-a4f8-2a7652bf8f71.png",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:57:18+00:00",
+                        "updatedAt": "2021-05-24T17:57:18+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        }
+    ],
+    "limit": 10,
+    "offset": 0,
+    "total": 19
+}
