@@ -10,8 +10,17 @@ import Foundation
 
 struct MangaDexResponse: Decodable {
     let result: String
-    let response: String
-    let data: MangaDexDataEnum
+    let response: String?
+    let data: MangaDexDataEnum?
+    let errors: [MangaDexErrorStruct]?
+    let statuses: [String: String]?
+    let token: [String: String]?
+}
+
+struct MangaDexErrorStruct: Decodable {
+    let id: String
+    let status: Int
+    let title: String
 }
 
 //MARK: - MangaDex Data
@@ -87,9 +96,7 @@ struct ChildMangaDexData: Decodable {
         if container.contains(.related) {
             related = try container.decode(String.self, forKey: .related)
         }
-        
     }
-
 }
 
 //MARK: - MangaDex Attributes
@@ -162,6 +169,7 @@ struct RawMangaModel: Decodable {
     let description: MultiLanguageText
     let contentRating: ContentRating
     let status: MangaStatus
+    let publicationDemographic: PublicationDemographic
     let tags: [MangaDexData]
     
     enum CodingKeys: String, CodingKey {
@@ -169,6 +177,7 @@ struct RawMangaModel: Decodable {
         case description
         case contentRating
         case status
+        case publicationDemographic
         case tags
     }
     
@@ -177,11 +186,26 @@ struct RawMangaModel: Decodable {
         title = try container.decode(MultiLanguageText.self, forKey: .title)
         description = try container.decode(MultiLanguageText.self, forKey: .description)
         
-        let rating = try container.decode(String.self, forKey: .contentRating)
-        contentRating = ContentRating.init(rawValue: rating) ?? .unknown
+        do {
+            let rating = try container.decode(String.self, forKey: .contentRating)
+            contentRating = ContentRating.init(rawValue: rating) ?? .unknown
+        } catch {
+            contentRating = .unknown
+        }
         
-        let mangaStatus = try container.decode(String.self, forKey: .status)
-        status = MangaStatus.init(rawValue: mangaStatus) ?? .unknown
+        do {
+            let mangaStatus = try container.decode(String.self, forKey: .status)
+            status = MangaStatus.init(rawValue: mangaStatus) ?? .unknown
+        } catch {
+            status = .unknown
+        }
+        
+        do {
+            let demographic = try container.decode(String.self, forKey: .publicationDemographic)
+            publicationDemographic = PublicationDemographic.init(rawValue: demographic) ?? .unknown
+        } catch {
+            publicationDemographic = .unknown
+        }
         
         tags = try container.decode([MangaDexData].self, forKey: .tags)
     }

@@ -10,12 +10,14 @@ import Foundation
 @testable import MangaDokusha
 
 enum MockDataType: String {
-    case getManga = "mockGetManga"
-    case getListManga = "mockGetListManga"
-    case getChapter = "mockGetChapter"
-    case getListChapter = "mockGetListChapter"
-    case getEmptyListManga = "mockGetEmptyListManga"
-    case getMangaEmptyDesc = "mockGetMangaEmptyDesc"
+    case manga = "mockManga"
+    case listManga = "mockListManga"
+    case chapter = "mockChapter"
+    case listChapter = "mockListChapter"
+    case emptyListManga = "mockEmptyListManga"
+    case mangaEmptyDesc = "mockMangaEmptyDesc"
+    case errorNoUser = "mockErrorNoUser"
+    
 }
 
 

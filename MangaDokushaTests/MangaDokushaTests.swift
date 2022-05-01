@@ -20,11 +20,11 @@ class MangaDokushaTests: XCTestCase {
     }
     
     func getMockData() -> MangaDetailModel? {
-        MockData.getMockData(type: .getManga)
+        MockData.getMockData(type: .manga)
     }
     
     func getListMockData() -> [MangaDetailModel]? {
-        MockData.getMockData(type: .getListManga)
+        MockData.getMockData(type: .listManga)
     }
 
     func testExample() throws {

@@ -19,7 +19,7 @@ class MangaDexResponseTests: XCTestCase {
     }
 
     func test_WhenInputGetMangaType_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getManga)
+        let sut = MockData.getMangaDexResponse(type: .manga)
         
         let data = sut?.data
         
@@ -88,7 +88,7 @@ class MangaDexResponseTests: XCTestCase {
     }
     
     func test_WhenInputGetListMangaType_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getListManga)
+        let sut = MockData.getMangaDexResponse(type: .listManga)
         
         let data = sut?.data
         
@@ -112,7 +112,7 @@ class MangaDexResponseTests: XCTestCase {
     }
     
     func test_WhenInputGetListMangaWithEmptyDesc_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getMangaEmptyDesc)
+        let sut = MockData.getMangaDexResponse(type: .mangaEmptyDesc)
         
         let data = sut?.data
         
@@ -136,7 +136,7 @@ class MangaDexResponseTests: XCTestCase {
     }
     
     func test_WhenInputGetChapterType_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getChapter)
+        let sut = MockData.getMangaDexResponse(type: .chapter)
         
         let data = sut?.data
         
@@ -185,7 +185,7 @@ class MangaDexResponseTests: XCTestCase {
     }
     
     func test_WhenInputGetListChapterType_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getListChapter)
+        let sut = MockData.getMangaDexResponse(type: .listChapter)
         
         let data = sut?.data
 
@@ -237,7 +237,7 @@ class MangaDexResponseTests: XCTestCase {
     }
     
     func test_WhenInputGetEmptyListType_ReturnCorrectType() throws {
-        let sut = MockData.getMangaDexResponse(type: .getEmptyListManga)
+        let sut = MockData.getMangaDexResponse(type: .emptyListManga)
         
         let data = sut?.data
         
@@ -249,6 +249,23 @@ class MangaDexResponseTests: XCTestCase {
         let totalChapterResult = resultData.count
         let totalChapterExpected = 0
         XCTAssert(totalChapterResult == totalChapterExpected, "expected chapter in list \(totalChapterExpected), but instead got \(totalChapterResult)")
+
+
+    }
+    
+    func test_WhenInputErrorNoUser_ReturnCorrectType() throws {
+        let sut = MockData.getMangaDexResponse(type: .errorNoUser)
+        
+        let errors = sut?.errors
+        
+        if let err = errors?.first {
+            let expStatus = 401
+            let resStatus = err.status
+            XCTAssert(expStatus == resStatus, "expected status \(expStatus), but instead got \(resStatus)")
+            
+        } else {
+            XCTFail("Error message not found")
+        }
 
 
     }

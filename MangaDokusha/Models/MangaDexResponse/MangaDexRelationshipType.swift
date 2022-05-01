@@ -33,3 +33,11 @@ enum MangaStatus: String {
     case cancelled = "cancelled"
     case unknown
 }
+
+enum PublicationDemographic: String {
+    case shounen = "shounen"
+    case shoujo = "shoujo"
+    case josei = "josei"
+    case seinen = "seinen"
+    case unknown
+}
