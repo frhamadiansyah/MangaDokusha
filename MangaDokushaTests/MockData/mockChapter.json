@@ -1,0 +1,153 @@
+{
+    "result": "ok",
+    "response": "entity",
+    "data": {
+        "id": "52d59db4-837e-4a25-a12a-194291984cfd",
+        "type": "chapter",
+        "attributes": {
+            "volume": "9",
+            "chapter": "60",
+            "title": "Masami-Chan, Did You Want It So Much?",
+            "translatedLanguage": "en",
+            "externalUrl": null,
+            "publishAt": "2019-10-13T17:33:04+00:00",
+            "readableAt": "2019-10-13T17:33:04+00:00",
+            "createdAt": "2019-10-13T17:33:04+00:00",
+            "updatedAt": "2019-10-13T17:33:04+00:00",
+            "pages": 24,
+            "version": 1
+        },
+        "relationships": [
+            {
+                "id": "e6864cbb-e1ec-478e-bee9-fa941b2bf609",
+                "type": "scanlation_group",
+                "attributes": {
+                    "name": "Japanese Unloved Mangas (JUM)",
+                    "altNames": [],
+                    "locked": true,
+                    "website": null,
+                    "ircServer": null,
+                    "ircChannel": null,
+                    "discord": "NuvmbEK",
+                    "contactEmail": null,
+                    "description": "We bring to the English speaking readers Japanese mangas which many not be that popular but have great content, art and story!\n\nNOTE: We have no fixed release schedule, whenever, wherever...",
+                    "twitter": null,
+                    "mangaUpdates": null,
+                    "focusedLanguages": [
+                        "en"
+                    ],
+                    "official": false,
+                    "verified": false,
+                    "inactive": false,
+                    "publishDelay": null,
+                    "createdAt": "2021-04-19T21:45:59+00:00",
+                    "updatedAt": "2022-02-12T17:24:08+00:00",
+                    "version": 2
+                }
+            },
+            {
+                "id": "8a1ca2e4-d83b-4ce6-a074-4102231bebb5",
+                "type": "manga",
+                "attributes": {
+                    "title": {
+                        "en": "Rakujitsu no Pathos"
+                    },
+                    "altTitles": [
+                        {
+                            "en": "Sunset of Passion"
+                        },
+                        {
+                            "ja": "落日のパトス"
+                        }
+                    ],
+                    "description": {
+                        "en": "What happens when next door to upcoming mangaka Fujiwara moves Yuuki, who was his teacher back in high school and first crush?  \n  \nYuuki, now a married woman, is starting a new life in the city, however her husband is always away on business trips. She finds comfort in the company of her former student, but what she doesn't realize is that Fujiwara can listen to everything happening in her apartment through the building's thin walls…"
+                    },
+                    "isLocked": false,
+                    "links": {
+                        "al": "101883",
+                        "ap": "rakujitsu-no-pathos",
+                        "bw": "series/52038",
+                        "kt": "40478",
+                        "mu": "116821",
+                        "amz": "https://www.amazon.co.jp/dp/B074CG5JVY",
+                        "ebj": "https://ebookjapan.yahoo.co.jp/books/325847",
+                        "mal": "92476"
+                    },
+                    "originalLanguage": "ja",
+                    "lastVolume": "",
+                    "lastChapter": "",
+                    "publicationDemographic": "seinen",
+                    "status": "ongoing",
+                    "year": 2014,
+                    "contentRating": "erotica",
+                    "tags": [
+                        {
+                            "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                            "type": "tag",
+                            "attributes": {
+                                "name": {
+                                    "en": "Romance"
+                                },
+                                "description": [],
+                                "group": "genre",
+                                "version": 1
+                            },
+                            "relationships": []
+                        },
+                        {
+                            "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                            "type": "tag",
+                            "attributes": {
+                                "name": {
+                                    "en": "Comedy"
+                                },
+                                "description": [],
+                                "group": "genre",
+                                "version": 1
+                            },
+                            "relationships": []
+                        },
+                        {
+                            "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                            "type": "tag",
+                            "attributes": {
+                                "name": {
+                                    "en": "Drama"
+                                },
+                                "description": [],
+                                "group": "genre",
+                                "version": 1
+                            },
+                            "relationships": []
+                        }
+                    ],
+                    "state": "published",
+                    "chapterNumbersResetOnNewVolume": false,
+                    "createdAt": "2019-03-23T01:43:50+00:00",
+                    "updatedAt": "2022-03-19T19:02:28+00:00",
+                    "version": 10,
+                    "availableTranslatedLanguages": [
+                        "en",
+                        "id"
+                    ]
+                }
+            },
+            {
+                "id": "d815faeb-46e4-40e8-860a-eed71525b5df",
+                "type": "user",
+                "attributes": {
+                    "username": "nevian70gr",
+                    "roles": [
+                        "ROLE_MEMBER",
+                        "ROLE_MD_AT_HOME",
+                        "ROLE_GROUP_LEADER",
+                        "ROLE_POWER_UPLOADER",
+                        "ROLE_GROUP_MEMBER"
+                    ],
+                    "version": 2
+                }
+            }
+        ]
+    }
+}

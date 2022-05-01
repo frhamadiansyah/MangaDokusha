@@ -1,0 +1,1739 @@
+{
+    "result": "ok",
+    "response": "collection",
+    "data": [
+        {
+            "id": "5dce526a-e499-4f47-acb6-22f37d554759",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "20",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-04-23T17:43:30+00:00",
+                "readableAt": "2022-04-23T17:43:30+00:00",
+                "createdAt": "2022-04-23T17:43:30+00:00",
+                "updatedAt": "2022-04-23T17:49:09+00:00",
+                "pages": 14,
+                "version": 4
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "304806f7-da08-4aa3-ab44-da86e5b48f1b",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "19",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-04-21T16:09:48+00:00",
+                "readableAt": "2022-04-21T16:09:48+00:00",
+                "createdAt": "2022-04-21T16:09:48+00:00",
+                "updatedAt": "2022-04-21T16:10:09+00:00",
+                "pages": 16,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "19f895f1-703e-4be9-800a-1ef99b5bde22",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "18",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-04-21T16:08:52+00:00",
+                "readableAt": "2022-04-21T16:08:52+00:00",
+                "createdAt": "2022-04-21T16:08:51+00:00",
+                "updatedAt": "2022-04-21T16:10:12+00:00",
+                "pages": 79,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "dceb1aaf-8411-478a-990b-82ba013281f8",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "17",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-04-03T18:45:51+00:00",
+                "readableAt": "2022-04-03T18:45:51+00:00",
+                "createdAt": "2022-04-03T18:45:51+00:00",
+                "updatedAt": "2022-04-03T18:46:04+00:00",
+                "pages": 17,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "6f5cd31a-64d1-468a-88d4-e51ab6eb913b",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "16",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-03-27T16:32:48+00:00",
+                "readableAt": "2022-03-27T16:32:48+00:00",
+                "createdAt": "2022-03-27T16:32:48+00:00",
+                "updatedAt": "2022-03-27T16:32:53+00:00",
+                "pages": 16,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "c692fda9-2d34-4bec-9082-b00140605a4e",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "15",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-03-21T13:47:17+00:00",
+                "readableAt": "2022-03-21T13:47:17+00:00",
+                "createdAt": "2022-03-21T13:47:17+00:00",
+                "updatedAt": "2022-03-21T13:47:33+00:00",
+                "pages": 18,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "9f15b86c-8edc-4303-bf86-348b12095210",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "14",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-03-14T18:39:00+00:00",
+                "readableAt": "2022-03-14T18:39:00+00:00",
+                "createdAt": "2022-03-14T18:39:00+00:00",
+                "updatedAt": "2022-03-14T18:39:07+00:00",
+                "pages": 16,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "45da98b5-a6fc-4dd9-b245-2637a92d26d4",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "13",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-03-08T00:23:49+00:00",
+                "readableAt": "2022-03-08T00:23:49+00:00",
+                "createdAt": "2022-03-08T00:23:49+00:00",
+                "updatedAt": "2022-03-08T00:23:57+00:00",
+                "pages": 21,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "2ba4e486-95b9-4bd4-98f3-188ae2f549f5",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "12",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-02-28T17:01:19+00:00",
+                "readableAt": "2022-02-28T17:01:19+00:00",
+                "createdAt": "2022-02-28T17:01:19+00:00",
+                "updatedAt": "2022-02-28T17:01:26+00:00",
+                "pages": 19,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        },
+        {
+            "id": "9663de4f-6b7f-4e8a-ab79-2dc06a7493a0",
+            "type": "chapter",
+            "attributes": {
+                "volume": null,
+                "chapter": "11",
+                "title": null,
+                "translatedLanguage": "en",
+                "externalUrl": null,
+                "publishAt": "2022-02-28T17:00:57+00:00",
+                "readableAt": "2022-02-28T17:00:57+00:00",
+                "createdAt": "2022-02-28T17:00:57+00:00",
+                "updatedAt": "2022-02-28T17:01:14+00:00",
+                "pages": 16,
+                "version": 3
+            },
+            "relationships": [
+                {
+                    "id": "ea35447d-5035-485f-8eda-841bafc4b215",
+                    "type": "scanlation_group",
+                    "attributes": {
+                        "name": "AceraTheGreat",
+                        "altNames": [],
+                        "locked": false,
+                        "website": null,
+                        "ircServer": null,
+                        "ircChannel": null,
+                        "discord": null,
+                        "contactEmail": null,
+                        "description": "Don't mind the name, just an old gimmick. 🤧",
+                        "twitter": null,
+                        "mangaUpdates": null,
+                        "focusedLanguages": [
+                            "en"
+                        ],
+                        "official": false,
+                        "verified": false,
+                        "inactive": false,
+                        "publishDelay": null,
+                        "createdAt": "2021-04-19T21:45:59+00:00",
+                        "updatedAt": "2021-04-19T21:45:59+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "4380f51f-99de-46ce-94dc-1b72faf1631f",
+                    "type": "manga",
+                    "attributes": {
+                        "title": {
+                            "en": "Flirting With Her"
+                        },
+                        "altTitles": [
+                            {
+                                "ko": "썸의 이해"
+                            },
+                            {
+                                "en": "Understanding of Flirting"
+                            },
+                            {
+                                "zh-hk": "終結曖昧"
+                            }
+                        ],
+                        "description": {
+                            "en": "Can't there be friends among male and female? HO-JUN and YU-HA are very close, but never seen each other as a man and a woman. But, the day before HO-JUN went into the military, something happened. In an awkward silence, YU-HA suddenly makes a move and kisses HO-JUN. This turned on HO-JUN's switch... \"We're not actually dating, but we treat each other as if we are... Are we a thing?\"\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "ko": "정말 남녀 사이에 친구는 없는 걸까, 친하게 지내면서도 서로를 이성으로는 전혀 의식하지 않았던 호준과 유하.\n하지만 사건은 호준의 입대 전날 일어났다. 어색한 침묵 속 무언가를 결심한 듯한 유하의 갑작스러운 키스에 호준의 욕망의 스위치가 켜지는데…\n'연인은 아니지만 사귀듯이 지낸 우리 사이, 이건 썸!?'\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)",
+                            "zh-hk": "男女之間難道沒有純友誼嗎?恩愷與昊均是從高中認識多年青梅竹馬，從未對彼此有過非分之想，直到昊均即將入伍的前一天，恩愷突然主動吻了昊均…「雖然我們不是男女朋友，但你對我的好，難道不是喜歡嗎!?」\n\n---\n\n- [Official Traditional Chinese Translation](https://www.toptoon.net/comic/epList/80997)"
+                        },
+                        "isLocked": false,
+                        "links": {
+                            "al": "145990",
+                            "mu": "196053",
+                            "raw": "https://toptoon.com/comic/ep_list/Understanding_of_flirting",
+                            "engtl": "https://toptoonplus.com/comic/100960"
+                        },
+                        "originalLanguage": "ko",
+                        "lastVolume": "",
+                        "lastChapter": "",
+                        "publicationDemographic": null,
+                        "status": "ongoing",
+                        "year": 2022,
+                        "contentRating": "pornographic",
+                        "tags": [
+                            {
+                                "id": "3e2b8dae-350e-4ab8-a8ce-016e844b9f0d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Long Strip"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Romance"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Drama"
+                                    },
+                                    "description": [],
+                                    "group": "genre",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Web Comic"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            },
+                            {
+                                "id": "f5ba408b-0e7a-484d-8d49-4e9125ac96de",
+                                "type": "tag",
+                                "attributes": {
+                                    "name": {
+                                        "en": "Full Color"
+                                    },
+                                    "description": [],
+                                    "group": "format",
+                                    "version": 1
+                                },
+                                "relationships": []
+                            }
+                        ],
+                        "state": "published",
+                        "chapterNumbersResetOnNewVolume": false,
+                        "createdAt": "2022-02-08T04:12:04+00:00",
+                        "updatedAt": "2022-03-31T03:55:38+00:00",
+                        "version": 6,
+                        "availableTranslatedLanguages": [
+                            "en"
+                        ]
+                    }
+                },
+                {
+                    "id": "0af1da6b-f54d-4e1b-8396-e5030c774375",
+                    "type": "user",
+                    "attributes": {
+                        "username": "Acera",
+                        "roles": [
+                            "ROLE_MEMBER",
+                            "ROLE_GROUP_MEMBER",
+                            "ROLE_GROUP_LEADER"
+                        ],
+                        "version": 4
+                    }
+                }
+            ]
+        }
+    ],
+    "limit": 10,
+    "offset": 0,
+    "total": 20
+}

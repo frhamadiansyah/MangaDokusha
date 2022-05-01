@@ -1,0 +1,12 @@
+{
+    "result": "error",
+    "errors": [
+        {
+            "id": "70289a8c-eed8-5c0e-989b-4c73c13bf791",
+            "status": 401,
+            "title": "unauthorized_http_exception",
+            "detail": "User not found",
+            "context": null
+        }
+    ]
+}

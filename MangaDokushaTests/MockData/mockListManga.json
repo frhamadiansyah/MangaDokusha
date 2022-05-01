@@ -1,0 +1,2719 @@
+{
+    "result": "ok",
+    "response": "collection",
+    "data": [
+        {
+            "id": "425f2ccf-581f-42cf-aed3-c3312fcde926",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Soredemo Ayumu wa Yosetekuru"
+                },
+                "altTitles": [
+                    {
+                        "en": "When Will Ayumu Make His Move?"
+                    },
+                    {
+                        "fr": "Néanmoins, Ayumu approche la finale"
+                    },
+                    {
+                        "ru": "Аюму всё равно станет ближе"
+                    },
+                    {
+                        "ja": "それでも歩は寄せてくる"
+                    },
+                    {
+                        "zh": "就算這樣，“步”還是靠了過來"
+                    },
+                    {
+                        "es-la": "A pesar de todo, Ayumu lo sigue intentando"
+                    }
+                ],
+                "description": {
+                    "en": "From the author of Karakai Jouzu no Takagi-san comes another sweet couple's comedy about Tanaka Ayumu, a first year high school student who is secretly in love with his senior, the president of the unofficial Shogi club, Yaotome Urushi. Tanaka vows to confess his feelings to Yaotome after he manages to defeat her in a game of shogi, but he's a beginner at the game and Yaotome always beats him. Meanwhile, she keeps trying to get Tanaka to admit his feelings, but he rarely allows his poker face to slip.  \n  \nThough the day of his victory is still nowhere to be seen, this is the story in which he may ‘checkmate’ her by other means.",
+                    "fr": "Ayumu n'avouera ses sentiments à sa senpai que s'il la bat dans une partie de Shougi.  \r\nBien que le jour de la victoire semble très très loin, il va essayer de gagner par bien d'autres moyens.",
+                    "ru": "Эта история крутится вокруг двух членов клуба сёги: девушке, которая помешана на игре, и парне, который тайно влюблен в нее.",
+                    "pt-br": "Ayumu quer derrotar sua senpai no Shogi para poder confessar seus sentimentos a ela. Mas o dia de sua vitória ainda está distante. Essa é a história em que ele tem que fazer um “xeque-mate” nela de outra forma."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "108105",
+                    "ap": "soredemo-ayumu-wa-yosetekuru",
+                    "bw": "series/210452/",
+                    "kt": "54614",
+                    "mu": "153164",
+                    "amz": "https://www.amazon.co.jp/gp/product/B07ZG4ZTLC",
+                    "cdj": "https://www.cdjapan.co.jp/product/NEOBK-2655957",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/548027/",
+                    "mal": "119216",
+                    "raw": "https://pocket.shonenmagazine.com/episode/10834108156646485056",
+                    "engtl": "https://kodansha.us/series/when-will-ayumu-make-his-move/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2019,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "31932a7e-5b8e-49a6-9f12-2afa39dc544c",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Traditional Games"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-11-01T02:01:04+00:00",
+                "updatedAt": "2022-04-03T10:39:09+00:00",
+                "version": 41,
+                "availableTranslatedLanguages": [
+                    "es-la",
+                    "en",
+                    "ar",
+                    "tr",
+                    "pt-br",
+                    "fr",
+                    "ru",
+                    "it",
+                    "cs"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "62459ba9-2bc7-4eb4-b1dc-c29bb410b65e",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "11",
+                        "fileName": "7661a5c9-0983-499d-b6ba-1289379220c2.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-04-03T10:39:08+00:00",
+                        "updatedAt": "2022-04-03T10:39:08+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "5683702c-0d4d-47b8-8865-ccd6ca63afb9",
+                    "type": "manga",
+                    "related": "preserialization"
+                },
+                {
+                    "id": "68cd1c93-5986-409a-bd43-c2260d0ac2da",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "77d20601-2fe7-4b79-9f2e-609d5def4be5",
+                    "type": "manga",
+                    "related": "preserialization"
+                },
+                {
+                    "id": "d353067b-714c-4a76-a40a-ca9168ad9e3b",
+                    "type": "manga",
+                    "related": "colored"
+                }
+            ]
+        },
+        {
+            "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kunoichi Tsubaki no Mune no Uchi"
+                },
+                "altTitles": [
+                    {
+                        "ru": "В сердце куноичи Цубаки"
+                    },
+                    {
+                        "ja": "くノ一ツバキの胸の内"
+                    },
+                    {
+                        "zh": "女忍者椿的心事"
+                    },
+                    {
+                        "en": "In the Heart of Kunoichi Tsubaki"
+                    }
+                ],
+                "description": {
+                    "en": "The isolationist Akane Clan, composed of an all-girls body mainly consisting of young kunoichi in training, has a code to which they all must adhere:  \r\n  \r\nAs men are beings of danger, to exchange with them is forbidden.  \r\n  \r\nKunoichi Tsubaki, the leader of the Dog Squad, is an excellent trainee with a promising future, but she has started to experience a strange feeling in her heart… whenever the subject of boys is brought up."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "100930",
+                    "ap": "kunoichi-tsubaki-no-mune-no-uchi",
+                    "bw": "series/166312/",
+                    "kt": "40838",
+                    "mu": "146595",
+                    "amz": "https://www.amazon.co.jp/dp/B07QLNXRX8",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/465777/",
+                    "mal": "112089",
+                    "raw": "https://gekkansunday.net/work/405/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2018,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "2d1f5d56-a1e5-4d0d-a961-2193588b08ec",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Loli"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "489dd859-9b61-4c37-af75-5b18e88daafc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Ninja"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-03-11T23:15:03+00:00",
+                "updatedAt": "2022-04-16T18:05:19+00:00",
+                "version": 10,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "ru",
+                    "es-la",
+                    "it",
+                    "es"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "dd9cdbd1-9bb1-419b-9f84-797729b9ffc5",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "7",
+                        "fileName": "c095945e-6b4f-4651-8469-568343ae9278.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-04-13T00:57:41+00:00",
+                        "updatedAt": "2022-04-13T00:57:41+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "3ac9fd03-e3de-4520-90aa-d9fc002eac0a",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "b3d3727b-d22e-4719-acd2-cf34510b1bb8",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "f7556f3f-428f-4ee0-91dd-ff6123add767",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "fb8eac2f-3f65-4602-afb6-9a7724227364",
+                    "type": "manga",
+                    "related": "shared_universe"
+                }
+            ]
+        },
+        {
+            "id": "3ac9fd03-e3de-4520-90aa-d9fc002eac0a",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Fudatsuki no Kyoko-chan"
+                },
+                "altTitles": [
+                    {
+                        "en": "The Infamous Kyoko-chan"
+                    },
+                    {
+                        "ru": "Печально известная Кёко-тян"
+                    },
+                    {
+                        "ja": "ふだつきのキョーコちゃん"
+                    },
+                    {
+                        "zh": "札月家的杏子妹妹"
+                    }
+                ],
+                "description": {
+                    "en": "Fudatsuki Kenji is known in his school for two things: for being a delinquent and a siscon. He constantly follows his little sister Kyoko around, fixing her giant ribbon, and chasing off any boys who might be interested in her.   \nHowever, the truth is much stranger than what people believe: he doesn't actually have a crush on his sister. In fact, he likes Hibino, the only girl in his class who isn't afraid of him.",
+                    "ru": "Фудацуки Кэндзи уже давно в школе считают хулиганом и сестролюбом. Причиной тому стало то, что он круглосуточно следит за своей сестрой Кёко, её гигантской лентой в волосах и отпугивает парней, которые заинтересованы в девушке. А ещё Кэндзи влюблен в Хибино-сан, единственную девушку, которая его не боится.   \nИстина же в том, что его сестра буквально монстр. Она цзянши, то есть вампир — поэтому она гораздо сильнее человека и ей нужно пить кровь Кэндзи. Кёко носит ленту в волосах, которая сдерживает её аппетит и сильно влияет на личность своей хозяйки.  \nУдастся ли Кэндзи сдержать в секрете силы своей сестры и получится ли что-нибудь с девушкой его мечты, Хибино-сан?",
+                    "pt-br": "Fudatsuki Kenji é conhecido na escola por duas coisas: por ser um delinquente e por ter um complexo de irmã. Ele sempre está grudado em sua irmã, Kyoko para cuidar dela e fazer de tudo que seu laço não se desfaça. O que acabou gerando uma fofoca em toda a escola que tem uma tara pela própria irmã.O que é uma grande mentira, ele não tem tara nenhuma pela irmã, mas tem um motivo para se protetor e principalmente com o laço dela, pois se o laço for desfeito algo de ruim pode acontecer. o que seria?"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "85915",
+                    "ap": "fudatsuki-no-kyoko-chan",
+                    "bw": "series/124590",
+                    "kt": "16060",
+                    "mu": "101920",
+                    "amz": "https://www.amazon.co.jp/gp/product/B01K9CVSC2",
+                    "mal": "56513"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "7",
+                "lastChapter": "37",
+                "publicationDemographic": "shounen",
+                "status": "completed",
+                "year": 2013,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "b9af3a63-f058-46de-a9a0-e0c13906197a",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Drama"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "eabc5b4c-6aff-42f3-b657-3e90cbd00b75",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Supernatural"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2018-09-24T12:08:42+00:00",
+                "updatedAt": "2022-04-25T11:55:44+00:00",
+                "version": 6,
+                "availableTranslatedLanguages": [
+                    "pt-br",
+                    "en",
+                    "ru",
+                    "tr",
+                    "ar"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "805b55ec-c56b-4fe7-b492-468fd7e06203",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "ae3480b0-dfbb-4eaf-9867-8dd01535e472.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T16:45:57+00:00",
+                        "updatedAt": "2021-05-24T16:45:57+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "f7556f3f-428f-4ee0-91dd-ff6123add767",
+                    "type": "manga",
+                    "related": "shared_universe"
+                }
+            ]
+        },
+        {
+            "id": "2a4bc9ec-2d70-428a-8b46-27f6218ed267",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Ijiranaide, Nagatoro-san: Comic Anthology"
+                },
+                "altTitles": [
+                    {
+                        "ja-ro": "Ijirushikanai! Nagatoro-san Comic Anthology"
+                    },
+                    {
+                        "ja-ro": "Nagatoro-san wo, Ijiritai!! Comic Anthology"
+                    },
+                    {
+                        "en": "Please Don't Bully Me, Nagatoro Comic Anthology"
+                    },
+                    {
+                        "ja-ro": "Soko Ijirunsuka, Nagatoro-san! Comic Anthology"
+                    },
+                    {
+                        "ru": "Не издевайся, Нагаторо-сан Антология"
+                    },
+                    {
+                        "ja": "イジるしかないっ！長瀞さん  Comic Anthology"
+                    },
+                    {
+                        "ja": "そこイジるんすか、長瀞さん Comic Anthology"
+                    },
+                    {
+                        "ja": "長瀞さんを、イジりたいっ‼︎ Comic Anthology"
+                    }
+                ],
+                "description": {
+                    "en": "Anthology from various doujin artists about Nagatoro and Senpai keeping to the theme of Nagatoro teasing Senpai and sometimes it backfiring on her.\n\nVolume 4\n1. *Does It Feel Good, Senpai?* by **Okinaga Umanosuke**\n2. *Were You Hoping for It, Senpai?* by **Kimidori Hana**\n3. *Do Not Grow Your Breasts without Thought.* by **Mozu**\n4. *It’s Hot, but What’s Up, Senpai?* by **Haiba Nemumi**\n5. *But This Is Obviously Your Drawing?* by **Ogushi Aritomo**\n6. *I’ll Let You See, Senpai.* by **fu-ta**\n7. *Senpai… What’s Going On Here…?* by **Zeroyon**\n8. *I Love You Game* by **Yuichi**\n9. *Welcome to Nagatoro’s Massage!* by **INU**\n10. *If Nagatoro-San Changed into a Swimsuit.* by **Arato Asato**\n11. *Do You Want to Be a Baby, Senpai?* by **Kurou**\n12. *Can I Squeeze You?* by **Manno**\n13. *Kouhai of the Dead* by **Magokoro Kurage**\n14. *Nagatoro-San vs Senpai* by **Mizumi**",
+                    "ru": "Антология с короткими историями от разных авторов на тему оригинальной манги \"Не издевайся, Нагаторо-сан\".  \n  \n\n\n---\n\n- **Volume 1** (Nagatoro-san wo, Ijiritai!!)  \nChomoran, Cool Kyoushinja, Hiroe Rei, Hotondo Shindeiru, Konbu Wakame, Najima Keiji, Nanashi, Orimoto Mimana, Shimimaru, Suzumoto Kou, Uchiyama Atsushi(Attsun)  \n- **Volume 2** (Soko Ijirunsuka, Nagatoro-san!)  \nAzu, Katou Yuiichi, Kawamura Taku, Mochinchi, Nanashi, Okamoto Lynn, Sukeno Yoshiaki, Suzuki Kenya, Tanigawa Nico, tugeneko, Watanabe Shizumu, Yamamoto Souichirou  \n- **Volume 3** (Ijirushikanai! Nagatoro-san)  \nManga: Sagara Riri, Nishide Kengoro, Andou Masaki (single page), Morishige Takuma, Enokidu/Enokids, Kumano Kyu, Sakurai Norio, Bimita  \nIllustrations: Issiki/Isshiki, Kitada Ryouma, Souji Hougu, Namori, Nekoume, Yamada Yoshinobu  \n- **Volume 4** (Motto Shiritai! Nagatoro-san!)  \nManga and Illustrations: 774 (Nanashi)  \n- **Volume 5** (Ippai Misemasu! Nagatoro-san)  \nIllustrations: Sugiura Jiro, Maki Keigo, CHANxCO, Honjou Raita, nonco, 774 (Nanashi)  \n  \n**Notes:**  \n- The Artist/Author fields only accepted 19 names before failing which isn't ideal for anthologies so I've split them between the two"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "104616",
+                    "bw": "de4fbbf9a6-c50b-4ef3-ae2a-90818afd52fe/",
+                    "kt": "56972",
+                    "mu": "151069",
+                    "amz": "https://www.amazon.co.jp/dp/4758022445/",
+                    "mal": "136168"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": null,
+                "status": "ongoing",
+                "year": 2021,
+                "contentRating": "suggestive",
+                "tags": [
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "51d83883-4103-437c-b4b1-731cb73d786c",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Anthology"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-08-16T01:01:02+00:00",
+                "updatedAt": "2022-04-22T22:38:19+00:00",
+                "version": 12,
+                "availableTranslatedLanguages": [
+                    "th",
+                    "zh",
+                    "en",
+                    "ru",
+                    "pt-br"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "580a9899-14f8-4ef6-a156-bcf1ed53e119",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Konbu Wakame",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/aconbwakame",
+                        "pixiv": "https://www.pixiv.net/users/1076594",
+                        "melonBook": null,
+                        "fanBox": "https://konbuwakame.fanbox.cc/",
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": "https://www.youtube.com/channel/UCAIFyekjtlga7IfOTb-25Eg",
+                        "weibo": null,
+                        "naver": null,
+                        "website": "https://konbuwakame.wixsite.com/a-c-o",
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-16T19:27:55+00:00",
+                        "version": 4
+                    }
+                },
+                {
+                    "id": "79204e73-f02a-4613-83b0-29eab617dc0d",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Hotondo Shindeiru",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "7d7a853d-79fe-4530-85a7-be7f58409911",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Mochinchi",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "7e552c08-f7cf-4e0e-9723-409d749dd77c",
+                    "type": "author",
+                    "attributes": {
+                        "name": "774 (Nanashi)",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/774nanash",
+                        "pixiv": "https://www.pixiv.net/en/users/72342",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-01-11T21:46:18+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "9c814f8e-2f55-410e-9b90-3a530bd33f21",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Najima Keiji",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "9df2ffe2-1b7f-4619-93e1-c97aa0f1c0d0",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Cool Kyoushinsha",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "a223930b-a54b-40d0-b7b9-2c10d16d155b",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Azu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": "https://azu401.fanbox.cc/",
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-14T14:22:27+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "beeb860e-199f-4d73-a501-78efa5b610b2",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Kawamura Taku",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/kawamurataku",
+                        "pixiv": "https://www.pixiv.net/en/users/2774416",
+                        "melonBook": null,
+                        "fanBox": "https://kawamurataku.fanbox.cc/",
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-11T11:41:54+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "c52a58c7-b6e5-4a34-9b4f-f60bf15d197d",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Chomoran",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/ShockGyutantei",
+                        "pixiv": "https://www.pixiv.net/en/users/47057752",
+                        "melonBook": null,
+                        "fanBox": "https://shockgyutantei.fanbox.cc/",
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": "https://fantia.jp/fanclubs/262599",
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-03-13T04:54:08+00:00",
+                        "version": 5
+                    }
+                },
+                {
+                    "id": "caa33a07-738b-4cfc-98c9-2894c586743c",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Katou Yuiichi",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "cd479eb9-07c2-4b0e-abb8-384d681ee2ac",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Hiroe Rei",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "17caee31-8437-47a8-aca3-c655064d42e9",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Attsun",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "1917a4d4-452d-40a1-a122-cd534cfa84f4",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Sukeno Yoshiaki",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "1d894200-4da1-40cd-8aca-4c1a9352eece",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Orimoto Mimana",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "450ee739-86da-46af-bf8d-d3bce8ac491a",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "tugeneko",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/tuge_neko",
+                        "pixiv": "https://www.pixiv.net/en/users/43359",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-14T20:09:39+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "649ba6b6-1120-4acd-9eee-c89b188764ee",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Tanigawa Nico",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "7e552c08-f7cf-4e0e-9723-409d749dd77c",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "774 (Nanashi)",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/774nanash",
+                        "pixiv": "https://www.pixiv.net/en/users/72342",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-01-11T21:46:18+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "8ea49f7a-fd87-481e-bf86-5e6ddc445a23",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Suzumoto Kou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "91281150-851b-4ed0-a77a-74bcc247b874",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Watanabe Shizumu",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "c1a8d4dd-f48a-4a33-9a18-ed39e0a9007f",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Suzuki Kenya",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/suzuki_kenya",
+                        "pixiv": "https://www.pixiv.net/users/31011922",
+                        "melonBook": null,
+                        "fanBox": "https://suzuki-kenya.fanbox.cc/",
+                        "booth": "https://suzuki-kenya.booth.pm/",
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": "https://suzuki-kenya.themedia.jp/",
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-04-19T23:08:34+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "cb914a00-1d7c-496f-a7e2-6c35d7d1dad3",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Shimimaru",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "d1fdd0e0-b817-4b17-9972-7082b6f4a7c7",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Okamoto Lynn",
+                        "imageUrl": null,
+                        "biography": {
+                            "en": "Lynn Okamoto (岡本倫, Okamoto Rin) is a Japanese manga artist and a former employee of Bandai. His most famous work is the series Elfen Lied which was adapted in a 13-episode anime series by the studio Arms. He lives in Tokyo, Japan.\n\nThe asteroid [49382 Lynnokamoto](https://en.wikipedia.org/wiki/List_of_minor_planets:_49001%E2%80%9350000#382) (1998 XG5) was named after him.\n\n\n\n"
+                        },
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-01-11T08:50:24+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "14a3ef8d-654b-4603-a10d-02612bbe73ec",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "4",
+                        "fileName": "174fb1d9-be23-425a-bccb-60e50590c89c.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-04-19T17:43:46+00:00",
+                        "updatedAt": "2022-04-19T17:43:46+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "d86cf65b-5f6c-437d-a0af-19a31f94ec55",
+                    "type": "manga",
+                    "related": "main_story"
+                }
+            ]
+        },
+        {
+            "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Karakai Jouzu no (Moto) Takagi-san"
+                },
+                "altTitles": [
+                    {
+                        "vi": "Chuyên gia trêu chọc Takagi-san (ngoại truyện)"
+                    },
+                    {
+                        "ms": "Si Master Jahil (mantan) Takagi-san"
+                    },
+                    {
+                        "en": "Skilled Teaser (Former) Takagi-san"
+                    },
+                    {
+                        "hi": "Takagi-san Chidane (Pehle) mai Mahir"
+                    },
+                    {
+                        "en": "Teasing Master (née) Takagi-san"
+                    },
+                    {
+                        "en": "The Teasing Master Formerly Known As Takagi-san"
+                    },
+                    {
+                        "ru": "Мастер дразнилок (Бывшая) Такаги-сан"
+                    },
+                    {
+                        "ja": "からかい上手の（元）高木さん"
+                    }
+                ],
+                "description": {
+                    "en": "Years after  *[Karakai Jouzu no Takagi-san](https://mangadex.org/title/13108/karakai-jouzu-no-takagi-san)*, Takagi and Nishikata are married and have a kindergarten-aged daughter named Chi. See how much some things have changed, and others have curiously stayed the same!  \n  \n*Note: The volumes collect the chapters in a different order than the web version. The chapters here follow the web numbering without any volumes.*"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "99549",
+                    "ap": "karakai-jouzu-no-moto-takagi-san",
+                    "bw": "series/141272",
+                    "kt": "39782",
+                    "mu": "143893",
+                    "amz": "https://www.amazon.co.jp/gp/product/B07D4FTWXK",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/434988/",
+                    "mal": "108187",
+                    "raw": "https://manga-one.com/webview/v3/smartnews/index?title_id=323"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": null,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-02-19T07:45:24+00:00",
+                "updatedAt": "2022-02-07T21:18:58+00:00",
+                "version": 39,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "pt-br",
+                    "es-la",
+                    "ru",
+                    "id",
+                    "hi",
+                    "it",
+                    "fr",
+                    "pl",
+                    "vi",
+                    "pt",
+                    "de"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "b29606d2-ee40-486d-b62f-74a8c6a68f9f",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Inaba Mifumi",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "b29606d2-ee40-486d-b62f-74a8c6a68f9f",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Inaba Mifumi",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": null,
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2021-04-19T21:59:45+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "eafd66ac-59b2-41f3-a633-93f9917e2a4d",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "15",
+                        "fileName": "9f0156c2-bf09-472a-900b-2408a137af0e.jpg",
+                        "locale": "ja",
+                        "createdAt": "2022-02-03T15:02:52+00:00",
+                        "updatedAt": "2022-02-03T15:02:52+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "3ac9fd03-e3de-4520-90aa-d9fc002eac0a",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+                    "type": "manga",
+                    "related": "prequel"
+                },
+                {
+                    "id": "b3d3727b-d22e-4719-acd2-cf34510b1bb8",
+                    "type": "manga",
+                    "related": "alternate_story"
+                },
+                {
+                    "id": "f7556f3f-428f-4ee0-91dd-ff6123add767",
+                    "type": "manga",
+                    "related": "sequel"
+                },
+                {
+                    "id": "fb8eac2f-3f65-4602-afb6-9a7724227364",
+                    "type": "manga",
+                    "related": "alternate_story"
+                }
+            ]
+        },
+        {
+            "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Karakai Jouzu no Takagi-san"
+                },
+                "altTitles": [
+                    {
+                        "vi": "Chuyên gia trêu chọc Takagi-san"
+                    },
+                    {
+                        "tr": "Kızdırma Ustası Takagi-san"
+                    },
+                    {
+                        "vi": "Nhất quỷ nhì ma, thứ ba Takagi"
+                    },
+                    {
+                        "fr": "Quand Takagi me taquine"
+                    },
+                    {
+                        "fr": "Takagi-san, la taquineuse professionnelle"
+                    },
+                    {
+                        "en": "Skilled Teaser Takagi"
+                    },
+                    {
+                        "ru": "Мастер дразнилок Такаги-сан"
+                    },
+                    {
+                        "ja": "からかい上手の高木さん"
+                    },
+                    {
+                        "zh": "擅长捉弄的高木同学"
+                    },
+                    {
+                        "en": "Teasing Master Takagi-san"
+                    },
+                    {
+                        "pt-br": "Takagi a mestra das pegadinhas"
+                    }
+                ],
+                "description": {
+                    "en": "*If you blush, you lose!*  \n\nLiving by this principle, the middle schooler Nishikata gets constantly made fun of by his seat neighbour Takagi-san. With his pride shattered to pieces, he vows to turn the tables and get back at her someday.   \n\nAnd so, he attempts to tease her day after day, only to find himself falling victim to Takagi-san's ridicule again sooner than later. Will he be able to make Takagi-san blush from embarrassment even once in the end?  \n\n*English Chapters have been renumbered to their tank numbers, where applicable.*",
+                    "pt-br": "Takagi-san, essa é a garota que se senta ao meu lado, sempre me provocando. Mas você vai ver, hoje é o dia que eu vou dar o troco e envergonhá-la!!"
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "85533",
+                    "ap": "teasing-master-takagi-san",
+                    "bw": "series/124585/",
+                    "kt": "26362",
+                    "mu": "100075",
+                    "amz": "https://www.amazon.co.jp/gp/product/B074C4NGHS",
+                    "cdj": "https://www.cdjapan.co.jp/product/NEOBK-2374361",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/255638/",
+                    "mal": "78537",
+                    "raw": "https://gekkansunday.net/work/404/",
+                    "engtl": "https://yenpress.com/9781975386122/teasing-master-takagi-san-vol-1/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": "shounen",
+                "status": "ongoing",
+                "year": 2012,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "0a39b5a1-b235-4886-a747-1d05d216532d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Award Winning"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2018-09-27T16:39:32+00:00",
+                "updatedAt": "2022-03-23T18:06:28+00:00",
+                "version": 32,
+                "availableTranslatedLanguages": [
+                    "ru",
+                    "pt-br",
+                    "fr",
+                    "es-la",
+                    "en",
+                    "it",
+                    "id",
+                    "vi",
+                    "hi",
+                    "uk"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "95cce4dc-a12c-43e9-928f-b596ac6bbb61",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": "17",
+                        "fileName": "743122cb-6cb8-4ed4-8a72-65a0cc87ed9b.png",
+                        "locale": "ja",
+                        "createdAt": "2022-01-08T08:39:18+00:00",
+                        "updatedAt": "2022-01-08T08:39:18+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "0a224e89-8796-4fa2-8281-28f3e8cc9fc7",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "0f12cb4e-0299-43cf-9d5f-78d5cce4cace",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "1af0467e-71d7-424d-ab80-9bf0ae205fd3",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "1f92c263-a2d6-4c3f-a023-461acf5040cf",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "2c5b3ec4-33b3-41f6-b43e-81c88f4d4b48",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "2de56033-a745-486e-86cc-8cc4ac12d208",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "3ac9fd03-e3de-4520-90aa-d9fc002eac0a",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "763ec21a-83bf-4ca1-a4fc-f7f1b0d91c42",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "903e7d37-48e9-4649-9f75-18e5d079bfd7",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "954bd0a2-f43e-434a-8baa-ce971c0e7ed6",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "9e5ffc17-cbce-4cdf-8b78-881cf72534a6",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "9f28db4a-cc19-44df-83d2-32f7b2d59f2c",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "b3d3727b-d22e-4719-acd2-cf34510b1bb8",
+                    "type": "manga",
+                    "related": "side_story"
+                },
+                {
+                    "id": "b46b36e4-baf4-48fe-8883-20387763e70a",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "d7cc68f3-1587-4f54-b68d-9bd11c5ac8af",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "db0c471e-d88b-4f71-b35a-dc39f1ea8c15",
+                    "type": "manga",
+                    "related": "colored"
+                },
+                {
+                    "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+                    "type": "manga",
+                    "related": "sequel"
+                },
+                {
+                    "id": "e857fe7f-ddab-491d-b61e-bef13c7b9a5a",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "f7556f3f-428f-4ee0-91dd-ff6123add767",
+                    "type": "manga",
+                    "related": "sequel"
+                },
+                {
+                    "id": "fb8eac2f-3f65-4602-afb6-9a7724227364",
+                    "type": "manga",
+                    "related": "side_story"
+                }
+            ]
+        },
+        {
+            "id": "e739399f-c2e6-49e7-982b-51ddbfe206d0",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "A Hero Can't Go on a Journey"
+                },
+                "altTitles": [
+                    {
+                        "ja-ro": "Tabi ni Dasasete Moraenai Yuusha no Manga"
+                    },
+                    {
+                        "ja": "旅に出させてもらえない勇者の漫画"
+                    }
+                ],
+                "description": {
+                    "en": "That's a story about a Hero and a Priest. Will he win a victory against her someday?  \nThat \"one-shot\" is the first chapter. It was originally posted on Twitter as one-shot, which would not have a sequel."
+                },
+                "isLocked": false,
+                "links": {
+                    "mu": "153987",
+                    "raw": "https://twitter.com/udon0531/status/1047064897086005255"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "",
+                "lastChapter": "",
+                "publicationDemographic": null,
+                "status": "ongoing",
+                "year": null,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "cdc58593-87dd-415e-bbc0-2ec27bf404cc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Fantasy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e197df38-d0e7-43b5-9b09-2842d0c326dd",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Web Comic"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-08-23T01:52:32+00:00",
+                "updatedAt": "2022-03-24T21:47:52+00:00",
+                "version": 3,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "pt-br",
+                    "fr",
+                    "tr"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "a41c0109-fdad-4f38-87df-199e50a0a939",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "b53923ab-a6cf-459c-85ce-94253035eea2.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:23:48+00:00",
+                        "updatedAt": "2021-05-24T17:23:48+00:00",
+                        "version": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "e6d9dfc6-7bdf-4713-a157-1e31dff301fa",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Kaijuu no Tokage"
+                },
+                "altTitles": [
+                    {
+                        "en": "Monster Lizard"
+                    },
+                    {
+                        "ja": "怪獣のトカゲ"
+                    },
+                    {
+                        "zh": "怪獸蜥蜴"
+                    }
+                ],
+                "description": {
+                    "en": "Hitomi stumbles upon an egg in the forest, and from it hatches Tokage-chan, a lizard girl who just wants to be recognized as a kaijuu."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "108414",
+                    "ap": "kaijuu-no-tokage",
+                    "bw": "series/217293",
+                    "kt": "46789",
+                    "mu": "137315",
+                    "amz": "https://www.amazon.co.jp/dp/B07WR94GPD/",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/557741",
+                    "mal": "118866"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "3",
+                "lastChapter": "29",
+                "publicationDemographic": "shounen",
+                "status": "completed",
+                "year": null,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "2d1f5d56-a1e5-4d0d-a961-2193588b08ec",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Loli"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "cdc58593-87dd-415e-bbc0-2ec27bf404cc",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Fantasy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "dd1f77c5-dea9-4e2b-97ae-224af09caf99",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Monster Girls"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "f4122d1c-3b44-44d0-9936-ff7502c39ad3",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Adaptation"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2020-01-05T02:22:33+00:00",
+                "updatedAt": "2022-01-25T01:06:24+00:00",
+                "version": 8,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "pt-br"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "f9a2f107-5a50-4a06-849d-233260819a8c",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Fukuchi Kamio",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/ookuragedako7",
+                        "pixiv": null,
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-03-18T17:12:55+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "e40e5cc5-5086-4f86-9342-63431c4f35da",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "bf596a97-233c-43d4-90ac-e834dc406b5d.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:40:02+00:00",
+                        "updatedAt": "2021-05-24T17:40:02+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "75de5e90-9621-4c0f-899f-056a90ef0061",
+                    "type": "manga",
+                    "related": "preserialization"
+                }
+            ]
+        },
+        {
+            "id": "b3d3727b-d22e-4719-acd2-cf34510b1bb8",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Ashita wa Doyoubi"
+                },
+                "altTitles": [
+                    {
+                        "en": "Ashita wa Doyoubi: Fall - Winter"
+                    },
+                    {
+                        "en": "Tomorrow is Saturday Spring · Summer"
+                    },
+                    {
+                        "en": "Завтра суббота"
+                    },
+                    {
+                        "en": "あしたは土曜日 春・夏"
+                    },
+                    {
+                        "en": "あしたは土曜日 秋・冬"
+                    },
+                    {
+                        "zh": "明天是星期六"
+                    }
+                ],
+                "description": {
+                    "en": "A slice of life comedy revolving around the conversations and daily shenanigans of three schoolgirls. Mina is lively and gets into mischief; Yukari is the class rep and usually follows Mina's lead; and Sanae is a member of the track club whom, unlike her friends, prefers to stay cool and act rationally. (From: MU)  \r\n  \r\nThe first volume is Ashita wa Doyoubi: Spring - Summer   \r\nThe second volume is Ashita wa Doyoubi: Fall - Winter."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "87142",
+                    "ap": "ashita-wa-doyoubi",
+                    "bw": "series/124581",
+                    "kt": "37511",
+                    "mu": "129153",
+                    "amz": "https://www.amazon.co.jp/gp/product/B074CFS5JJ/",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/354255/",
+                    "mal": "97699"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "2",
+                "lastChapter": "52",
+                "publicationDemographic": "shounen",
+                "status": "completed",
+                "year": null,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "2d1f5d56-a1e5-4d0d-a961-2193588b08ec",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Loli"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "4d32cc48-9f00-4cca-9b5a-a839f0764984",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Comedy"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "caaa44eb-cd40-4177-b930-79d3ef2afe87",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "School Life"
+                            },
+                            "description": [],
+                            "group": "theme",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2018-12-26T05:23:00+00:00",
+                "updatedAt": "2022-01-25T02:59:39+00:00",
+                "version": 4,
+                "availableTranslatedLanguages": [
+                    "pt-br",
+                    "es",
+                    "en",
+                    "id",
+                    "tr"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "da49e42b-077b-4f88-a868-e0fd44c30ca5",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "bc8d9814-44cc-4fc2-b6f7-03698b420177.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T16:55:44+00:00",
+                        "updatedAt": "2021-05-24T16:55:44+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "1ab5f7e0-7768-457c-9f63-19471b6503cc",
+                    "type": "manga",
+                    "related": "shared_universe"
+                },
+                {
+                    "id": "2de56033-a745-486e-86cc-8cc4ac12d208",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "6e445564-d9a8-4862-bff1-f4d6be6dba2c",
+                    "type": "manga",
+                    "related": "main_story"
+                },
+                {
+                    "id": "954bd0a2-f43e-434a-8baa-ce971c0e7ed6",
+                    "type": "manga",
+                    "related": "doujinshi"
+                },
+                {
+                    "id": "ddcebfa2-05a0-4fcd-9cd4-60d779c38f2c",
+                    "type": "manga",
+                    "related": "alternate_story"
+                }
+            ]
+        },
+        {
+            "id": "75de5e90-9621-4c0f-899f-056a90ef0061",
+            "type": "manga",
+            "attributes": {
+                "title": {
+                    "en": "Koibumi - Yamamoto Souichirou Tanpenshuu -"
+                },
+                "altTitles": [
+                    {
+                        "en": "A Wish for Sasa★"
+                    },
+                    {
+                        "ja-ro": "Kaijuu no Tokage"
+                    },
+                    {
+                        "ja-ro": "Koibumi"
+                    },
+                    {
+                        "en": "Love Letter"
+                    },
+                    {
+                        "ja-ro": "Matsumoto Eeko wa Futsuu no Ko"
+                    },
+                    {
+                        "en": "Matsumoto Eiko Is an Average Girl"
+                    },
+                    {
+                        "en": "Middle-aged Cat Guy"
+                    },
+                    {
+                        "ja-ro": "Minarai Witch"
+                    },
+                    {
+                        "en": "Monster Lizard"
+                    },
+                    {
+                        "ja-ro": "Neko no Oji-san"
+                    },
+                    {
+                        "ja-ro": "Neko no Ossan"
+                    },
+                    {
+                        "ja-ro": "Sasa ni Negai o★"
+                    },
+                    {
+                        "en": "Witch in Training"
+                    },
+                    {
+                        "en": "Witch Trainee"
+                    },
+                    {
+                        "ja": "ネコのオジサン"
+                    },
+                    {
+                        "ja": "みならいウイッチ"
+                    },
+                    {
+                        "ja": "怪獣のトカゲ"
+                    },
+                    {
+                        "ja": "恋文－山本崇一朗短編集－"
+                    },
+                    {
+                        "ja": "松本エーコは普通の子"
+                    }
+                ],
+                "description": {
+                    "en": "Collection of Yamamoto Souichirou's Oneshots  \n  \n1. Love Letter: Okamoto, a young middle schooler, wants to confess his love to a girl named Kamiyama through a love letter. However, things go out of his plan when Kamiyama shocks him with an unthinkable request.  \n  \n2. The Neighbor I've Longed for  \n  \n3. Middle-aged Cat Guy: Kazuki's sister brings home a stray cat, who is actually a middle aged man in disguise.  \n  \n4. A Wish for Sasa★  \n  \n5. Monster Lizard: Venturing into the hills to find her dog who ran away, Hitomi finds a strange lizard girl who is feeling lonely.  \n  \n6. Matsumoto Eiko Is an Average Girl: Oneshot about a girl's short-lived quest to become more interesting in order to catch her crush's attention.  \n  \n7. Witch in Training: Spring has arrived. Having just turned 13, the young witch Koharu has embarked on the traditional journey of independence. Now, she just needs someplace to crash."
+                },
+                "isLocked": false,
+                "links": {
+                    "al": "109288",
+                    "bw": "de1ef532c6-b55e-4f8a-a03c-4d5bdc9b7e9d",
+                    "kt": "53148",
+                    "mu": "146725",
+                    "amz": "https://www.amazon.co.jp/dp/B078X8R3SQ",
+                    "ebj": "https://ebookjapan.yahoo.co.jp/books/438060/"
+                },
+                "originalLanguage": "ja",
+                "lastVolume": "1",
+                "lastChapter": "7",
+                "publicationDemographic": "shounen",
+                "status": "completed",
+                "year": null,
+                "contentRating": "safe",
+                "tags": [
+                    {
+                        "id": "0234a31e-a729-4e28-9d6a-3f87c4966b9e",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Oneshot"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "423e2eae-a7a2-4a8b-ac03-a8351462d71d",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Romance"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "51d83883-4103-437c-b4b1-731cb73d786c",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Anthology"
+                            },
+                            "description": [],
+                            "group": "format",
+                            "version": 1
+                        },
+                        "relationships": []
+                    },
+                    {
+                        "id": "e5301a23-ebd9-49dd-a0cb-2add944c7fe9",
+                        "type": "tag",
+                        "attributes": {
+                            "name": {
+                                "en": "Slice of Life"
+                            },
+                            "description": [],
+                            "group": "genre",
+                            "version": 1
+                        },
+                        "relationships": []
+                    }
+                ],
+                "state": "published",
+                "chapterNumbersResetOnNewVolume": false,
+                "createdAt": "2019-12-01T23:56:23+00:00",
+                "updatedAt": "2022-02-11T06:25:16+00:00",
+                "version": 4,
+                "availableTranslatedLanguages": [
+                    "en",
+                    "tr",
+                    "pt-br",
+                    "id",
+                    "it",
+                    "fr"
+                ]
+            },
+            "relationships": [
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "author",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "0b42f3e4-625a-4010-b601-2f1025214887",
+                    "type": "artist",
+                    "attributes": {
+                        "name": "Yamamoto Souichirou",
+                        "imageUrl": null,
+                        "biography": [],
+                        "twitter": "https://twitter.com/udon0531",
+                        "pixiv": "https://www.pixiv.net/users/61937",
+                        "melonBook": null,
+                        "fanBox": null,
+                        "booth": null,
+                        "nicoVideo": null,
+                        "skeb": null,
+                        "fantia": null,
+                        "tumblr": null,
+                        "youtube": null,
+                        "weibo": null,
+                        "naver": null,
+                        "website": null,
+                        "createdAt": "2021-04-19T21:59:45+00:00",
+                        "updatedAt": "2022-02-10T22:12:20+00:00",
+                        "version": 2
+                    }
+                },
+                {
+                    "id": "657c35c3-eeef-4f1d-918a-afc2205c6563",
+                    "type": "cover_art",
+                    "attributes": {
+                        "description": "",
+                        "volume": null,
+                        "fileName": "964578da-57bf-4d8b-981e-e099d5c745af.jpg",
+                        "locale": "ja",
+                        "createdAt": "2021-05-24T17:35:54+00:00",
+                        "updatedAt": "2021-05-24T17:35:54+00:00",
+                        "version": 1
+                    }
+                },
+                {
+                    "id": "e6d9dfc6-7bdf-4713-a157-1e31dff301fa",
+                    "type": "manga",
+                    "related": "serialization"
+                }
+            ]
+        }
+    ],
+    "limit": 10,
+    "offset": 0,
+    "total": 23
+}
+

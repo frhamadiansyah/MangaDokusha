@@ -35,6 +35,11 @@ struct APIService: Requestable {
             .mapError({ urlError in
                 return MangaDokushaError.networkError(urlError)
             })
+//            .map({ response in
+//                print("📶 URL : \(response.response.url?.absoluteString)")
+//                return response.data
+//            })
+//            .decode(type: T.self, decoder: decoder)
             .tryMap { data, response -> T in
                 print("📶 URL : \(response.url?.absoluteString)")
                 do {
