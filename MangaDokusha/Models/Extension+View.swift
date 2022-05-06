@@ -44,15 +44,15 @@ extension View {
     }
     
     @ViewBuilder
-    func handlingBackendError(backendError: BackendError, showError: Binding<Bool>, completion: @escaping () -> Void) -> some View {
+    func handlingBackendError(backendError: MangaDexErrorStruct, showError: Binding<Bool>, completion: @escaping () -> Void) -> some View {
         EmptyView()
-            .alert(backendError.errors[0].title, isPresented: showError) {
+            .alert(backendError.title, isPresented: showError) {
                 Button(action: completion) {
                     Text("OK")
                 }
                 
             } message: {
-                Text(backendError.errors[0].detail)
+                Text(backendError.localizedDescription)
             }
     }
     
@@ -72,8 +72,7 @@ extension View {
     @ViewBuilder
     func customAsyncImage(url: String) -> some View {
         AsyncImage(
-            url: URL(string: url),
-            transaction: Transaction(animation: .easeInOut)
+            url: URL(string: url)
         ) { phase in
             switch phase {
             case .empty:

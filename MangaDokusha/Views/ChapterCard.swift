@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ChapterCard: View {
-    let chapter: ChapterTitleModel
+    let chapter: ChapterModel
     var body: some View {
         HStack {
             VStack {
@@ -17,10 +17,10 @@ struct ChapterCard: View {
                     .frame(maxHeight: .infinity, alignment: .top)
             }
             VStack(alignment: .leading, spacing: 5) {
-                Text("\(chapter.chapterTitle)")
+                Text("\(chapter.title)")
                     .font(.headline)
                 Spacer()
-                Text(chapter.scanlation)
+                Text(chapter.group)
                     .font(.subheadline)
                     .padding(.bottom, 5)
             }
@@ -40,6 +40,6 @@ struct ChapterCard: View {
 
 struct ChapterCard_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterCard(chapter: dummyChapterTitleModel)
+        ChapterCard(chapter: ChapterModel())
     }
 }

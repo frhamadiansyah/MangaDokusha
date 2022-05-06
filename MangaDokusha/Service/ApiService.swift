@@ -17,10 +17,13 @@ let baseUrlHost = "api.mangadex.org"
 
 
 protocol Requestable {
-    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error>
+//    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error>
+    func make(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<MangaDexResponse, Error>
 }
 
 struct APIService: Requestable {
+    
+    static let shared = APIService()
     
     func addBearerToken(request: URLRequest) -> URLRequest {
         var newRequest = request
@@ -30,34 +33,87 @@ struct APIService: Requestable {
     }
     
     
-    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error> {
-        URLSession.shared.dataTaskPublisher(for: addBearerToken(request: request))
-            .mapError({ urlError in
-                return MangaDokushaError.networkError(urlError)
-            })
-//            .map({ response in
-//                print("📶 URL : \(response.response.url?.absoluteString)")
-//                return response.data
+//    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error> {
+//        URLSession.shared.dataTaskPublisher(for: addBearerToken(request: request))
+//            .mapError({ urlError in
+//                return MangaDokushaError.networkError(urlError)
 //            })
-//            .decode(type: T.self, decoder: decoder)
-            .tryMap { data, response -> T in
-                print("📶 URL : \(response.url?.absoluteString)")
-                do {
-                    let result = try decoder.decode(T.self, from: data)
-                    print("✅ Response Complete : \(result)")
-                    return result
-                } catch is DecodingError {
-                    let errorResponse = try decoder.decode(BackendError.self, from: data)
-                    ("❌ Backend Error : \(errorResponse)")
-                    throw MangaDokushaError.backendError(errorResponse)
-                } catch let error {
-                    throw MangaDokushaError.otherError(error)
-                }
-
+////            .map({ response in
+////                print("📶 URL : \(response.response.url?.absoluteString)")
+////                return response.data
+////            })
+////            .decode(type: T.self, decoder: decoder)
+//            .tryMap { data, response -> T in
+//                print("📶 URL : \(response.url?.absoluteString)")
+//                do {
+//                    let result = try decoder.decode(T.self, from: data)
+//                    print("✅ Response Complete : \(result)")
+//                    return result
+//                } catch is DecodingError {
+//                    let errorResponse = try decoder.decode(BackendError.self, from: data)
+//                    ("❌ Backend Error : \(errorResponse)")
+//                    throw MangaDokushaError.backendError(errorResponse)
+//                } catch let error {
+//                    throw MangaDokushaError.otherError(error)
+//                }
+//
+//            }
+//            .receive(on: DispatchQueue.main)
+//            .eraseToAnyPublisher()
+//
+//    }
+    
+    func make<T: Decodable>(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<T, Error> {
+        URLSession.shared.dataTaskPublisher(for: request)
+            .map { response in
+                response.data
             }
+            .decode(type: T.self, decoder: decoder)
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
         
+    }
+
+    func make(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<MangaDexResponse, Error> {
+        URLSession.shared.dataTaskPublisher(for: addBearerToken(request: request))
+            .mapError { urlError -> MangaDokushaError in
+                return MangaDokushaError.networkError(urlError)
+            }
+            .tryMap({ output in
+                do {
+                    let result = try decoder.decode(MangaDexResponse.self, from: output.data)
+                    if let error = result.errors?.first {
+                        throw MangaDokushaError.backendError(error)
+                    } else {
+                        return result
+                    }
+                } catch let error {
+                    throw MangaDokushaError.otherError(error)
+                }
+            })
+        
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
+}
+
+struct TestService {
+    let apiService = APIService()
+    
+    func getManga(request: URLRequest, decoder: JSONDecoder) -> AnyPublisher<MangaDexDataEnum, MangaDokushaError> {
+        apiService.make(request: request, decoder: decoder)
+            .mapError({ error -> MangaDokushaError in
+                return MangaDokushaError.otherError(error)
+            })
+            .map { response in
+                return response.data!
+            }
+//            .catch({ error -> MangaDokushaError in
+//                return MangaDokushaError.otherError(error)
+//            })
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
 }
 

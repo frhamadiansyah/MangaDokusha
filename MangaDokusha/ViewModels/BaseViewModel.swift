@@ -19,13 +19,15 @@ class BaseViewModel: ObservableObject {
         
     }
     
-    func basicHandleCompletionError(error: Subscribers.Completion<Error>) {
+    func basicHandleCompletionError(error: Subscribers.Completion<MangaDokushaError>) {
         switch error {
         case .failure(let err):
-            self.error = err as? MangaDokushaError
+            self.error = err
             self.showError.toggle()
         case .finished:
             print("finished")
         }
     }
+    
+    
 }

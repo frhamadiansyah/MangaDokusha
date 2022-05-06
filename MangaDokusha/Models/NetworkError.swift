@@ -10,10 +10,11 @@ import Foundation
 
 enum MangaDokushaError: Error {
     case networkError(Error)
-    case backendError(BackendError)
+    case backendError(MangaDexErrorStruct)
     case otherError(Error)
     case noChapter
     case noMangaFound
+//    case backendErrorNew(MangaDexErrorStruct)
 }
 
 

@@ -253,6 +253,28 @@ class MangaDexResponseTests: XCTestCase {
 
     }
     
+    func test_WhenInputChapterImageUrls_ReturnCorrectType() throws {
+        let sut = MockData.getMangaDexResponse(type: .chapterImageUrls)
+        
+        guard let baseUrl = sut?.baseUrl else {
+            XCTFail("Base URL field not found")
+            return
+        }
+        
+        let expectedBaseUrl = "https://uploads.mangadex.org"
+        XCTAssert(baseUrl == expectedBaseUrl, "expected base url \(expectedBaseUrl), but instead got \(baseUrl)")
+        
+        guard let hash = sut?.chapter?.hash else {
+            XCTFail("hash field not found")
+            return
+        }
+        
+        let expectedHash = "60f2f99e0dc04e191a92e9c326ef5de1"
+        XCTAssert(hash == expectedHash, "expected base url \(expectedHash), but instead got \(hash)")
+
+
+    }
+    
     func test_WhenInputErrorNoUser_ReturnCorrectType() throws {
         let sut = MockData.getMangaDexResponse(type: .errorNoUser)
         
@@ -266,8 +288,6 @@ class MangaDexResponseTests: XCTestCase {
         } else {
             XCTFail("Error message not found")
         }
-
-
     }
 
     func testPerformanceExample() throws {

@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct MangaListView: View {
-    @ObservedObject var vm: MangaListViewModel
+    @StateObject var vm: MangaListViewModel = MangaListViewModel()
+    @State private var didAppear: Bool = false
+    
+    init() {
+        print("CALLED ONCE")
+    }
     var body: some View {
         List {
             ForEach(vm.mangaList) { manga in
@@ -18,50 +23,49 @@ struct MangaListView: View {
                     MangaListCard(model: manga)
                 }
             }
-        }.refreshable {
-            print("REFRESH")
         }
-        .onAppear(perform: {
-            if let request = vm.currentRequest {
-                vm.getMangaList(request: request)
-            }
-        })
+        .onAppear(perform: onLoad)
         .background {
-            errorHandling(error: vm.error, showError: $vm.showError) {
-                
+            errorHandling(error: vm.error, showError: $vm.showError) { }
+        }
+    }
+    
+    func onLoad() {
+        if !didAppear {
+            if vm.mangaList.isEmpty {
+                let req = vm.getMangaListRequest(id: mangaIds)
+                print(mangaIds.count)
+                vm.getMangaList(request: req)
             }
         }
+        didAppear = true
     }
 }
 
 struct MangaListView_Previews: PreviewProvider {
     static var previews: some View {
-        MangaListView(vm: MangaListViewModel())
+        MangaListView()
     }
 }
 
 
 struct MangaListCard: View {
-    let model: MangaDetailModel
+    let model: MangaModel
     
     var body: some View {
         HStack {
-            customAsyncImage(url: model.coverUrl ?? "")
-//                .aspectRatio(contentMode: .fill)
-                .clipped()
-                .frame(width: 200, height: 200, alignment: .center)
-                .cornerRadius(5)
-            VStack {
-//                Spacer()
-                Text(model.title)
-                    .shadow(radius: 10)
+            if let cover = model.cover {
+                customAsyncImage(url: cover.coverUrl)
+                    .aspectRatio(contentMode: .fit)
+                    .clipped()
+                    .frame(width: 200, height: 200, alignment: .center)
+                    .cornerRadius(5)
+                VStack {
+                    Text(model.title)
+                        .shadow(radius: 10)
+                }
+                Spacer()
             }
-            Spacer()
         }
-//        .frame(width: 400, height: 200, alignment: .top)
-//        .clipped()
-//        .cornerRadius(5)
-        
-//        .padding()
     }
 }

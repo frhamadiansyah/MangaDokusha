@@ -13,11 +13,19 @@ struct MangaDexResponse: Decodable {
     let response: String?
     let data: MangaDexDataEnum?
     let errors: [MangaDexErrorStruct]?
+    let baseUrl: String?
+    let chapter: ChapterImageUrlModel?
     let statuses: [String: String]?
     let token: [String: String]?
 }
 
-struct MangaDexErrorStruct: Decodable {
+struct ChapterImageUrlModel: Decodable {
+    let hash: String
+    let data: [String]
+    let dataSaver: [String]
+}
+
+struct MangaDexErrorStruct: Decodable, Error {
     let id: String
     let status: Int
     let title: String
@@ -215,4 +223,5 @@ struct RawMangaModel: Decodable {
 
 struct RawMangaChapterModel: Decodable {
     let chapter: String
+    let title: String
 }
