@@ -9,25 +9,40 @@ import Foundation
 import Combine
 
 struct ReadChapterService {
-    
+
     let apiService: Requestable
 
     func getReadChapterRequest(chapterId: String) -> URLRequest {
-        
+
         let urlString = "\(baseUrl)/at-home/server/\(chapterId)"
-//        let urlString = "\(baseUrl)/cover/\(coverId)"
         print(urlString)
         let url = URL(string: urlString)!
         return URLRequest(url: url)
     }
     
-    func getListChapter(request: URLRequest) -> AnyPublisher<ReadChapterModel, Error> {
+    func getChapterImageModel(request: URLRequest) -> AnyPublisher<ReadChapterModel, MangaDokushaError> {
         apiService.make(request: request, decoder: JSONDecoder())
-    
-    }
-    
-    func getChapterImage(chapterId: String) -> AnyPublisher<ReadChapterModel, Error> {
-        apiService.make(request: getReadChapterRequest(chapterId: chapterId), decoder: JSONDecoder())
-    
+            .tryMap({ response -> ReadChapterModel in
+                let result = ReadChapterModel(response)
+                if !result.imageUrls.isEmpty {
+                    return ReadChapterModel(response)
+                }
+                    
+                throw MangaDokushaError.backendError(MangaDexErrorStruct(
+                    id: UUID().uuidString,
+                    status: 1,
+                    title: "Chapter images is empty. Check mangadex docs for updates"
+                ))
+                
+            })
+            .mapError({ error -> MangaDokushaError in
+                if let err = error as? MangaDokushaError {
+                    print(err)
+                    return err
+                } else {
+                    return MangaDokushaError.otherError(error)
+                }
+            })
+            .eraseToAnyPublisher()
     }
 }

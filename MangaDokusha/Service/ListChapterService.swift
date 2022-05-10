@@ -11,7 +11,6 @@ import Combine
 let queryLimit = 50
 
 struct ListChapterService {
-    
     let apiService: Requestable
     
     func generateBaseRequest(mangaId: String, limit: Int = queryLimit, offset: Int = 0) -> URLComponents {
@@ -51,7 +50,6 @@ struct ListChapterService {
         }
         
         let url = components.url
-        print(url)
         return URLRequest(url: url!)
     }
     
@@ -62,7 +60,6 @@ struct ListChapterService {
         let chapterInt = Int(chapter)
         
         if nextChapter {
-//            components.queryItems?.append(URLQueryItem(name: "chapter", value: "\(chapterInt + 1)"))
             components.queryItems?.append(URLQueryItem(name: "createdAtSince", value: createdAt))
         } else {
             components.queryItems?.append(URLQueryItem(name: "chapter", value: "\(chapterInt - 1)"))
@@ -71,20 +68,31 @@ struct ListChapterService {
         return URLRequest(url: url!)
     }
     
-    func getListChapter(request: URLRequest) -> AnyPublisher<ListChapterModel, Error> {
+    func getListChapter(request: URLRequest) -> AnyPublisher<[ChapterModel], MangaDokushaError> {
         apiService.make(request: request, decoder: JSONDecoder())
-        
+            .tryMap({ response -> [ChapterModel] in
+                if case .collection(let chapters) = response.data {
+                    let result = chapters.map { ChapterModel($0) }
+                    return result
+                } else {
+                    throw MangaDokushaError.backendError(MangaDexErrorStruct(
+                        id: UUID().uuidString,
+                        status: 0,
+                        title: "Different list chapter response. Check mangadex docs for updates"
+                    ))
+                }
+                
+            })
+            .mapError({ error -> MangaDokushaError in
+                if let err = error as? MangaDokushaError {
+                    print(err)
+                    return err
+                } else {
+                    return MangaDokushaError.otherError(error)
+                }
+            })
+            .eraseToAnyPublisher()
+    
     }
     
-    func getListChapter(mangaId: String, limit: Int = 50, offset: Int = 0, ascending: Bool = true) -> AnyPublisher<ListChapterModel, Error> {
-        let request = generateListChapterRequest(mangaId: mangaId, limit: limit, offset: offset, ascending: ascending)
-        return apiService.make(request: request, decoder: JSONDecoder())
-        
-    }
-    
-    func getNextOrPreviousChapter(mangaId: String, currentChapter: String, createdAt: String, nextChapter: Bool) -> AnyPublisher<ListChapterModel, Error> {
-        let request = generateNextOrPreviousChapterRequest(mangaId: mangaId, currentChapter: currentChapter, createdAt: createdAt, nextChapter: nextChapter)
-        return apiService.make(request: request, decoder: JSONDecoder())
-        
-    }
 }

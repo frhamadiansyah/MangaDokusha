@@ -14,61 +14,60 @@ struct ContentView: View {
         self.vm = ContentViewModel(mangaId: mangaId)
     }
     
-    init(mangaModel: MangaDetailModel) {
+    init(mangaModel: MangaModel) {
         self.vm = ContentViewModel(mangaId: mangaModel.id)
-        self.vm.mangaDetail = mangaModel
+        self.vm.mangaModel = mangaModel
     }
     
 //    let state
     var body: some View {
         ScrollView {
-            VStack(spacing: 10) {
-                if let detail = vm.mangaDetail {
+            if let detail = vm.mangaModel,
+               let cover = vm.mangaModel?.cover,
+               let author = vm.mangaModel?.author,
+               let artist = vm.mangaModel?.artist {
+                VStack(spacing: 10) {
 
-                    customAsyncImage(url: detail.coverUrl ?? "NIL")
+                    customAsyncImage(url: cover.coverUrl)
                         .frame(width: 200, height: 400, alignment: .center)
                         .cornerRadius(5)
 
-                    authorAndArtistView(author: detail.author ?? "", authorId: detail.authorId ?? "", artist: detail.artist ?? "", artistId: detail.artistId ?? "")
-//                    authorAndArtistView(author: detail.author ?? "NIL", artist: detail.artist ?? "NIL")
-                    Text("rating: \(detail.contentRating.rawValue)")
+                    authorAndArtistView(author: author , artist: artist)
+
+                    Text("rating:\(detail.contentRating.rawValue)")
                         .padding(5)
-                    
-                    Text("status: \(detail.status)")
+                        
+                    Text("status: \(detail.status.rawValue)")
                         .padding(5)
                     goToListChapterView(mangaDetail: detail)
-                    
+                        
                     Text(detail.description)
                         .font(.body)
 
-                } else {
-                    ProgressView()
-                }
+         
+                }.padding(.horizontal)
+                    .navigationTitle(detail.title)
+            }
 
-     
-            }.padding(.horizontal)
-                .navigationTitle(vm.mangaDetail?.title ?? "Manga")
         }
         .onAppear {
-            vm.getDetailManga(mangaId: vm.mangaId)
+            let urlReq = vm.getDetailMangaRequest(mangaId: vm.mangaId)
+            vm.getDetailManga(urlRequest: urlReq)
         }
         .background {
-            errorHandling(error: vm.error, showError: $vm.showError)
-            {
-
-            }
+            errorHandling(error: vm.error, showError: $vm.showError) { }
         }
     }
     
-    func authorAndArtistView(author: String, authorId: String, artist: String, artistId: String) -> some View {
+    func authorAndArtistView(author: CreatorModel, artist: CreatorModel) -> some View {
         HStack {
             VStack {
                 Text("Author")
                     .font(.headline)
                 NavigationLink {
-                    MangaListView(vm: MangaListViewModel(authorId: authorId))
+//                    MangaListView(vm: MangaListViewModel(authorId: author.id))
                 } label: {
-                    Text(author)
+                    Text(author.name)
                         .font(.subheadline)
                 }
 
@@ -79,9 +78,9 @@ struct ContentView: View {
                 Text("Artist")
                     .font(.headline)
                 NavigationLink {
-                    MangaListView(vm: MangaListViewModel(artistId: artistId))
+//                    MangaListView(vm: MangaListViewModel(artistId: artist.Id))
                 } label: {
-                    Text(artist)
+                    Text(artist.name)
                         .font(.subheadline)
                 }
 
@@ -91,9 +90,10 @@ struct ContentView: View {
     }
     
     
-    func goToListChapterView(mangaDetail: MangaDetailModel) -> some View {
+    func goToListChapterView(mangaDetail: MangaModel) -> some View {
         NavigationLink {
-            ListChapterView(vm: ListChapterViewModel(mangaDetail: mangaDetail))
+            ListChapterView(vm: ListChapterViewModel(manga: mangaDetail))
+//            Text("Dummy")
         } label: {
             HStack {
                 Text("Chapter List")

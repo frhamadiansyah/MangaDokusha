@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SearchView: View {
-    @StateObject var vm: SearchViewModel = SearchViewModel()
+    @StateObject var vm = MangaListViewModel()
     @FocusState private var keyboard: Bool
 
     var body: some View {

@@ -1,5 +1,5 @@
 //
-//  NetworkError.swift
+//  MangaDokushaError.swift
 //  MangaDokusha
 //
 //  Created by Fandrian Rhamadiansyah on 11/04/22.
@@ -10,10 +10,11 @@ import Foundation
 
 enum MangaDokushaError: Error {
     case networkError(Error)
-    case backendError(BackendError)
+    case backendError(MangaDexErrorStruct)
     case otherError(Error)
     case noChapter
     case noMangaFound
+    case differentResponse
 }
 
 

@@ -197,6 +197,11 @@ class MangaDexResponseTests: XCTestCase {
         let totalChapterExpected = 10
         XCTAssert(totalChapterResult == totalChapterExpected, "expected chapter in list \(totalChapterExpected), but instead got \(totalChapterResult)")
         
+        
+        let firstIdExpected = "5dce526a-e499-4f47-acb6-22f37d554759"
+        let firstIdResult = resultData.first?.id
+        XCTAssert(firstIdResult == firstIdExpected, "expected id \(firstIdExpected), but instead got \(firstIdResult)")
+        
         guard case .chapter(let model) = resultData.first!.attributes else {
             XCTFail("attribute not chapter entity")
             return
@@ -253,6 +258,28 @@ class MangaDexResponseTests: XCTestCase {
 
     }
     
+    func test_WhenInputChapterImageUrls_ReturnCorrectType() throws {
+        let sut = MockData.getMangaDexResponse(type: .chapterImageUrls)
+        
+        guard let baseUrl = sut?.baseUrl else {
+            XCTFail("Base URL field not found")
+            return
+        }
+        
+        let expectedBaseUrl = "https://uploads.mangadex.org"
+        XCTAssert(baseUrl == expectedBaseUrl, "expected base url \(expectedBaseUrl), but instead got \(baseUrl)")
+        
+        guard let hash = sut?.chapter?.hash else {
+            XCTFail("hash field not found")
+            return
+        }
+        
+        let expectedHash = "60f2f99e0dc04e191a92e9c326ef5de1"
+        XCTAssert(hash == expectedHash, "expected base url \(expectedHash), but instead got \(hash)")
+
+
+    }
+    
     func test_WhenInputErrorNoUser_ReturnCorrectType() throws {
         let sut = MockData.getMangaDexResponse(type: .errorNoUser)
         
@@ -266,8 +293,6 @@ class MangaDexResponseTests: XCTestCase {
         } else {
             XCTFail("Error message not found")
         }
-
-
     }
 
     func testPerformanceExample() throws {

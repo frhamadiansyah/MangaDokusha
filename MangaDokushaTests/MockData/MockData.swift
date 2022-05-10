@@ -16,6 +16,7 @@ enum MockDataType: String {
     case listChapter = "mockListChapter"
     case emptyListManga = "mockEmptyListManga"
     case mangaEmptyDesc = "mockMangaEmptyDesc"
+    case chapterImageUrls = "mockChapterImageUrls"
     case errorNoUser = "mockErrorNoUser"
     
 }

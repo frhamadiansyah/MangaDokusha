@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeBaseView: View {
     var body: some View {
         NavigationView {
-            MangaListView(vm: MangaListViewModel(mangaIds: mangaIds))
+            MangaListView()
             .navigationTitle("Home")
         }
     }
@@ -24,6 +24,7 @@ struct HomeBaseView_Previews: PreviewProvider {
 
 
 let mangaIds = [
+    "efb4278c-a761-406b-9d69-19603c5e4c8b",
     "a04d4899-54c7-4f2e-a0a9-2338999ad6ac",
     "f4b350ca-3f00-4f0f-8dce-a3b80e593200",
     "1c5f98e8-9516-468f-8b64-2bac7e257709",

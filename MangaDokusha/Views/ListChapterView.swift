@@ -10,22 +10,31 @@ import SwiftUI
 struct ListChapterView: View {
     
     @ObservedObject var vm: ListChapterViewModel
+    @State var readChapter: Bool = false
+    @State var selectedChapter: ChapterModel = ChapterModel()
     
     var body: some View {
         List {
             ForEach(vm.listChapter) { chapter in
-                NavigationLink {
-                    ReadChapterView(chapter: chapter, mangaDetail: vm.mangaDetail)
-                } label: {
+                Button(action: {
+                    vm.selectedChapter = chapter
+                    
+                    readChapter.toggle()
+                }, label: {
                     ChapterCard(chapter: chapter)
-                }.onAppear {
+                })
+                .onAppear {
                         vm.loadMoreIfNeeded(currentChapter: chapter)
                     }
+                .fullScreenCover(isPresented: $readChapter) {
+                    ReadingView(vm: vm.readingVm)
+
+                }
             }
         }.refreshable {
             vm.loadInitialChapterList()
         }
-        .navigationTitle(vm.mangaDetail.title)
+        .navigationTitle(vm.currentManga?.title ?? "")
         .toolbar {
             ToolbarItem(placement: .automatic) {
                 Button {
@@ -48,13 +57,13 @@ struct ListChapterView: View {
             vm.loadInitialChapterList()
         }
     }
+    
 
 }
 
 struct ListChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        ListChapterView(vm: ListChapterViewModel(mangaDetail: detailDummy))
+        ListChapterView(vm: ListChapterViewModel(manga: MangaModel()))
     }
 }
 
-let detailDummy = MangaDetailModel(id: "1", title: "dd", description: "asd", coverId: "ASDAD")

@@ -18,23 +18,9 @@ class MangaDokushaTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
-    func getMockData() -> MangaDetailModel? {
-        MockData.getMockData(type: .manga)
-    }
-    
-    func getListMockData() -> [MangaDetailModel]? {
-        MockData.getMockData(type: .listManga)
-    }
 
     func testExample() throws {
-//        let result = MockData.getMockDataResponse(type: .getManga)
-//        print(result)
-        let res = getMockData()
-        print(res)
 
-        let aaa = getListMockData()
-        print(aaa)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // Any test you write for XCTest can be annotated as throws and async.
