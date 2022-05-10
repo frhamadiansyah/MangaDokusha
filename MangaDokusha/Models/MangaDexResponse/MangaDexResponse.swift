@@ -29,6 +29,12 @@ struct MangaDexErrorStruct: Decodable, Error {
     let id: String
     let status: Int
     let title: String
+    
+    init(id: String, status: Int, title: String) {
+        self.id = id
+        self.status = status
+        self.title = title
+    }
 }
 
 //MARK: - MangaDex Data
@@ -223,5 +229,5 @@ struct RawMangaModel: Decodable {
 
 struct RawMangaChapterModel: Decodable {
     let chapter: String
-    let title: String
+    let title: String?
 }

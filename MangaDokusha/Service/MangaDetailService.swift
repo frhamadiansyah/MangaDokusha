@@ -32,7 +32,11 @@ struct MangaService {
                 if case .entity(let manga) = response.data {
                     return MangaModel(manga)
                 } else {
-                    throw MangaDokushaError.noMangaFound
+                    throw MangaDokushaError.backendError(MangaDexErrorStruct(
+                        id: UUID().uuidString,
+                        status: 1,
+                        title: "Different manga response. Check mangadex docs for updates"
+                    ))
                 }
                 
             })
@@ -47,36 +51,3 @@ struct MangaService {
             .eraseToAnyPublisher()
     }
 }
-//
-//struct MangaDetailService {
-//
-//    let apiService: Requestable
-//
-//    func getMangaRequest(mangaId: String) -> URLRequest {
-//
-//        var components = URLComponents()
-//        components.scheme = "https"
-//        components.host = "api.mangadex.org"
-//        components.path = "/manga/\(mangaId)"
-//        components.queryItems = [
-//            URLQueryItem(name: "includes[]", value: "cover_art"),
-//            URLQueryItem(name: "includes[]", value: "author"),
-//            URLQueryItem(name: "includes[]", value: "artist"),
-//        ]
-//        let url = components.url
-//        return URLRequest(url: url!)
-//    }
-//
-//    func getMangaDetail(request: URLRequest) -> AnyPublisher<MangaDetailResponse, Error> {
-//        apiService.make(request: request, decoder: JSONDecoder())
-//
-//    }
-//
-//    func getMangaDetail(mangaId: String) -> AnyPublisher<MangaDetailResponse, Error> {
-//        apiService.make(request: getMangaRequest(mangaId: mangaId), decoder: JSONDecoder())
-//
-//
-//    }
-//}
-//
-//

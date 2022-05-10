@@ -18,7 +18,6 @@ struct TabBarView: View {
                     }
                 }
             SearchView()
-//            Text("BELOM")
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")

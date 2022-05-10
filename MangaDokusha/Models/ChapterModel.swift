@@ -22,14 +22,14 @@ struct ChapterModel: Identifiable {
             return
         }
         chapter = chap.chapter
-        title = chap.title
+        title = chap.title ?? "no title"
         
         guard let relationships = response.relationships else { return }
         
         for relationship in relationships where relationship.type != .unknownType {
             if relationship.type == .manga {
                 manga = MangaModel(relationship)
-            } else if relationship.type == .scanlation{
+            } else if relationship.type == .scanlation {
                 guard case .creator(let creator) = relationship.attributes else { return }
                 group = creator.name
             }

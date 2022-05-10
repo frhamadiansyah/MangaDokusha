@@ -67,4 +67,3 @@ struct ListChapterView_Previews: PreviewProvider {
     }
 }
 
-let detailDummy = MangaDetailModel(id: "1", title: "dd", description: "asd", coverId: "ASDAD")

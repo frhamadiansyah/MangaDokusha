@@ -197,6 +197,11 @@ class MangaDexResponseTests: XCTestCase {
         let totalChapterExpected = 10
         XCTAssert(totalChapterResult == totalChapterExpected, "expected chapter in list \(totalChapterExpected), but instead got \(totalChapterResult)")
         
+        
+        let firstIdExpected = "5dce526a-e499-4f47-acb6-22f37d554759"
+        let firstIdResult = resultData.first?.id
+        XCTAssert(firstIdResult == firstIdExpected, "expected id \(firstIdExpected), but instead got \(firstIdResult)")
+        
         guard case .chapter(let model) = resultData.first!.attributes else {
             XCTFail("attribute not chapter entity")
             return

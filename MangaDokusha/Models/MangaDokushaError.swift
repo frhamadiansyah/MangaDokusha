@@ -1,5 +1,5 @@
 //
-//  NetworkError.swift
+//  MangaDokushaError.swift
 //  MangaDokusha
 //
 //  Created by Fandrian Rhamadiansyah on 11/04/22.
@@ -14,7 +14,7 @@ enum MangaDokushaError: Error {
     case otherError(Error)
     case noChapter
     case noMangaFound
-//    case backendErrorNew(MangaDexErrorStruct)
+    case differentResponse
 }
 
 

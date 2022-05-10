@@ -24,11 +24,16 @@ struct ReadChapterService {
         apiService.make(request: request, decoder: JSONDecoder())
             .tryMap({ response -> ReadChapterModel in
                 let result = ReadChapterModel(response)
-                if result.imageUrls.isEmpty {
-                    throw MangaDokushaError.noChapter
-                } else {
+                if !result.imageUrls.isEmpty {
                     return ReadChapterModel(response)
                 }
+                    
+                throw MangaDokushaError.backendError(MangaDexErrorStruct(
+                    id: UUID().uuidString,
+                    status: 1,
+                    title: "Chapter images is empty. Check mangadex docs for updates"
+                ))
+                
             })
             .mapError({ error -> MangaDokushaError in
                 if let err = error as? MangaDokushaError {
