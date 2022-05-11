@@ -12,6 +12,8 @@ struct MangaDokushaApp: App {
     var body: some Scene {
         WindowGroup {
             TabBarView()
+//            firstView()
+            
 
         }
     }

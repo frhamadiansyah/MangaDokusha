@@ -92,7 +92,10 @@ struct ContentView: View {
     
     func goToListChapterView(mangaDetail: MangaModel) -> some View {
         NavigationLink {
-            ListChapterView(vm: ListChapterViewModel(manga: mangaDetail))
+            BaseView {
+                ListChapterView(vm: ListChapterViewModel(manga: mangaDetail))
+            }
+
 //            Text("Dummy")
         } label: {
             HStack {

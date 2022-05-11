@@ -18,13 +18,16 @@ struct MangaListView: View {
         List {
             ForEach(vm.mangaList) { manga in
                 NavigationLink {
-                    ContentView(mangaModel: manga)
+                    BaseView {
+                        ContentView(mangaModel: manga)
+                    }
                 } label: {
                     MangaListCard(model: manga)
                 }
             }
         }
         .onAppear(perform: onLoad)
+//        .searchable(text: $vm.searchKeyword)
         .background {
             errorHandling(error: vm.error, showError: $vm.showError) { }
         }

@@ -86,9 +86,29 @@ extension View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .transition(.scale(scale: 0.1, anchor: .center))
+                
             case .failure:
-                Image(systemName: "wifi.slash")
+                AsyncImage(url: URL(string: url)) { phase in
+                    if let image = phase.image {
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } else if phase.error != nil {
+                        AsyncImage(url: URL(string: url)) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                        } placeholder: {
+                            ZStack{
+                                Image(systemName: "arrow.clockwise")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                ProgressView()
+                            }
+                        }
+                    }
+                }
+                
             @unknown default:
                 EmptyView()
             }

@@ -48,7 +48,10 @@ struct SearchView: View {
                 List {
                     ForEach(vm.mangaList) { manga in
                         NavigationLink {
-                            ContentView(mangaModel: manga)
+                            BaseView {
+                                ContentView(mangaModel: manga)
+                            }
+                            
                         } label: {
                             MangaListCard(model: manga)
                         }

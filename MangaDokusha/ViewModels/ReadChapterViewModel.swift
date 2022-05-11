@@ -16,6 +16,14 @@ class ReadChapterViewModel: BaseViewModel {
     
     @Published var imageUrls = [String]()
 
+    override init() {
+        super.init()
+    }
+    
+    init(manga: MangaModel?, chapter: ChapterModel?) {
+        self.manga = manga
+        self.currentChapter = chapter
+    }
     
     func getChapterImageRequest() -> URLRequest {
         return readChapterService.getReadChapterRequest(chapterId: currentChapter?.id ?? "")

@@ -16,20 +16,16 @@ struct ListChapterView: View {
     var body: some View {
         List {
             ForEach(vm.listChapter) { chapter in
-                Button(action: {
-                    vm.selectedChapter = chapter
-                    
-                    readChapter.toggle()
+                NavigationLink(destination: {
+                    BaseView {
+                        ReadingView(vm: ReadChapterViewModel(manga: vm.currentManga, chapter: chapter))
+                    }
                 }, label: {
                     ChapterCard(chapter: chapter)
                 })
                 .onAppear {
                         vm.loadMoreIfNeeded(currentChapter: chapter)
                     }
-                .fullScreenCover(isPresented: $readChapter) {
-                    ReadingView(vm: vm.readingVm)
-
-                }
             }
         }.refreshable {
             vm.loadInitialChapterList()
@@ -45,16 +41,17 @@ struct ListChapterView: View {
                 } label: {
                     Image(systemName: "arrow.up.arrow.down")
                 }
-                
             }
         }
         .background {
             errorHandling(error: vm.error, showError: $vm.showError) {
-                
+
             }
         }
         .onAppear {
-            vm.loadInitialChapterList()
+            if vm.listChapter.isEmpty {
+                vm.loadInitialChapterList()
+            }
         }
     }
     

@@ -11,11 +11,6 @@ struct ReadingView: View {
     @ObservedObject var vm: ReadChapterViewModel
     @Environment(\.presentationMode) var presentationMode
     
-//    init(manga: MangaModel, chapter: ChapterModel) {
-//        vm = ReadChapterViewModel()
-//        vm.currentChapter = chapter
-//        vm.manga = manga
-//    }
     init(vm: ReadChapterViewModel) {
         self.vm = vm
     }
@@ -23,11 +18,7 @@ struct ReadingView: View {
     var body: some View {
         ScrollView(showsIndicators: true) {
             ScrollViewReader { value in
-                VStack(spacing: 0) {
-//                    Text("\(vm.currentChapter?.title)")
-//
-//                    Text("\(vm.manga?.title)")
-                    
+                LazyVStack(spacing: 0) {
                     
                     ForEach(vm.imageUrls, id:\.self) { image in
                         customAsyncImage(url: image)
@@ -35,30 +26,19 @@ struct ReadingView: View {
                     
                 }
             }
-        }.onAppear(perform: {
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear(perform: {
             let req = vm.getChapterImageRequest()
             vm.loadChapterImageUrl(request: req)
         })
-        .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .local)
-            .onEnded({ value in
-                if value.translation.width > 0 {
-                    print("QUIT")
-                    self.presentationMode.wrappedValue.dismiss()
-                                            // left
-                                        }
-                else {
-                    print("SWIPER!!!")
-                }
-
-            })
-        )
         
     }
 }
 
 struct ReadingView_Previews: PreviewProvider {
     static var previews: some View {
-//        ReadingView()
-        Text("MALES")
+        ReadingView(vm: ReadChapterViewModel())
+//        Text("MALES")
     }
 }

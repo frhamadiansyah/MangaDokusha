@@ -43,7 +43,7 @@ class ListChapterViewModel: BaseViewModel {
     }
     
     func loadInitialChapterList() {
-        
+        offset = 0
         listChapter = []
         
         guard let manga = currentManga else { return }

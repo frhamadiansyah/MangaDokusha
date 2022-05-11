@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @StateObject private var tabController = TabController()
+    
     var body: some View {
-        TabView {
+        TabView(selection: $tabController.activeTab) {
             HomeBaseView()
+                .tag(Tab.home)
                 .tabItem {
                     VStack {
                         Image(systemName: "house")
@@ -18,6 +21,7 @@ struct TabBarView: View {
                     }
                 }
             SearchView()
+                .tag(Tab.search)
                 .tabItem {
                     VStack {
                         Image(systemName: "magnifyingglass")
@@ -25,11 +29,27 @@ struct TabBarView: View {
                     }
                 }
         }
+        .environmentObject(tabController)
     }
 }
 
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView()
+    }
+}
+
+
+enum Tab {
+    case home
+    case search
+}
+
+
+class TabController: ObservableObject {
+    @Published var activeTab = Tab.home
+    
+    func open(_ tab: Tab) {
+        activeTab = tab
     }
 }
