@@ -21,8 +21,8 @@ struct TagsView: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            Text(title)
+        VStack(alignment: .leading, spacing: 3) {
+            Text("\(title):")
             
             TagCloudView(tags: tags, color: color)
 
