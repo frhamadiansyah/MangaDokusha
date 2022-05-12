@@ -14,6 +14,9 @@ extension View {
         modifier(ErrorHandle(showError: showError, error: error, completion: completion))
     }
     
+    func isLoading(_ isLoading: Binding<Bool>) -> some View {
+        modifier(LoadingHandle(isLoading: isLoading))
+    }
     
     
 }

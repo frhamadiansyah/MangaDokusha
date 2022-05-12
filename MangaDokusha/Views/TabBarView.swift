@@ -20,12 +20,12 @@ struct TabBarView: View {
                         Text("Home")
                     }
                 }
-            SearchView()
-                .tag(Tab.search)
+            DownloadedView()
+                .tag(Tab.download)
                 .tabItem {
                     VStack {
-                        Image(systemName: "magnifyingglass")
-                        Text("Search")
+                        Image(systemName: "arrow.down.circle")
+                        Text("Downloads")
                     }
                 }
         }
@@ -42,7 +42,7 @@ struct TabBarView_Previews: PreviewProvider {
 
 enum Tab {
     case home
-    case search
+    case download
 }
 
 
@@ -51,5 +51,20 @@ class TabController: ObservableObject {
     
     func open(_ tab: Tab) {
         activeTab = tab
+    }
+}
+
+
+struct LoadingHandle: ViewModifier {
+    @Binding var isLoading: Bool
+    
+    func body(content: Content) -> some View {
+        ZStack {
+            if isLoading {
+                ProgressView("Loading...")
+                    .scaleEffect(2)
+            }
+            content
+        }
     }
 }

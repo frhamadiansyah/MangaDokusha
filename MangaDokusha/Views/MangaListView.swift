@@ -9,11 +9,7 @@ import SwiftUI
 
 struct MangaListView: View {
     @StateObject var vm: MangaListViewModel = MangaListViewModel()
-    @State private var didAppear: Bool = false
     
-    init() {
-        print("CALLED ONCE")
-    }
     var body: some View {
         List {
             ForEach(vm.mangaList) { manga in
@@ -24,22 +20,19 @@ struct MangaListView: View {
                 } label: {
                     MangaListCard(model: manga)
                 }
+                .onAppear {
+                    if !vm.searchKeyword.isEmpty {
+                        vm.searchMoreIfNeeded(currentManga: manga)
+                    }
+                }
             }
         }
-        .onAppear(perform: onLoad)
+        .searchable(text: $vm.searchKeyword)
+        .isLoading($vm.isLoading)
+        
         .handleError(error: vm.error, showError: $vm.showError) { }
     }
     
-    func onLoad() {
-        if !didAppear {
-            if vm.mangaList.isEmpty {
-                let req = vm.getMangaListRequest(id: mangaIds)
-                print(mangaIds.count)
-                vm.getMangaList(request: req)
-            }
-        }
-        didAppear = true
-    }
 }
 
 struct MangaListView_Previews: PreviewProvider {
