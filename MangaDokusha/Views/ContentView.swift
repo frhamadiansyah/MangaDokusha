@@ -28,17 +28,18 @@ struct ContentView: View {
                let artist = vm.mangaModel?.artist {
                 VStack(spacing: 10) {
 
-                    customAsyncImage(url: cover.coverUrl)
+                    CustomAsyncImage(url: cover.coverUrl)
                         .frame(width: 200, height: 400, alignment: .center)
                         .cornerRadius(5)
 
                     authorAndArtistView(author: author , artist: artist)
 
-                    Text("rating:\(detail.contentRating.rawValue)")
-                        .padding(5)
-                        
-                    Text("status: \(detail.status.rawValue)")
-                        .padding(5)
+                    TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: .red)
+                    
+                    TagsView(title: "Tags", tags: detail.tags)
+                    
+                    TagsView(title: "Status", tags: [detail.status.rawValue], color: .gray)
+                    
                     goToListChapterView(mangaDetail: detail)
                         
                     Text(detail.description)
@@ -50,13 +51,14 @@ struct ContentView: View {
             }
 
         }
+        .handleError(error: vm.error, showError: $vm.showError) { }
         .onAppear {
             let urlReq = vm.getDetailMangaRequest(mangaId: vm.mangaId)
             vm.getDetailManga(urlRequest: urlReq)
         }
-        .background {
-            errorHandling(error: vm.error, showError: $vm.showError) { }
-        }
+//        .background {
+//            errorHandling(error: vm.error, showError: $vm.showError) { }
+//        }
     }
     
     func authorAndArtistView(author: CreatorModel, artist: CreatorModel) -> some View {

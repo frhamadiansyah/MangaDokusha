@@ -13,7 +13,7 @@ class BaseViewModel: ObservableObject {
     var cancel = Set<AnyCancellable>()
     
     @Published var showError: Bool = false
-    @Published var error: MangaDokushaError?
+    @Published var error: MangaDokushaError? 
     
     init() {
         
@@ -23,7 +23,7 @@ class BaseViewModel: ObservableObject {
         switch error {
         case .failure(let err):
             self.error = err
-            self.showError.toggle()
+            self.showError = true
         case .finished:
             print("finished")
         }

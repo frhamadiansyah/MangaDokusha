@@ -27,10 +27,7 @@ struct MangaListView: View {
             }
         }
         .onAppear(perform: onLoad)
-//        .searchable(text: $vm.searchKeyword)
-        .background {
-            errorHandling(error: vm.error, showError: $vm.showError) { }
-        }
+        .handleError(error: vm.error, showError: $vm.showError) { }
     }
     
     func onLoad() {
@@ -58,7 +55,7 @@ struct MangaListCard: View {
     var body: some View {
         HStack {
             if let cover = model.cover {
-                customAsyncImage(url: cover.coverUrl)
+                CustomAsyncImage(url: cover.coverUrl)
                     .aspectRatio(contentMode: .fit)
                     .clipped()
                     .frame(width: 200, height: 200, alignment: .center)

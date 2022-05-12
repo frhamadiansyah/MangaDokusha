@@ -21,12 +21,13 @@ struct ReadingView: View {
                 LazyVStack(spacing: 0) {
                     
                     ForEach(vm.imageUrls, id:\.self) { image in
-                        customAsyncImage(url: image)
+                        CustomAsyncImage(url: image)
                     }
                     
                 }
             }
         }
+        .handleError(error: vm.error, showError: $vm.showError) { }
         .navigationBarTitleDisplayMode(.inline)
         .onAppear(perform: {
             let req = vm.getChapterImageRequest()
@@ -39,6 +40,5 @@ struct ReadingView: View {
 struct ReadingView_Previews: PreviewProvider {
     static var previews: some View {
         ReadingView(vm: ReadChapterViewModel())
-//        Text("MALES")
     }
 }

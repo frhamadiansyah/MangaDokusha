@@ -11,7 +11,6 @@ struct ListChapterView: View {
     
     @ObservedObject var vm: ListChapterViewModel
     @State var readChapter: Bool = false
-    @State var selectedChapter: ChapterModel = ChapterModel()
     
     var body: some View {
         List {
@@ -24,8 +23,8 @@ struct ListChapterView: View {
                     ChapterCard(chapter: chapter)
                 })
                 .onAppear {
-                        vm.loadMoreIfNeeded(currentChapter: chapter)
-                    }
+                    vm.loadMoreIfNeeded(currentChapter: chapter)
+                }
             }
         }.refreshable {
             vm.loadInitialChapterList()
@@ -43,19 +42,13 @@ struct ListChapterView: View {
                 }
             }
         }
-        .background {
-            errorHandling(error: vm.error, showError: $vm.showError) {
-
-            }
-        }
+        .handleError(error: vm.error, showError: $vm.showError) { }
         .onAppear {
             if vm.listChapter.isEmpty {
                 vm.loadInitialChapterList()
             }
         }
     }
-    
-
 }
 
 struct ListChapterView_Previews: PreviewProvider {

@@ -63,11 +63,8 @@ struct SearchView: View {
                 .refreshable {
                     
                 }
-            }.background {
-                errorHandling(error: vm.error, showError: $vm.showError) {
-                    
-                }
             }
+            .handleError(error: vm.error, showError: $vm.showError) { }
             .onSubmit {
                 if vm.searchKeyword.isEmpty {
                     vm.mangaList = []

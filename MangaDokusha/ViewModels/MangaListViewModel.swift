@@ -41,7 +41,12 @@ class MangaListViewModel: BaseViewModel {
             .sink { error in
                 self.basicHandleCompletionError(error: error)
             } receiveValue: { models in
-                self.mangaList.append(contentsOf: models)
+                if models.isEmpty {
+                    self.error = .noMangaFound
+                    self.showError.toggle()
+                } else {
+                    self.mangaList.append(contentsOf: models)
+                }
             }.store(in: &cancel)
     }
     
