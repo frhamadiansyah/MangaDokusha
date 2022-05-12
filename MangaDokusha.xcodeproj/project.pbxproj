@@ -15,6 +15,7 @@
 		75B4CEA4282C2FA4003D7EA5 /* ErrorHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA3282C2FA4003D7EA5 /* ErrorHandle.swift */; };
 		75B4CEA6282CC28B003D7EA5 /* CustomAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA5282CC28B003D7EA5 /* CustomAsyncImage.swift */; };
 		75B4CEA8282CC93A003D7EA5 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA7282CC93A003D7EA5 /* TagsView.swift */; };
+		75B4CEAB282CD3EE003D7EA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA9282CD3EE003D7EA5 /* Model.xcdatamodeld */; };
 		75BDB2B127FDD1EB00C00EE7 /* MangaDokushaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDB2B027FDD1EB00C00EE7 /* MangaDokushaApp.swift */; };
 		75BDB2B327FDD1EB00C00EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */; };
 		75BDB2B527FDD1EC00C00EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BDB2B427FDD1EC00C00EE7 /* Assets.xcassets */; };
@@ -88,6 +89,7 @@
 		75B4CEA3282C2FA4003D7EA5 /* ErrorHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandle.swift; sourceTree = "<group>"; };
 		75B4CEA5282CC28B003D7EA5 /* CustomAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAsyncImage.swift; sourceTree = "<group>"; };
 		75B4CEA7282CC93A003D7EA5 /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		75B4CEAA282CD3EE003D7EA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		75BDB2AD27FDD1EB00C00EE7 /* MangaDokusha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaDokusha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BDB2B027FDD1EB00C00EE7 /* MangaDokushaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDokushaApp.swift; sourceTree = "<group>"; };
 		75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				75BDB2B627FDD1ED00C00EE7 /* Preview Content */,
 				75BDB2DC27FE025D00C00EE7 /* Service */,
 				75D8841D28259150005A86D6 /* Dummy.swift */,
+				75B4CEA9282CD3EE003D7EA5 /* Model.xcdatamodeld */,
 			);
 			path = MangaDokusha;
 			sourceTree = "<group>";
@@ -522,6 +525,7 @@
 				75BDB2DB27FDD34300C00EE7 /* ApiService.swift in Sources */,
 				75600873280EDD2F00B7A120 /* MangaListViewModel.swift in Sources */,
 				75E8AA96281C67D8001E2D8E /* MangaDexResponse.swift in Sources */,
+				75B4CEAB282CD3EE003D7EA5 /* Model.xcdatamodeld in Sources */,
 				75E8AAB0281EF819001E2D8E /* MangaModel.swift in Sources */,
 				75A44F8D28044B2F00F07058 /* MangaDokushaError.swift in Sources */,
 				75BDB2ED2800367F00C00EE7 /* ListChapterService.swift in Sources */,
@@ -861,6 +865,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75B4CEA9282CD3EE003D7EA5 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75B4CEAA282CD3EE003D7EA5 /* Model.xcdatamodel */,
+			);
+			currentVersion = 75B4CEAA282CD3EE003D7EA5 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 75BDB2A527FDD1EA00C00EE7 /* Project object */;
 }
