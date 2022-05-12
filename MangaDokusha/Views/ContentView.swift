@@ -34,11 +34,11 @@ struct ContentView: View {
 
                     authorAndArtistView(author: author , artist: artist)
 
-                    TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: .red)
+                    TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: detail.contentRating.getColor())
                     
                     TagsView(title: "Tags", tags: detail.tags)
                     
-                    TagsView(title: "Status", tags: [detail.status.rawValue], color: .gray)
+                    TagsView(title: "Status", tags: [detail.status.rawValue], color: detail.status.getColor())
                     
                     goToListChapterView(mangaDetail: detail)
                         

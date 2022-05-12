@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum MangaDexRelationshipType: String {
     case manga = "manga"
@@ -24,6 +25,21 @@ enum ContentRating: String {
     case erotica = "erotica"
     case pornographic = "pornographic"
     case unknown
+    
+    func getColor() -> Color {
+        switch self {
+        case .safeContent:
+            return Color.green
+        case .suggestive:
+            return Color.orange
+        case .erotica:
+            return Color.pink
+        case .pornographic:
+            return Color.red
+        case .unknown:
+            return Color.gray
+        }
+    }
 }
 
 enum MangaStatus: String {
@@ -32,6 +48,21 @@ enum MangaStatus: String {
     case hiatus = "hiatus"
     case cancelled = "cancelled"
     case unknown
+    
+    func getColor() -> Color {
+        switch self {
+        case .ongoing:
+            return Color.green
+        case .completed:
+            return Color.blue
+        case .hiatus:
+            return Color.orange
+        case .cancelled:
+            return Color.red
+        case .unknown:
+            return Color.gray
+        }
+    }
 }
 
 enum PublicationDemographic: String {

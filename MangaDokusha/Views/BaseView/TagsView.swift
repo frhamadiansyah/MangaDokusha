@@ -98,9 +98,10 @@ struct TagCloudView: View {
         Text(text)
             .padding(.all, 5)
             .font(.body)
-            .background(color)
+            .background(Capsule()
+                .fill(color)
+            )
             .foregroundColor(Color.white)
-            .cornerRadius(5)
     }
 
     private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
