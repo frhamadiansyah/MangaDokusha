@@ -28,7 +28,7 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                print("\(chapter.chapter) downloaded")
+                print("\(chapter.chapter) downloaded!!!")
             } label: {
                 Image(systemName: "arrow.down.circle")
                     .padding(10)
