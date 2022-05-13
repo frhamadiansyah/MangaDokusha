@@ -17,6 +17,8 @@
 		75B4CEA8282CC93A003D7EA5 /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA7282CC93A003D7EA5 /* TagsView.swift */; };
 		75B4CEAB282CD3EE003D7EA5 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEA9282CD3EE003D7EA5 /* Model.xcdatamodeld */; };
 		75B4CEAD282D3D73003D7EA5 /* DownloadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEAC282D3D73003D7EA5 /* DownloadedView.swift */; };
+		75B4CEB4282E22F6003D7EA5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEB3282E22F6003D7EA5 /* CoreDataManager.swift */; };
+		75B4CEB6282E2428003D7EA5 /* ChapterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B4CEB5282E2428003D7EA5 /* ChapterViewModel.swift */; };
 		75BDB2B127FDD1EB00C00EE7 /* MangaDokushaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDB2B027FDD1EB00C00EE7 /* MangaDokushaApp.swift */; };
 		75BDB2B327FDD1EB00C00EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */; };
 		75BDB2B527FDD1EC00C00EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BDB2B427FDD1EC00C00EE7 /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		75B4CEA7282CC93A003D7EA5 /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
 		75B4CEAA282CD3EE003D7EA5 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		75B4CEAC282D3D73003D7EA5 /* DownloadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedView.swift; sourceTree = "<group>"; };
+		75B4CEB3282E22F6003D7EA5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		75B4CEB5282E2428003D7EA5 /* ChapterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterViewModel.swift; sourceTree = "<group>"; };
 		75BDB2AD27FDD1EB00C00EE7 /* MangaDokusha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MangaDokusha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BDB2B027FDD1EB00C00EE7 /* MangaDokushaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDokushaApp.swift; sourceTree = "<group>"; };
 		75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -248,6 +252,7 @@
 				75BDB2EC2800367F00C00EE7 /* ListChapterService.swift */,
 				75BDB2F728009E4700C00EE7 /* ReadChapterService.swift */,
 				75A44F8E28049C2E00F07058 /* ListMangaService.swift */,
+				75B4CEB3282E22F6003D7EA5 /* CoreDataManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				75BDB2FD2800A61500C00EE7 /* ReadChapterViewModel.swift */,
 				75600872280EDD2F00B7A120 /* MangaListViewModel.swift */,
 				75ED7CBB2819CB3400287BFF /* BaseViewModel.swift */,
+				75B4CEB5282E2428003D7EA5 /* ChapterViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B4CEB6282E2428003D7EA5 /* ChapterViewModel.swift in Sources */,
 				75BDB2F6280093A700C00EE7 /* HomeBaseView.swift in Sources */,
 				75D8841228229B43005A86D6 /* ChapterModel.swift in Sources */,
 				75B4CEA8282CC93A003D7EA5 /* TagsView.swift in Sources */,
@@ -519,6 +526,7 @@
 				75BDB2F328008BEF00C00EE7 /* ListChapterViewModel.swift in Sources */,
 				75D8841E28259151005A86D6 /* Dummy.swift in Sources */,
 				75A44F8F28049C2E00F07058 /* ListMangaService.swift in Sources */,
+				75B4CEB4282E22F6003D7EA5 /* CoreDataManager.swift in Sources */,
 				75BDB2FE2800A61500C00EE7 /* ReadChapterViewModel.swift in Sources */,
 				75B4CEA6282CC28B003D7EA5 /* CustomAsyncImage.swift in Sources */,
 				75BDB2E727FE09B300C00EE7 /* ContentViewModel.swift in Sources */,

@@ -20,7 +20,7 @@ struct ListChapterView: View {
                         ReadingView(vm: ReadChapterViewModel(manga: vm.currentManga, chapter: chapter))
                     }
                 }, label: {
-                    ChapterCard(chapter: chapter)
+                    ChapterCard(manga: vm.currentManga, chapter: chapter)
                 })
                 .onAppear {
                     vm.loadMoreIfNeeded(currentChapter: chapter)

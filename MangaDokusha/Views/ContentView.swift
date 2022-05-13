@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var vm: ContentViewModel
+    @StateObject var vm: ContentViewModel
     
     init(mangaId: String) {
-        self.vm = ContentViewModel(mangaId: mangaId)
+        _vm = StateObject(wrappedValue: ContentViewModel(mangaId: mangaId))
     }
     
     init(mangaModel: MangaModel) {
-        self.vm = ContentViewModel(mangaId: mangaModel.id)
-        self.vm.mangaModel = mangaModel
+        _vm = StateObject(wrappedValue: ContentViewModel(manga: mangaModel))
+//        self.vm = ContentViewModel(mangaId: mangaModel.id)
+//        self.vm.mangaModel = mangaModel
     }
     
 //    let state

@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="ChapterEntity" representedClassName="ChapterEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="chapter" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <relationship name="manga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MangaEntity" inverseName="chapters" inverseEntity="MangaEntity"/>
+    </entity>
+    <entity name="MangaEntity" representedClassName="MangaEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChapterEntity" inverseName="manga" inverseEntity="ChapterEntity"/>
+    </entity>
+    <elements>
+        <element name="MangaEntity" positionX="-36" positionY="9" width="128" height="74"/>
+        <element name="ChapterEntity" positionX="285.7670288085938" positionY="-176.973876953125" width="128" height="74"/>
+    </elements>
 </model>

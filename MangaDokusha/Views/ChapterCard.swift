@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct ChapterCard: View {
-    let chapter: ChapterModel
+    @StateObject var vm : ChapterViewModel
+
+    init(manga: MangaModel?, chapter: ChapterModel) {
+        _vm = StateObject(wrappedValue: ChapterViewModel(manga: manga, chapter: chapter))
+    }
     var body: some View {
         HStack {
             VStack {
-                Text("\(chapter.chapter):")
+                Text("\(vm.chapter.chapter):")
                     .font(.headline)
                     .frame(maxHeight: .infinity, alignment: .top)
             }
             VStack(alignment: .leading, spacing: 5) {
-                Text("\(chapter.title)")
+                Text("\(vm.chapter.title)")
                     .font(.headline)
                 Spacer()
-                Text(chapter.group)
+                Text(vm.chapter.group)
                     .font(.subheadline)
                     .padding(.bottom, 5)
             }
@@ -28,7 +32,8 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                print("\(chapter.chapter) downloaded!!!")
+                vm.addChapter()
+                print("\(vm.chapter.chapter) downloaded!!!")
             } label: {
                 Image(systemName: "arrow.down.circle")
                     .padding(10)
@@ -40,6 +45,6 @@ struct ChapterCard: View {
 
 struct ChapterCard_Previews: PreviewProvider {
     static var previews: some View {
-        ChapterCard(chapter: ChapterModel())
+        ChapterCard(manga: dummyManga, chapter: dummyChapter)
     }
 }

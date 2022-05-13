@@ -10,6 +10,8 @@ import Combine
 
 class ListChapterViewModel: BaseViewModel {
     
+    
+    
     var currentManga: MangaModel?
     
     var listChapterService = ListChapterService(apiService: APIService())
