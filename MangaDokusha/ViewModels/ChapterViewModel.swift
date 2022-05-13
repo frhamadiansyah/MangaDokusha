@@ -21,8 +21,12 @@ class ChapterViewModel: BaseViewModel {
         self.chapter = chapter
     }
     
+    @Published var isDownloaded = false
+    
     
     func addChapter() {
+//        guard isDownloaded else { return }
+        
         let newChapter = ChapterEntity(context: manager.context)
         
         newChapter.id = chapter.id
@@ -43,9 +47,50 @@ class ChapterViewModel: BaseViewModel {
                 
                 newChapter.manga = newManga
             }
-
+            
         }
         save()
+    }
+    
+    func checkIfDownloaded() {
+        let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
+        
+        let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)
+        request.sortDescriptors = [sort]
+        
+        let filter = NSPredicate(format: "id == %@", chapter.id)
+        request.predicate = filter
+        do {
+            let chapterExist = try manager.context.fetch(request)
+            if !chapterExist.isEmpty {
+                self.isDownloaded = true
+            }
+        } catch let error {
+            print("Error fetching : \(error.localizedDescription)")
+        }
+
+    }
+    
+    func downloadChapter() {
+        let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
+        
+        let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)
+        request.sortDescriptors = [sort]
+        
+        let filter = NSPredicate(format: "id == %@", chapter.id)
+        request.predicate = filter
+        do {
+            let chapterExist = try manager.context.fetch(request)
+            if !chapterExist.isEmpty {
+                self.isDownloaded = true
+            } else {
+                self.addChapter()
+                self.isDownloaded = true
+            }
+        } catch let error {
+            print("Error fetching : \(error.localizedDescription)")
+        }
+        
     }
     
     func getMangaFromPersistence() -> MangaEntity? {

@@ -13,7 +13,7 @@
         <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChapterEntity" inverseName="manga" inverseEntity="ChapterEntity"/>
     </entity>
     <elements>
-        <element name="ChapterEntity" positionX="285.7670288085938" positionY="-176.973876953125" width="128" height="103"/>
+        <element name="ChapterEntity" positionX="285.7670288085938" positionY="-176.973876953125" width="128" height="89"/>
         <element name="MangaEntity" positionX="-36" positionY="9" width="128" height="103"/>
     </elements>
 </model>

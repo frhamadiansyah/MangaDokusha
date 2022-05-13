@@ -16,14 +16,16 @@ struct DownloadsView: View {
             List {
                 ForEach(vm.mangas) {
                     manga in
-                    MangaListCard(entity: manga)
+                    NavigationLink {
+                        DownloadsChapterView(entity: manga)
+                    } label: {
+                        MangaListCard(entity: manga)
+                    }
+                    
                 }
-//                Text("Hello, World!")
-//                Spacer()
-//                Button("LOADING") {
-//                    isLoading.toggle()
-//                }
-
+                .onDelete { index in
+                    delete(index: index)
+                }
                 
             }
             .isLoading($isLoading)
@@ -32,6 +34,16 @@ struct DownloadsView: View {
             }
         }
         
+    }
+    
+    func delete(index: IndexSet) {
+        for i in index {
+            let entity = vm.mangas[i]
+            vm.deleteEntity(entity: entity)
+        }
+        vm.getManga()
+//        let entity = vm.chapters[index.count]
+//        print(entity)
     }
 }
 

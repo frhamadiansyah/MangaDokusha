@@ -32,13 +32,25 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                vm.addChapter()
+                vm.downloadChapter()
                 print("\(vm.chapter.chapter) downloaded!!!")
             } label: {
-                Image(systemName: "arrow.down.circle")
-                    .padding(10)
-            }.buttonStyle(PlainButtonStyle())
+                if vm.isDownloaded {
+                    Image(systemName: "arrow.down.circle.fill")
+                        .padding(10)
+                        .foregroundColor(.green)
+                } else {
+                    Image(systemName: "arrow.down.circle")
+                        .padding(10)
+                }
+                
+            }
+            .disabled(vm.isDownloaded)
+            .buttonStyle(PlainButtonStyle())
 
+        }
+        .onAppear {
+            vm.checkIfDownloaded()
         }
     }
 }

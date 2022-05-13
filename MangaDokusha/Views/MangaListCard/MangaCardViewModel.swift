@@ -13,6 +13,8 @@ class MangaCardViewModel: BaseViewModel {
     
     @Published var title: String?
     
+    @Published var count: Int = 0
+    
     var manga: MangaModel?
     
     var entity: MangaEntity? 
@@ -27,5 +29,6 @@ class MangaCardViewModel: BaseViewModel {
         self.entity = entity
         coverUrl = entity?.coverUrl
         title = entity?.title
+        count = entity?.chapters?.count ?? 0
     }
 }
