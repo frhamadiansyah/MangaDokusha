@@ -23,12 +23,12 @@ class CoreDataManager {
         context = container.viewContext
     }
     
-    func save() {
+    func save() throws {
         do {
             try context.save()
             print("Save successfully")
         } catch let error {
-            print("Error saving: \(error)")
+            throw MangaDokushaError.otherError(error)
         }
         
     }

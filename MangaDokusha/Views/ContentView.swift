@@ -33,7 +33,9 @@ struct ContentView: View {
                         .frame(width: 200, height: 400, alignment: .center)
                         .cornerRadius(5)
 
-                    authorAndArtistView(author: author , artist: artist)
+                    authorAndArtistView(author: author, artist: artist)
+                    
+                    goToListChapterView(mangaDetail: detail)
 
                     TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: detail.contentRating.getColor())
                     
@@ -41,7 +43,6 @@ struct ContentView: View {
                     
                     TagsView(title: "Status", tags: [detail.status.rawValue], color: detail.status.getColor())
                     
-                    goToListChapterView(mangaDetail: detail)
                         
                     Text(detail.description)
                         .font(.body)

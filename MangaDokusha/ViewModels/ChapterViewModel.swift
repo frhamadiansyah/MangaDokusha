@@ -29,13 +29,53 @@ class ChapterViewModel: BaseViewModel {
         newChapter.chapter = chapter.chapter
         
         if let manga = manga {
-            let newManga = MangaEntity(context: manager.context)
-            newManga.id = manga.id
-            newManga.title = manga.title
-            newChapter.manga = newManga
+            
+            if let coreManga = getMangaFromPersistence() {
+                newChapter.manga = coreManga
+            } else {
+                let newManga = MangaEntity(context: manager.context)
+                newManga.id = manga.id
+                
+                guard let cover = manga.cover?.coverUrl else {return}
+                newManga.coverUrl = cover
+                
+                newManga.title = manga.title
+                
+                newChapter.manga = newManga
+            }
+
         }
+        save()
+    }
+    
+    func getMangaFromPersistence() -> MangaEntity? {
+        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
         
-        manager.save()
+        let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
+        request.sortDescriptors = [sort]
+        guard let manga = manga else {return nil}
+        let filter = NSPredicate(format: "id == %@", manga.id)
+        request.predicate = filter
+        do {
+            let coreManga = try manager.context.fetch(request)
+            if !coreManga.isEmpty {
+                return coreManga.first
+            }
+        } catch let err {
+            print("Error fetching : \(err.localizedDescription)")
+            self.error = MangaDokushaError.otherError(err)
+            self.showError = true
+        }
+        return nil
+    }
+    
+    func save() {
+        do {
+            try manager.save()
+        } catch let err {
+            self.error = MangaDokushaError.otherError(err)
+            self.showError = true
+        }
     }
     
 }
