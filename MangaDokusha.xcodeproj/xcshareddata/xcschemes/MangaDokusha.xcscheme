@@ -26,8 +26,29 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "75BDB2BC27FDD1ED00C00EE7"
+               BuildableName = "MangaDokushaTests.xctest"
+               BlueprintName = "MangaDokushaTests"
+               ReferencedContainer = "container:MangaDokusha.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "75BDB2C627FDD1ED00C00EE7"
+               BuildableName = "MangaDokushaUITests.xctest"
+               BlueprintName = "MangaDokushaUITests"
+               ReferencedContainer = "container:MangaDokusha.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
