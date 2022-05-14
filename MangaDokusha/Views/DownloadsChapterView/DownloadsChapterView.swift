@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DownloadsChapterView: View {
     @StateObject var vm: DownloadsChapterViewModel
+    @Environment(\.presentationMode) var presentationMode
     
     init(entity: MangaEntity) {
         _vm = StateObject(wrappedValue: DownloadsChapterViewModel(entity: entity))
@@ -34,11 +35,13 @@ struct DownloadsChapterView: View {
     func delete(index: IndexSet) {
         for i in index {
             let entity = vm.chapters[i]
-            vm.deleteEntity(entity: entity)
+            vm.deleteChapter(chapter: entity) { bool in
+                if bool {
+                    self.presentationMode.wrappedValue.dismiss()
+                }
+            }
         }
         vm.getChapter()
-//        let entity = vm.chapters[index.count]
-//        print(entity)
     }
 }
 

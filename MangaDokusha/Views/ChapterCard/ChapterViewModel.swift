@@ -16,21 +16,20 @@ class ChapterViewModel: BaseViewModel {
     
     var chapter: ChapterModel
     
+    
     init(manga: MangaModel?, chapter: ChapterModel) {
         self.manga = manga
         self.chapter = chapter
+    
     }
     
     @Published var isDownloaded = false
     
     
     func addChapter() {
-//        guard isDownloaded else { return }
-        
         let newChapter = ChapterEntity(context: manager.context)
         
-        newChapter.id = chapter.id
-        newChapter.chapter = chapter.chapter
+        newChapter.translateChapterModel(model: chapter)
         
         if let manga = manga {
             
@@ -38,28 +37,25 @@ class ChapterViewModel: BaseViewModel {
                 newChapter.manga = coreManga
             } else {
                 let newManga = MangaEntity(context: manager.context)
-                newManga.id = manga.id
-                
-                guard let cover = manga.cover?.coverUrl else {return}
-                newManga.coverUrl = cover
-                
-                newManga.title = manga.title
-                
+                newManga.translateMangaModel(model: manga)
                 newChapter.manga = newManga
             }
             
         }
-        save()
+        save { result in
+            if result {
+                self.isDownloaded = true
+            }
+        }
+        
     }
     
     func checkIfDownloaded() {
         let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
         
-        let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)
-        request.sortDescriptors = [sort]
-        
         let filter = NSPredicate(format: "id == %@", chapter.id)
         request.predicate = filter
+        
         do {
             let chapterExist = try manager.context.fetch(request)
             if !chapterExist.isEmpty {
@@ -67,40 +63,22 @@ class ChapterViewModel: BaseViewModel {
             }
         } catch let error {
             print("Error fetching : \(error.localizedDescription)")
+            self.error = MangaDokushaError.otherError(error)
+            self.showError = true
         }
 
     }
     
-    func downloadChapter() {
-        let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
-        
-        let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)
-        request.sortDescriptors = [sort]
-        
-        let filter = NSPredicate(format: "id == %@", chapter.id)
-        request.predicate = filter
-        do {
-            let chapterExist = try manager.context.fetch(request)
-            if !chapterExist.isEmpty {
-                self.isDownloaded = true
-            } else {
-                self.addChapter()
-                self.isDownloaded = true
-            }
-        } catch let error {
-            print("Error fetching : \(error.localizedDescription)")
-        }
-        
-    }
-    
     func getMangaFromPersistence() -> MangaEntity? {
-        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
         
-        let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
-        request.sortDescriptors = [sort]
+        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
+        request.fetchLimit = 1
+        
         guard let manga = manga else {return nil}
+        
         let filter = NSPredicate(format: "id == %@", manga.id)
         request.predicate = filter
+        
         do {
             let coreManga = try manager.context.fetch(request)
             if !coreManga.isEmpty {
@@ -114,12 +92,14 @@ class ChapterViewModel: BaseViewModel {
         return nil
     }
     
-    func save() {
+    func save(completion: @escaping (Bool) -> Void) {
         do {
             try manager.save()
+            completion(true)
         } catch let err {
             self.error = MangaDokushaError.otherError(err)
             self.showError = true
+            completion(false)
         }
     }
     

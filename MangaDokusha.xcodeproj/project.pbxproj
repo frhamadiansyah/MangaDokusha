@@ -205,6 +205,60 @@
 			path = MangaListCard;
 			sourceTree = "<group>";
 		};
+		75B4CEC3282EC092003D7EA5 /* MangaListView */ = {
+			isa = PBXGroup;
+			children = (
+				75A44F942805F37100F07058 /* MangaListView.swift */,
+				75600872280EDD2F00B7A120 /* MangaListViewModel.swift */,
+			);
+			path = MangaListView;
+			sourceTree = "<group>";
+		};
+		75B4CEC4282EC0A9003D7EA5 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				75BDB2E627FE09B300C00EE7 /* ContentViewModel.swift */,
+				75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		75B4CEC5282EC0BC003D7EA5 /* ListChapterView */ = {
+			isa = PBXGroup;
+			children = (
+				75BDB2F028008A5E00C00EE7 /* ListChapterView.swift */,
+				75BDB2F228008BEF00C00EE7 /* ListChapterViewModel.swift */,
+			);
+			path = ListChapterView;
+			sourceTree = "<group>";
+		};
+		75B4CEC6282EC0D4003D7EA5 /* ChapterCard */ = {
+			isa = PBXGroup;
+			children = (
+				75B4CEB5282E2428003D7EA5 /* ChapterViewModel.swift */,
+				75ED7CB32818182200287BFF /* ChapterCard.swift */,
+			);
+			path = ChapterCard;
+			sourceTree = "<group>";
+		};
+		75B4CEC7282EC0F9003D7EA5 /* DownloadsView */ = {
+			isa = PBXGroup;
+			children = (
+				75B4CEAC282D3D73003D7EA5 /* DownloadsView.swift */,
+				75B4CEB7282E2C0B003D7EA5 /* DownloadsViewModel.swift */,
+			);
+			path = DownloadsView;
+			sourceTree = "<group>";
+		};
+		75B4CEC8282EC110003D7EA5 /* ReadingView */ = {
+			isa = PBXGroup;
+			children = (
+				75BDB2FD2800A61500C00EE7 /* ReadChapterViewModel.swift */,
+				75D8841B28253522005A86D6 /* ReadingView.swift */,
+			);
+			path = ReadingView;
+			sourceTree = "<group>";
+		};
 		75BDB2A427FDD1EA00C00EE7 = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +285,6 @@
 				75B4CEA2282C2F82003D7EA5 /* ViewModifiers */,
 				75D8841F282A86FC005A86D6 /* Extensions */,
 				75BDB2F42800939900C00EE7 /* Views */,
-				75BDB2E527FE099500C00EE7 /* ViewModels */,
 				75BDB2E227FE07CD00C00EE7 /* Models */,
 				75BDB2B027FDD1EB00C00EE7 /* MangaDokushaApp.swift */,
 				75BDB2B427FDD1EC00C00EE7 /* Assets.xcassets */,
@@ -297,34 +350,20 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		75BDB2E527FE099500C00EE7 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				75BDB2E627FE09B300C00EE7 /* ContentViewModel.swift */,
-				75BDB2F228008BEF00C00EE7 /* ListChapterViewModel.swift */,
-				75BDB2FD2800A61500C00EE7 /* ReadChapterViewModel.swift */,
-				75600872280EDD2F00B7A120 /* MangaListViewModel.swift */,
-				75ED7CBB2819CB3400287BFF /* BaseViewModel.swift */,
-				75B4CEB5282E2428003D7EA5 /* ChapterViewModel.swift */,
-				75B4CEB7282E2C0B003D7EA5 /* DownloadsViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		75BDB2F42800939900C00EE7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75B4CEC8282EC110003D7EA5 /* ReadingView */,
+				75B4CEC7282EC0F9003D7EA5 /* DownloadsView */,
+				75B4CEC6282EC0D4003D7EA5 /* ChapterCard */,
+				75B4CEC5282EC0BC003D7EA5 /* ListChapterView */,
+				75B4CEC4282EC0A9003D7EA5 /* ContentView */,
+				75B4CEC3282EC092003D7EA5 /* MangaListView */,
 				75B4CEBE282E6DB8003D7EA5 /* MangaListCard */,
 				75B4CEBD282E6DA0003D7EA5 /* DownloadsChapterView */,
 				75E607C8282B7D0E00FE2B05 /* BaseView */,
 				75BDB2F5280093A700C00EE7 /* HomeBaseView.swift */,
-				75BDB2F028008A5E00C00EE7 /* ListChapterView.swift */,
-				75BDB2B227FDD1EB00C00EE7 /* ContentView.swift */,
-				75A44F942805F37100F07058 /* MangaListView.swift */,
 				75E6D97628074920006CC550 /* TabBarView.swift */,
-				75ED7CB32818182200287BFF /* ChapterCard.swift */,
-				75D8841B28253522005A86D6 /* ReadingView.swift */,
-				75B4CEAC282D3D73003D7EA5 /* DownloadsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +400,7 @@
 		75E607C8282B7D0E00FE2B05 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				75ED7CBB2819CB3400287BFF /* BaseViewModel.swift */,
 				75E607C9282B7D2A00FE2B05 /* BaseView.swift */,
 				75B4CEA7282CC93A003D7EA5 /* TagsView.swift */,
 			);

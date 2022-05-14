@@ -40,6 +40,8 @@ class DownloadsChapterViewModel: BaseViewModel {
         do {
             chapters = try manager.context.fetch(request)
         } catch let error {
+            self.error = MangaDokushaError.otherError(error)
+            self.showError = true
             print("Error fetching : \(error.localizedDescription)")
         }
 
@@ -56,7 +58,13 @@ class DownloadsChapterViewModel: BaseViewModel {
         }
     }
     
-//    func checkManga(completion: @escaping () -> Void) {
-//        
-//    }
+    func deleteChapter(chapter: ChapterEntity, completion: @escaping (Bool) -> Void) {
+        guard let manga = chapter.manga else {return}
+        let count = manga.chapters?.count
+        deleteEntity(entity: chapter)
+        if count == 1 {
+            deleteEntity(entity: manga)
+            completion(true)
+        }
+    }
 }
