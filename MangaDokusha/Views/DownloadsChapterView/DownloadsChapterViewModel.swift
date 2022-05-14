@@ -16,6 +16,8 @@ class DownloadsChapterViewModel: BaseViewModel {
     
     @Published var chapters = [ChapterEntity]()
     
+    @Published var mangaTitle = ""
+    
     init(entity: MangaEntity) {
         self.entity = entity
     }
@@ -30,6 +32,8 @@ class DownloadsChapterViewModel: BaseViewModel {
     }
     
     func getChapter() {
+        mangaTitle = entity.title ?? "No Title"
+        
         let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
         
         let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)

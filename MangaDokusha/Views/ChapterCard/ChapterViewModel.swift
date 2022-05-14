@@ -16,6 +16,9 @@ class ChapterViewModel: BaseViewModel {
     
     var chapter: ChapterModel
     
+    var readChapterService = ReadChapterService(apiService: APIService())
+    
+    @Published var imageUrls = [String]()
     
     init(manga: MangaModel?, chapter: ChapterModel) {
         self.manga = manga
@@ -25,11 +28,47 @@ class ChapterViewModel: BaseViewModel {
     
     @Published var isDownloaded = false
     
+    func getChapterImageRequest() -> URLRequest {
+        return readChapterService.getReadChapterRequest(chapterId: chapter.id)
+    }
     
-    func addChapter() {
+    func loadChapterImageUrl(request: URLRequest, completion: @escaping ([String]) -> Void) {
+        imageUrls = []
+        readChapterService.getChapterImageModel(request: request)
+            .sink { error in
+                self.basicHandleCompletionError(error: error)
+                completion([])
+            } receiveValue: { model in
+                self.imageUrls.append(contentsOf: model.saverImageUrls)
+                completion(model.saverImageUrls)
+            }.store(in: &cancel)
+    }
+    
+    func downloadChapter() {
+        let request = getChapterImageRequest()
+        loadChapterImageUrl(request: request) { array  in
+            if array.count > 0 {
+                self.addChapter(pageUrls: array)
+            }
+        }
+    }
+    
+    
+    func addChapter(pageUrls: [String]) {
+
         let newChapter = ChapterEntity(context: manager.context)
         
         newChapter.translateChapterModel(model: chapter)
+        
+        newChapter.pageCount = Int16(pageUrls.count)
+        
+        for (index, element) in pageUrls.enumerated() {
+            let page = PageEntity(context: manager.context)
+            page.chapterId = chapter.id
+            page.pageNumber = Int16(index)
+            page.id = element
+            newChapter.addToPages(page)
+        }
         
         if let manga = manga {
             

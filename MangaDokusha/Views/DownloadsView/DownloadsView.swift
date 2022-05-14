@@ -32,6 +32,7 @@ struct DownloadsView: View {
             .onAppear {
                 vm.getManga()
             }
+            .navigationTitle("Downloads")
         }
         
     }
@@ -42,8 +43,6 @@ struct DownloadsView: View {
             vm.deleteEntity(entity: entity)
         }
         vm.getManga()
-//        let entity = vm.chapters[index.count]
-//        print(entity)
     }
 }
 

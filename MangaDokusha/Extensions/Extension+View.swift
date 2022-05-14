@@ -28,6 +28,7 @@ extension ChapterEntity {
         self.id = model.id
         self.chapter = model.chapter
         self.chapterTitle = model.title
+        
     }
 }
 

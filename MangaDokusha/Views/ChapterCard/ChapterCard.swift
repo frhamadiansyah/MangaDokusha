@@ -32,7 +32,7 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                vm.addChapter()
+                vm.downloadChapter()
                 print("\(vm.chapter.chapter) downloaded!!!")
             } label: {
                 if vm.isDownloaded {

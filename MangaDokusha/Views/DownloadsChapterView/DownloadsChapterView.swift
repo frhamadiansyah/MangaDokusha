@@ -18,7 +18,14 @@ struct DownloadsChapterView: View {
     var body: some View {
         List {
             ForEach(vm.chapters) { chapter in
-                Text(chapter.chapter ?? "")
+                NavigationLink {
+                    ReadDownloadedView(entity: chapter)
+                } label: {
+                    HStack {
+                        Text("\(chapter.chapter ?? "") :")
+                        Text("\(chapter.chapterTitle ?? "")")
+                    }
+                }
                     
             }
             .onDelete { index in
@@ -26,6 +33,7 @@ struct DownloadsChapterView: View {
             }
             
         }
+        .navigationTitle(vm.mangaTitle)
         
         .onAppear {
             vm.getChapter()
