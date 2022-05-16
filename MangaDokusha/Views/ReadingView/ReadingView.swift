@@ -19,15 +19,14 @@ struct ReadingView: View {
         ScrollView(showsIndicators: true) {
             ScrollViewReader { value in
                 LazyVStack(spacing: 0) {
-                    
                     ForEach(vm.imageUrls, id:\.self) { image in
                         CustomAsyncImage(url: image)
                     }
-                    
                 }
             }
         }
         .handleError(error: vm.error, showError: $vm.showError) { }
+        .navigationTitle("Chapter \(vm.currentChapter?.chapter ?? "")")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear(perform: {
             let req = vm.getChapterImageRequest()

@@ -19,6 +19,11 @@ class ContentViewModel: BaseViewModel {
         self.mangaId = mangaId
     }
     
+    init(manga: MangaModel) {
+        self.mangaId = manga.id
+        mangaModel = manga
+    }
+    
     
     func getDetailMangaRequest(mangaId: String) -> URLRequest {
         return mangaService.getMangaRequest(mangaId: mangaId)

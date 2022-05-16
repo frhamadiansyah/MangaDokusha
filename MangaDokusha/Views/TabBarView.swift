@@ -20,7 +20,7 @@ struct TabBarView: View {
                         Text("Home")
                     }
                 }
-            DownloadedView()
+            DownloadsView()
                 .tag(Tab.download)
                 .tabItem {
                     VStack {

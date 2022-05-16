@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import CoreData
 
 extension View {
     
@@ -19,4 +20,34 @@ extension View {
     }
     
     
+}
+
+extension ChapterEntity {
+    
+    func translateChapterModel(model: ChapterModel) {
+        self.id = model.id
+        self.chapter = model.chapter
+        self.chapterTitle = model.title
+        
+    }
+}
+
+
+extension MangaEntity {
+    
+    func translateMangaModel(model: MangaModel) {
+        self.id = model.id
+        self.title = model.title
+        guard let coverUrl = model.cover?.coverUrl else {return}
+        self.coverUrl = coverUrl
+        
+    }
+    
+    func translateToModel() -> MangaModel {
+        let model = MangaModel(id: self.id ?? "No Id",
+                               title: self.title ?? "No Title",
+                               description: "No Description")
+        print(model)
+        return model
+    }
 }

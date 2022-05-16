@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject var vm: ContentViewModel
+    @StateObject var vm: ContentViewModel
     
     init(mangaId: String) {
-        self.vm = ContentViewModel(mangaId: mangaId)
+        _vm = StateObject(wrappedValue: ContentViewModel(mangaId: mangaId))
     }
     
     init(mangaModel: MangaModel) {
-        self.vm = ContentViewModel(mangaId: mangaModel.id)
-        self.vm.mangaModel = mangaModel
+        _vm = StateObject(wrappedValue: ContentViewModel(manga: mangaModel))
+//        self.vm = ContentViewModel(mangaId: mangaModel.id)
+//        self.vm.mangaModel = mangaModel
     }
     
 //    let state
@@ -32,7 +33,9 @@ struct ContentView: View {
                         .frame(width: 200, height: 400, alignment: .center)
                         .cornerRadius(5)
 
-                    authorAndArtistView(author: author , artist: artist)
+                    authorAndArtistView(author: author, artist: artist)
+                    
+                    goToListChapterView(mangaDetail: detail)
 
                     TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: detail.contentRating.getColor())
                     
@@ -40,7 +43,6 @@ struct ContentView: View {
                     
                     TagsView(title: "Status", tags: [detail.status.rawValue], color: detail.status.getColor())
                     
-                    goToListChapterView(mangaDetail: detail)
                         
                     Text(detail.description)
                         .font(.body)
@@ -95,7 +97,7 @@ struct ContentView: View {
     func goToListChapterView(mangaDetail: MangaModel) -> some View {
         NavigationLink {
             BaseView {
-                ListChapterView(vm: ListChapterViewModel(manga: mangaDetail))
+                ListChapterView(manga: mangaDetail)
             }
 
 //            Text("Dummy")
