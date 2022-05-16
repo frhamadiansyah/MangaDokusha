@@ -97,7 +97,7 @@ struct ContentView: View {
     func goToListChapterView(mangaDetail: MangaModel) -> some View {
         NavigationLink {
             BaseView {
-                ListChapterView(vm: ListChapterViewModel(manga: mangaDetail))
+                ListChapterView(manga: mangaDetail)
             }
 
 //            Text("Dummy")

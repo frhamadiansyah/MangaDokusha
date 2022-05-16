@@ -42,4 +42,12 @@ extension MangaEntity {
         self.coverUrl = coverUrl
         
     }
+    
+    func translateToModel() -> MangaModel {
+        let model = MangaModel(id: self.id ?? "No Id",
+                               title: self.title ?? "No Title",
+                               description: "No Description")
+        print(model)
+        return model
+    }
 }

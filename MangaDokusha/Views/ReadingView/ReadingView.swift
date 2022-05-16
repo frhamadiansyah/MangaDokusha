@@ -26,6 +26,7 @@ struct ReadingView: View {
             }
         }
         .handleError(error: vm.error, showError: $vm.showError) { }
+        .navigationTitle("Chapter \(vm.currentChapter?.chapter ?? "")")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear(perform: {
             let req = vm.getChapterImageRequest()

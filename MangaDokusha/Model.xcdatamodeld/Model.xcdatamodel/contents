@@ -5,20 +5,20 @@
         <attribute name="chapterTitle" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="pageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="manga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MangaEntity" inverseName="chapters" inverseEntity="MangaEntity"/>
-        <relationship name="pages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PageEntity" inverseName="chapter" inverseEntity="PageEntity"/>
+        <relationship name="manga" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MangaEntity" inverseName="chapters" inverseEntity="MangaEntity"/>
+        <relationship name="pages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PageEntity" inverseName="chapter" inverseEntity="PageEntity"/>
     </entity>
     <entity name="MangaEntity" representedClassName="MangaEntity" syncable="YES" codeGenerationType="class">
         <attribute name="coverUrl" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ChapterEntity" inverseName="manga" inverseEntity="ChapterEntity"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="ChapterEntity" inverseName="manga" inverseEntity="ChapterEntity"/>
     </entity>
     <entity name="PageEntity" representedClassName="PageEntity" syncable="YES" codeGenerationType="class">
         <attribute name="chapterId" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="pageNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChapterEntity" inverseName="pages" inverseEntity="ChapterEntity"/>
+        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChapterEntity" inverseName="pages" inverseEntity="ChapterEntity"/>
     </entity>
     <elements>
         <element name="ChapterEntity" positionX="285.7670288085938" positionY="-176.973876953125" width="128" height="119"/>

@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ListChapterView: View {
     
-    @ObservedObject var vm: ListChapterViewModel
+    @StateObject var vm: ListChapterViewModel
     @State var readChapter: Bool = false
+    
+    init(manga: MangaModel) {
+        _vm = StateObject(wrappedValue: ListChapterViewModel(manga: manga))
+    }
     
     var body: some View {
         List {
@@ -53,7 +57,7 @@ struct ListChapterView: View {
 
 struct ListChapterView_Previews: PreviewProvider {
     static var previews: some View {
-        ListChapterView(vm: ListChapterViewModel(manga: MangaModel()))
+        ListChapterView(manga: MangaModel())
     }
 }
 

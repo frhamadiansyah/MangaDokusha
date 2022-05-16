@@ -17,27 +17,38 @@ struct DownloadsChapterView: View {
     
     var body: some View {
         List {
-            ForEach(vm.chapters) { chapter in
-                NavigationLink {
-                    ReadDownloadedView(entity: chapter)
-                } label: {
-                    HStack {
-                        Text("\(chapter.chapter ?? "") :")
-                        Text("\(chapter.chapterTitle ?? "")")
+            Section {
+                ForEach(vm.chapters) { chapter in
+                    NavigationLink {
+                        ReadDownloadedView(entity: chapter)
+                    } label: {
+                        HStack {
+                            Text("\(chapter.chapter ?? "") :")
+                            Text("\(chapter.chapterTitle ?? "")")
+                        }
                     }
-                }
                     
+                }
+                .onDelete { index in
+                    delete(index: index)
+                }
             }
-            .onDelete { index in
-                delete(index: index)
+            Section {
+                NavigationLink {
+                    ListChapterView(manga: vm.entity.translateToModel())
+                } label: {
+                    Text("See All Chapters")
+                }
+                
+                
             }
             
         }
-        .navigationTitle(vm.mangaTitle)
-        
         .onAppear {
             vm.getChapter()
         }
+        .navigationTitle(vm.mangaTitle)
+
     }
     
     func delete(index: IndexSet) {

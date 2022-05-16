@@ -24,11 +24,13 @@ class CoreDataManager {
     }
     
     func save() throws {
-        do {
-            try context.save()
-            print("Save successfully")
-        } catch let error {
-            throw MangaDokushaError.otherError(error)
+        if context.hasChanges {
+            do {
+                try self.context.save()
+                print("Save successfully")
+            } catch let error {
+                throw MangaDokushaError.otherError(error)
+            }
         }
         
     }
