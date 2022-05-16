@@ -16,8 +16,6 @@ struct ContentView: View {
     
     init(mangaModel: MangaModel) {
         _vm = StateObject(wrappedValue: ContentViewModel(manga: mangaModel))
-//        self.vm = ContentViewModel(mangaId: mangaModel.id)
-//        self.vm.mangaModel = mangaModel
     }
     
 //    let state
@@ -58,9 +56,6 @@ struct ContentView: View {
             let urlReq = vm.getDetailMangaRequest(mangaId: vm.mangaId)
             vm.getDetailManga(urlRequest: urlReq)
         }
-//        .background {
-//            errorHandling(error: vm.error, showError: $vm.showError) { }
-//        }
     }
     
     func authorAndArtistView(author: CreatorModel, artist: CreatorModel) -> some View {
@@ -95,13 +90,7 @@ struct ContentView: View {
     
     
     func goToListChapterView(mangaDetail: MangaModel) -> some View {
-        NavigationLink {
-            BaseView {
-                ListChapterView(manga: mangaDetail)
-            }
-
-//            Text("Dummy")
-        } label: {
+        Navigator(.listChapter(mangaDetail)) {
             HStack {
                 Text("Chapter List")
                     .font(.title3)
@@ -113,7 +102,6 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(Color.blue, lineWidth: 4)
                 )
-            
         }
     }
 }

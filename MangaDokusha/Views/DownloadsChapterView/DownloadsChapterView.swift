@@ -19,28 +19,22 @@ struct DownloadsChapterView: View {
         List {
             Section {
                 ForEach(vm.chapters) { chapter in
-                    NavigationLink {
-                        ReadDownloadedView(entity: chapter)
-                    } label: {
+                    Navigator(.offlineReading(chapter)) {
                         HStack {
                             Text("\(chapter.chapter ?? "") :")
                             Text("\(chapter.chapterTitle ?? "")")
                         }
                     }
-                    
                 }
                 .onDelete { index in
                     delete(index: index)
                 }
             }
             Section {
-                NavigationLink {
-                    ListChapterView(manga: vm.entity.translateToModel())
-                } label: {
+                Navigator(.listChapter(vm.entity.translateToModel())) {
                     Text("See All Chapters")
                 }
-                
-                
+
             }
             
         }

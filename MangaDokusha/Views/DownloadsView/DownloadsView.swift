@@ -16,12 +16,10 @@ struct DownloadsView: View {
             List {
                 ForEach(vm.mangas) {
                     manga in
-                    NavigationLink {
-                        DownloadsChapterView(entity: manga)
-                    } label: {
+                    
+                    Navigator(.offlineListChapter(manga)) {
                         MangaListCard(entity: manga)
                     }
-                    
                 }
                 .onDelete { index in
                     delete(index: index)

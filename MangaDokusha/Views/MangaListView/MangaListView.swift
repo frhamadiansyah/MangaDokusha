@@ -13,11 +13,7 @@ struct MangaListView: View {
     var body: some View {
         List {
             ForEach(vm.mangaList) { manga in
-                NavigationLink {
-                    BaseView {
-                        ContentView(mangaModel: manga)
-                    }
-                } label: {
+                Navigator(.content(manga)) {
                     MangaListCard(manga: manga)
                 }
                 .onAppear {

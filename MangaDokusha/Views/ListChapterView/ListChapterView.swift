@@ -19,11 +19,7 @@ struct ListChapterView: View {
     var body: some View {
         List {
             ForEach(vm.listChapter) { chapter in
-                NavigationLink(destination: {
-                    BaseView {
-                        ReadingView(vm: ReadChapterViewModel(manga: vm.currentManga, chapter: chapter))
-                    }
-                }, label: {
+                Navigator(.onlineReading(vm.currentManga, chapter), content: {
                     ChapterCard(manga: vm.currentManga, chapter: chapter)
                 })
                 .onAppear {
