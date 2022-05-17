@@ -27,35 +27,43 @@ struct DownloadsChapterView: View {
                     }
                 }
                 .onDelete { index in
-                    delete(index: index)
+                    Task {
+                        await vm.deleteItems(offsets:index)
+                    }
                 }
             }
             Section {
-                Navigator(.listChapter(vm.entity.translateToModel())) {
+                Navigator(.listChapter(MangaModel(id: vm.entity.id ?? "", title: "", description: ""))) {
                     Text("See All Chapters")
                 }
 
             }
             
         }
+        .handleError(error: vm.error, showError: $vm.showError) {
+            self.presentationMode.wrappedValue.dismiss()
+        }
         .onAppear {
-            vm.getChapter()
+            Task {
+                await vm.getChapters()
+            }
+//            vm.getChapter()
         }
         .navigationTitle(vm.mangaTitle)
 
     }
     
-    func delete(index: IndexSet) {
-        for i in index {
-            let entity = vm.chapters[i]
-            vm.deleteChapter(chapter: entity) { bool in
-                if bool {
-                    self.presentationMode.wrappedValue.dismiss()
-                }
-            }
-        }
-        vm.getChapter()
-    }
+//    func delete(index: IndexSet) {
+//        for i in index {
+//            let entity = vm.chapters[i]
+//            vm.deleteChapter(chapter: entity) { bool in
+//                if bool {
+//                    self.presentationMode.wrappedValue.dismiss()
+//                }
+//            }
+//        }
+//        vm.getChapter()
+//    }
 }
 
 struct DownloadsChapterView_Previews: PreviewProvider {

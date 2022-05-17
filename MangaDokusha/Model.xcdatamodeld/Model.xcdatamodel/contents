@@ -5,7 +5,7 @@
         <attribute name="chapterTitle" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="pageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="manga" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="MangaEntity" inverseName="chapters" inverseEntity="MangaEntity"/>
+        <relationship name="manga" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MangaEntity" inverseName="chapters" inverseEntity="MangaEntity"/>
         <relationship name="pages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PageEntity" inverseName="chapter" inverseEntity="PageEntity"/>
     </entity>
     <entity name="MangaEntity" representedClassName="MangaEntity" syncable="YES" codeGenerationType="class">

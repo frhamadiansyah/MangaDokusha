@@ -34,4 +34,29 @@ class CoreDataManager {
         }
         
     }
+    
+    func save2() async throws {
+        if context.hasChanges {
+            try await context.perform { 
+                do {
+                    try self.context.save()
+                } catch {
+                    throw MangaDokushaError.otherError(error)
+                    
+                }
+            }
+        }
+    }
+    
+    func delete(_ object: NSManagedObject) {
+        context.delete(object)
+    }
+    
+    func deleteAll() async throws {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = MangaEntity.fetchRequest()
+        let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        try await context.perform {
+            _ = try? self.container.viewContext.execute(batchDeleteRequest)
+        }
+    }
 }

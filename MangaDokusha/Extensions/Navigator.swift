@@ -58,9 +58,9 @@ struct Navigator<Content: View>: View {
 
         case .offlineListChapter(let mangaEntity):
             NavigationLink {
-                BaseView {
+//                BaseView {
                     DownloadsChapterView(entity: mangaEntity)
-                }
+//                }
             } label: {
                 content
             }

@@ -29,5 +29,14 @@ class BaseViewModel: ObservableObject {
         }
     }
     
+    func basicHandleError(_ error: Error) {
+        if let err = error as? MangaDokushaError {
+            self.error = err
+        } else {
+            self.error = MangaDokushaError.otherError(error)
+        }
+        self.showError = true
+    }
+    
     
 }

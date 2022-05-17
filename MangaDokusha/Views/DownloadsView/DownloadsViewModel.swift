@@ -12,37 +12,56 @@ class DownloadsViewModel: BaseViewModel {
     let manager = CoreDataManager.instance
     @Published var mangas: [MangaEntity] = []
     
-    func save() {
+    
+    @MainActor
+    func deleteItems(offsets: IndexSet) async {
+    offsets.map { mangas [$0] }.forEach(manager.delete)
         do {
-            try manager.save()
-        } catch let err {
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
+            try await manager.save2()
+            try await getMangas()
+        } catch {
+            basicHandleError(error)
         }
     }
     
-    func deleteEntity(entity: NSManagedObject) {
-        do {
-            try manager.context.delete(entity)
-            save()
-            print("Delete success")
-        } catch let err {
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
-        }
-    }
-    
-    func getManga() {
+    func fetchMangas() async throws -> [MangaEntity] {
         let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
         
         let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
         request.sortDescriptors = [sort]
         
-        do {
-            mangas = try manager.context.fetch(request)
-        } catch let error {
-            print("Error fetching : \(error.localizedDescription)")
+        return try await manager.context.perform {
+            return try request.execute()
         }
-
     }
+    
+    @MainActor
+    func getMangas() async {
+        do {
+            mangas = try await fetchMangas()
+        } catch let err {
+            basicHandleError(err)
+        }
+        
+    }
+    
+    func deleteAll() {
+        Task {
+            try await manager.deleteAll()
+            try await getMangas()
+        }
+    }
+//    func getManga() {
+//        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
+//
+//        let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
+//        request.sortDescriptors = [sort]
+//
+//        do {
+//            mangas = try manager.context.fetch(request)
+//        } catch let error {
+//            print("Error fetching : \(error.localizedDescription)")
+//        }
+//
+//    }
 }

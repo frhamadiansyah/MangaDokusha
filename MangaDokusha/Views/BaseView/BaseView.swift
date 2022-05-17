@@ -22,9 +22,7 @@ struct BaseView<Content>: View where Content: View {
                     if value.translation.width > 0 {
                         self.presentationMode.wrappedValue.dismiss()
                     }
-                    else {
-                        print("SWIPER!!!")
-                    }
+                    
                     
                 })
             )

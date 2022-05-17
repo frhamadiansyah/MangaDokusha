@@ -9,8 +9,8 @@ import SwiftUI
 
 struct DownloadsView: View {
     @StateObject var vm = DownloadsViewModel()
-    
-    @State var isLoading: Bool = false
+    @State private var confirmDelete = false
+
     var body: some View {
         NavigationView {
             List {
@@ -22,25 +22,41 @@ struct DownloadsView: View {
                     }
                 }
                 .onDelete { index in
-                    delete(index: index)
+                    Task {
+                        await vm.deleteItems(offsets: index)
+                    }
+
                 }
                 
             }
-            .isLoading($isLoading)
             .onAppear {
-                vm.getManga()
+                Task {
+                    await vm.getMangas()
+                }
+                
+            }
+            .handleError(error: vm.error, showError: $vm.showError) { }
+            .alert(isPresented: $confirmDelete) {
+                Alert(
+                    title: Text("Are you sure you want to delete all downloads?"),
+                    message: Text("There is no undo"),
+                    primaryButton: .destructive(Text("Delete")) {
+                        vm.deleteAll()
+                    },
+                    secondaryButton: .cancel()
+                )
+            }
+            .toolbar {
+                Button {
+                    confirmDelete.toggle()
+                } label: {
+                    Image(systemName: "trash")
+                        .foregroundColor(.red)
+                }
             }
             .navigationTitle("Downloads")
         }
         
-    }
-    
-    func delete(index: IndexSet) {
-        for i in index {
-            let entity = vm.mangas[i]
-            vm.deleteEntity(entity: entity)
-        }
-        vm.getManga()
     }
 }
 
