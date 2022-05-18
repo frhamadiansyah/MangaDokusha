@@ -61,7 +61,7 @@ class ChapterViewModel: BaseViewModel {
         let request = getChapterImageRequest()
         loadChapterImageUrl(request: request) { array, filename  in
             if array.count > 0 {
-                Task {
+                Task(priority: .background) {
                     await self.addChapterr(pageUrls: array, fileName: filename)
                     self.isLoading = false
                     self.isDownloaded = true

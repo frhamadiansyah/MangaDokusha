@@ -71,7 +71,7 @@ class LocalFileManager {
     func deleteAll() {
         guard let documentsUrl = FileManager
             .default
-            .urls(for: .cachesDirectory, in: .userDomainMask)
+            .urls(for: .documentDirectory, in: .userDomainMask)
             .first
         else { return }
         
