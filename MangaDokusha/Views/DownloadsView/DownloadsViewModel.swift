@@ -10,6 +10,8 @@ import CoreData
 
 class DownloadsViewModel: BaseViewModel {
     let manager = CoreDataManager.instance
+    let fileManager = LocalFileManager.shared
+    
     @Published var mangas: [MangaEntity] = []
     
     
@@ -49,19 +51,7 @@ class DownloadsViewModel: BaseViewModel {
         Task {
             try await manager.deleteAll()
             try await getMangas()
+            fileManager.deleteAll()
         }
     }
-//    func getManga() {
-//        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
-//
-//        let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
-//        request.sortDescriptors = [sort]
-//
-//        do {
-//            mangas = try manager.context.fetch(request)
-//        } catch let error {
-//            print("Error fetching : \(error.localizedDescription)")
-//        }
-//
-//    }
 }

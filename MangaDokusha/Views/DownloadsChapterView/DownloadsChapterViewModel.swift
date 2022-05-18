@@ -22,20 +22,20 @@ class DownloadsChapterViewModel: BaseViewModel {
         self.entity = entity
         mangaTitle = entity.title ?? "No Title"
     }
-
+    
     @MainActor
     func deleteItems(offsets: IndexSet) async {
-    offsets.map { chapters [$0] }.forEach(manager.delete)
+        offsets.map { chapters [$0] }.forEach(manager.delete)
         do {
             try await manager.save2()
             let count = try await fetchChapters()
             if count.isEmpty {
                 try manager.delete(entity)
+                try await manager.save2()
                 throw MangaDokushaError.noChapter
             } else {
                 chapters = count
             }
-//            try await getChapters()
         } catch {
             basicHandleError(error)
         }
@@ -91,7 +91,7 @@ class DownloadsChapterViewModel: BaseViewModel {
             self.showError = true
             print("Error fetching : \(error.localizedDescription)")
         }
-
+        
     }
     
     func deleteEntity(entity: NSManagedObject) {

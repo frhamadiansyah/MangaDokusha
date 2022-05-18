@@ -7,13 +7,16 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class ReadDownloadedViewModel: BaseViewModel {
     
     let entity: ChapterEntity
     let manager = CoreDataManager.instance
+    let fileManager = LocalFileManager.shared
     
     @Published var imageUrls = [String]()
+    @Published var images = [UIImage]()
     
     @Published var pageTitle = ""
     
@@ -22,7 +25,7 @@ class ReadDownloadedViewModel: BaseViewModel {
     }
     
     func getPages() {
-        pageTitle = "Chapter \(entity.chapter ?? "")"
+        pageTitle = "Chapter \(entity.chapter.toString())"
         
         let request = NSFetchRequest<PageEntity>(entityName: "PageEntity")
         
@@ -35,6 +38,9 @@ class ReadDownloadedViewModel: BaseViewModel {
         do {
             let pages = try manager.context.fetch(request)
             imageUrls = pages.map({$0.id ?? ""})
+            for i in pages {
+                images.append(fileManager.getImage(name: i.id ?? "") ?? UIImage())
+            }
         } catch let error {
             print("Error fetching : \(error.localizedDescription)")
         }

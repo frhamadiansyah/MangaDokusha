@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ChapterEntity" representedClassName="ChapterEntity" syncable="YES" codeGenerationType="class">
-        <attribute name="chapter" optional="YES" attributeType="String"/>
+        <attribute name="chapter" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="chapterTitle" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="pageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
@@ -17,12 +17,13 @@
     <entity name="PageEntity" representedClassName="PageEntity" syncable="YES" codeGenerationType="class">
         <attribute name="chapterId" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="pageId" optional="YES" attributeType="String"/>
         <attribute name="pageNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChapterEntity" inverseName="pages" inverseEntity="ChapterEntity"/>
     </entity>
     <elements>
         <element name="ChapterEntity" positionX="285.7670288085938" positionY="-176.973876953125" width="128" height="119"/>
         <element name="MangaEntity" positionX="-36" positionY="9" width="128" height="89"/>
-        <element name="PageEntity" positionX="171" positionY="0" width="128" height="89"/>
+        <element name="PageEntity" positionX="171" positionY="0" width="128" height="104"/>
     </elements>
 </model>

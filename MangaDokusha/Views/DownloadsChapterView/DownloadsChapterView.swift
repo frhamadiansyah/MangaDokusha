@@ -21,7 +21,7 @@ struct DownloadsChapterView: View {
                 ForEach(vm.chapters) { chapter in
                     Navigator(.offlineReading(chapter)) {
                         HStack {
-                            Text("\(chapter.chapter ?? "") :")
+                            Text("\(chapter.chapter.toString()) :")
                             Text("\(chapter.chapterTitle ?? "")")
                         }
                     }

@@ -230,4 +230,5 @@ struct RawMangaModel: Decodable {
 struct RawMangaChapterModel: Decodable {
     let chapter: String
     let title: String?
+    
 }

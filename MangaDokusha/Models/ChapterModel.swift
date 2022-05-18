@@ -9,7 +9,7 @@ import Foundation
 
 struct ChapterModel: Identifiable {
     let id: String
-    var chapter: String = ""
+    var chapter: Float = 0
     var title: String = "No Title"
     var group: String = "Unknown"
     
@@ -21,7 +21,7 @@ struct ChapterModel: Identifiable {
         guard case .chapter(let chap) = response.attributes else {
             return
         }
-        chapter = chap.chapter
+        chapter = Float(chap.chapter) ?? 0
         title = chap.title ?? "no title"
         
         guard let relationships = response.relationships else { return }
