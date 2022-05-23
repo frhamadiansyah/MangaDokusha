@@ -31,4 +31,10 @@ class MangaCardViewModel: BaseViewModel {
         title = entity?.title
         count = entity?.chapters?.count ?? 0
     }
+    
+    func updateChapterCount() {
+        let chapters = entity?.chapters
+        print(chapters?.count)
+        count = chapters?.count ?? 0
+    }
 }

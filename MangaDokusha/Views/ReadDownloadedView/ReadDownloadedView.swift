@@ -17,9 +17,6 @@ struct ReadDownloadedView: View {
         ScrollView(showsIndicators: true) {
             ScrollViewReader { value in
                 LazyVStack(spacing: 0) {
-//                    ForEach(vm.imageUrls, id:\.self) { image in
-//                        CustomAsyncImage(url: image)
-//                    }
                     ForEach(vm.images, id:\.self) { image in
                         Image(uiImage: image)
                             .resizable()

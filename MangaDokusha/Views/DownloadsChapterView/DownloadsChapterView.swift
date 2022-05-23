@@ -52,18 +52,7 @@ struct DownloadsChapterView: View {
         .navigationTitle(vm.mangaTitle)
 
     }
-    
-//    func delete(index: IndexSet) {
-//        for i in index {
-//            let entity = vm.chapters[i]
-//            vm.deleteChapter(chapter: entity) { bool in
-//                if bool {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }
-//            }
-//        }
-//        vm.getChapter()
-//    }
+
 }
 
 struct DownloadsChapterView_Previews: PreviewProvider {

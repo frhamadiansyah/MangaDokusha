@@ -43,7 +43,6 @@ class ReadDownloadedViewModel: BaseViewModel {
             let mangaId = entity.manga?.id ?? ""
             
             for i in pages {
-//                images.append(fileManager.getImage(name: i.id ?? "") ?? UIImage())
                 let pageId = i.id ?? ""
                 let page = fileManager.getImage(name: pageId, chapter: chapterId, manga: mangaId)
                 

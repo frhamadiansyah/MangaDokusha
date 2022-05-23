@@ -16,24 +16,6 @@ class LocalFileManager {
     
     
     //MARK: - Save
-    func saveImage(data: Data, name: String) {
-        
-        guard
-            let path = getPathForImage(name: name) else {
-            print("Error getting data")
-            return
-        }
-        
-        
-        do {
-            try data.write(to: path)
-            print("✅ success saving")
-        } catch let error {
-            print("❌ error saving : \(error)")
-        }
-        
-    }
-    
     func saveImage(data: Data, name: String, chapter: String, manga: String) {
         
         guard
@@ -46,27 +28,16 @@ class LocalFileManager {
         do {
             try data.write(to: path)
             print("✅ success saving")
-        } catch let error {
+        } catch {
             print("❌ error saving : \(error)")
         }
         
     }
     
     //MARK: - Fetch
-    func getImage(name: String) -> UIImage? {
-        guard
-            let path = getPathForImage(name: name)?.path,
-            FileManager.default.fileExists(atPath: path) else {
-            print("error getting path")
-            return nil
-        }
-        
-        return UIImage(contentsOfFile: path)
-    }
     
     func getImage(name: String, chapter: String, manga: String) -> UIImage? {
         guard
-//            let path = getPathForImage(name: name)?.path,
             let path = getPathForImage(name: name, chapter: chapter, manga: manga)?.path,
             FileManager.default.fileExists(atPath: path) else {
             print("error getting path")
@@ -77,36 +48,7 @@ class LocalFileManager {
     }
     
     //MARK: - Get Path
-    func getPathForImage(name: String) -> URL? {
-        guard var path = manager
-            .urls(for: .documentDirectory, in: .userDomainMask)
-            .first
-        else { return nil }
-        
-        path = path.appendingPathComponent("fandriTesting")
-        let exist = manager.fileExists(atPath: path.path)
-        
-        if exist {
-            path = path.appendingPathComponent("\(name)")
-            
-        } else {
-            do {
-                try manager.createDirectory(at: path,
-                                            withIntermediateDirectories: true,
-                                            attributes: [:])
-                path = path.appendingPathComponent("\(name)")
-            } catch {
-                print(error.localizedDescription)
-                return nil
-            }
 
-        }
-        
-        print(path.path)
-        return path
-        
-    }
-    
     func getDirectoryPath(_ base: URL,_ dir: String) -> URL? {
         let pathUrl = base.appendingPathComponent(dir)
         let exist = manager.fileExists(atPath: pathUrl.path)
