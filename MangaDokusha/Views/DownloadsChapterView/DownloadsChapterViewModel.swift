@@ -12,6 +12,8 @@ class DownloadsChapterViewModel: BaseViewModel {
     
     let manager = CoreDataManager.instance
     
+    let fileManager = LocalFileManager.shared
+    
     @Published var entity: MangaEntity
     
     @Published var chapters = [ChapterEntity]()
@@ -25,7 +27,13 @@ class DownloadsChapterViewModel: BaseViewModel {
     
     @MainActor
     func deleteItems(offsets: IndexSet) async {
-        offsets.map { chapters [$0] }.forEach(manager.delete)
+        let mangaId = entity.id ?? ""
+        offsets.map { chapters [$0] }.forEach { chapter in
+            let chapterId = chapter.id ?? ""
+            manager.delete(chapter)
+            fileManager.deleteChapter(chapter: chapterId, manga: mangaId)
+        }
+        
         do {
             try await manager.save2()
             let count = try await fetchChapters()

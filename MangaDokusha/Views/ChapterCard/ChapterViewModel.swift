@@ -92,7 +92,8 @@ class ChapterViewModel: BaseViewModel {
             
             do {
                 let data = try await loadItems(from: url)
-                fileManager.saveImage(data: data, name: name)
+//                fileManager.saveImage(data: data, name: name)
+                fileManager.saveImage(data: data, name: name, chapter: chapter.id, manga: manga.id)
             } catch {
                 print("GAGAL")
             }

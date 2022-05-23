@@ -12,6 +12,10 @@ class LocalFileManager {
     
     static let shared = LocalFileManager()
     
+    let manager = FileManager.default
+    
+    
+    //MARK: - Save
     func saveImage(data: Data, name: String) {
         
         guard
@@ -30,6 +34,25 @@ class LocalFileManager {
         
     }
     
+    func saveImage(data: Data, name: String, chapter: String, manga: String) {
+        
+        guard
+            let path = getPathForImage(name: name, chapter: chapter, manga: manga) else {
+            print("Error getting data")
+            return
+        }
+        
+        
+        do {
+            try data.write(to: path)
+            print("✅ success saving")
+        } catch let error {
+            print("❌ error saving : \(error)")
+        }
+        
+    }
+    
+    //MARK: - Fetch
     func getImage(name: String) -> UIImage? {
         guard
             let path = getPathForImage(name: name)?.path,
@@ -41,36 +64,121 @@ class LocalFileManager {
         return UIImage(contentsOfFile: path)
     }
     
-    func getPathForImage(name: String) -> URL? {
-        guard let path = FileManager
-            .default
-            .urls(for: .cachesDirectory, in: .userDomainMask)
-            .first?
-            .appendingPathComponent("\(name)")
-        else { return nil }
-        
-        return path
-    }
-    
-    func deleteImage(name: String) {
+    func getImage(name: String, chapter: String, manga: String) -> UIImage? {
         guard
-            let path = getPathForImage(name: name),
-            FileManager.default.fileExists(atPath: path.path) else {
+//            let path = getPathForImage(name: name)?.path,
+            let path = getPathForImage(name: name, chapter: chapter, manga: manga)?.path,
+            FileManager.default.fileExists(atPath: path) else {
             print("error getting path")
-            return
+            return nil
         }
         
+        return UIImage(contentsOfFile: path)
+    }
+    
+    //MARK: - Get Path
+    func getPathForImage(name: String) -> URL? {
+        guard var path = manager
+            .urls(for: .documentDirectory, in: .userDomainMask)
+            .first
+        else { return nil }
+        
+        path = path.appendingPathComponent("fandriTesting")
+        let exist = manager.fileExists(atPath: path.path)
+        
+        if exist {
+            path = path.appendingPathComponent("\(name)")
+            
+        } else {
+            do {
+                try manager.createDirectory(at: path,
+                                            withIntermediateDirectories: true,
+                                            attributes: [:])
+                path = path.appendingPathComponent("\(name)")
+            } catch {
+                print(error.localizedDescription)
+                return nil
+            }
+
+        }
+        
+        print(path.path)
+        return path
+        
+    }
+    
+    func getDirectoryPath(_ base: URL,_ dir: String) -> URL? {
+        let pathUrl = base.appendingPathComponent(dir)
+        let exist = manager.fileExists(atPath: pathUrl.path)
+        
+        if exist {
+            return pathUrl
+        } else {
+            do {
+                try manager.createDirectory(at: pathUrl,
+                                            withIntermediateDirectories: true,
+                                            attributes: [:])
+                return pathUrl
+            } catch {
+                print(error.localizedDescription)
+                return nil
+            }
+        }
+    }
+    
+    func getPathForImage(name: String, chapter: String, manga: String) -> URL? {
+        guard let base = manager
+            .urls(for: .documentDirectory, in: .userDomainMask)
+            .first
+        else { return nil }
+        
+        guard let mangaPath = getDirectoryPath(base, manga) else { return nil }
+        
+        guard let chapterPath = getDirectoryPath(mangaPath, chapter) else { return nil }
+        
+        let filePath = chapterPath.appendingPathComponent("\(name)")
+
+        return filePath
+        
+    }
+    
+    //MARK: - Delete
+    func deletePath(_ pathUrl: URL) {
+
         do {
-            try FileManager.default.removeItem(at: path)
+            try FileManager.default.removeItem(at: pathUrl)
             print("successfully deleted")
         } catch let error {
             print("error deleting file : \(error)")
         }
     }
     
+    func deleteChapter(chapter: String, manga: String) {
+        guard let base = manager
+            .urls(for: .documentDirectory, in: .userDomainMask)
+            .first
+        else { return }
+        
+        guard let mangaPath = getDirectoryPath(base, manga) else { return }
+        
+        guard let chapterPath = getDirectoryPath(mangaPath, chapter) else { return }
+        
+        deletePath(chapterPath)
+    }
+    
+    func deleteManga(manga: String) {
+        guard let base = manager
+            .urls(for: .documentDirectory, in: .userDomainMask)
+            .first
+        else { return }
+        
+        guard let mangaPath = getDirectoryPath(base, manga) else { return }
+        
+        deletePath(mangaPath)
+    }
+    
     func deleteAll() {
-        guard let documentsUrl = FileManager
-            .default
+        guard let documentsUrl = manager
             .urls(for: .documentDirectory, in: .userDomainMask)
             .first
         else { return }

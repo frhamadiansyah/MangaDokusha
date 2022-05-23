@@ -17,7 +17,11 @@ class DownloadsViewModel: BaseViewModel {
     
     @MainActor
     func deleteItems(offsets: IndexSet) async {
-    offsets.map { mangas [$0] }.forEach(manager.delete)
+    offsets.map { mangas [$0] }.forEach { manga in
+        let mangaId = manga.id ?? ""
+        manager.delete(manga)
+        fileManager.deleteManga(manga: mangaId)
+    }
         do {
             try await manager.save2()
             try await getMangas()
