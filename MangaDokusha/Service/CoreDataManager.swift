@@ -37,7 +37,7 @@ class CoreDataManager {
     
     func save2() async throws {
         if context.hasChanges {
-            try await context.perform { 
+            try await context.perform {
                 do {
                     try self.context.save()
                 } catch {

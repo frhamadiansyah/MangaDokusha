@@ -21,7 +21,7 @@ struct DownloadsChapterView: View {
                 ForEach(vm.chapters) { chapter in
                     Navigator(.offlineReading(chapter)) {
                         HStack {
-                            Text("\(chapter.chapter ?? "") :")
+                            Text("\(chapter.chapter.toString()) :")
                             Text("\(chapter.chapterTitle ?? "")")
                         }
                     }
@@ -52,18 +52,7 @@ struct DownloadsChapterView: View {
         .navigationTitle(vm.mangaTitle)
 
     }
-    
-//    func delete(index: IndexSet) {
-//        for i in index {
-//            let entity = vm.chapters[i]
-//            vm.deleteChapter(chapter: entity) { bool in
-//                if bool {
-//                    self.presentationMode.wrappedValue.dismiss()
-//                }
-//            }
-//        }
-//        vm.getChapter()
-//    }
+
 }
 
 struct DownloadsChapterView_Previews: PreviewProvider {

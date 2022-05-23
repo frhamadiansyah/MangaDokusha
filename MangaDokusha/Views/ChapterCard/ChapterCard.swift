@@ -16,7 +16,7 @@ struct ChapterCard: View {
     var body: some View {
         HStack {
             VStack {
-                Text("\(vm.chapter.chapter):")
+                Text("\(vm.chapter.chapter.toString()):")
                     .font(.headline)
                     .frame(maxHeight: .infinity, alignment: .top)
             }
@@ -39,6 +39,9 @@ struct ChapterCard: View {
                     Image(systemName: "arrow.down.circle.fill")
                         .padding(10)
                         .foregroundColor(.green)
+                } else if vm.isLoading {
+                    ProgressView()
+                        .padding(10)
                 } else {
                     Image(systemName: "arrow.down.circle")
                         .padding(10)
@@ -50,7 +53,9 @@ struct ChapterCard: View {
 
         }
         .onAppear {
-            vm.checkIfDownloaded()
+            Task {
+                await vm.checkIfDownloaded()
+            }
         }
     }
 }

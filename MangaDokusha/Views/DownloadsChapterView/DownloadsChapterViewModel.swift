@@ -12,6 +12,8 @@ class DownloadsChapterViewModel: BaseViewModel {
     
     let manager = CoreDataManager.instance
     
+    let fileManager = LocalFileManager.shared
+    
     @Published var entity: MangaEntity
     
     @Published var chapters = [ChapterEntity]()
@@ -22,20 +24,26 @@ class DownloadsChapterViewModel: BaseViewModel {
         self.entity = entity
         mangaTitle = entity.title ?? "No Title"
     }
-
+    
     @MainActor
     func deleteItems(offsets: IndexSet) async {
-    offsets.map { chapters [$0] }.forEach(manager.delete)
+        let mangaId = entity.id ?? ""
+        offsets.map { chapters [$0] }.forEach { chapter in
+            let chapterId = chapter.id ?? ""
+            manager.delete(chapter)
+            fileManager.deleteChapter(chapter: chapterId, manga: mangaId)
+        }
+        
         do {
             try await manager.save2()
             let count = try await fetchChapters()
             if count.isEmpty {
                 try manager.delete(entity)
+                try await manager.save2()
                 throw MangaDokushaError.noChapter
             } else {
                 chapters = count
             }
-//            try await getChapters()
         } catch {
             basicHandleError(error)
         }
@@ -65,53 +73,4 @@ class DownloadsChapterViewModel: BaseViewModel {
         
     }
     
-    func save() {
-        do {
-            try manager.save()
-        } catch let err {
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
-        }
-    }
-    
-    func getChapter() {
-        mangaTitle = entity.title ?? "No Title"
-        
-        let request = NSFetchRequest<ChapterEntity>(entityName: "ChapterEntity")
-        
-        let sort = NSSortDescriptor(keyPath: \ChapterEntity.chapter, ascending: true)
-        request.sortDescriptors = [sort]
-        
-        let filter = NSPredicate(format: "manga == %@", entity)
-        request.predicate = filter
-        do {
-            chapters = try manager.context.fetch(request)
-        } catch let error {
-            self.error = MangaDokushaError.otherError(error)
-            self.showError = true
-            print("Error fetching : \(error.localizedDescription)")
-        }
-
-    }
-    
-    func deleteEntity(entity: NSManagedObject) {
-        do {
-            try manager.context.delete(entity)
-            save()
-            print("Delete success")
-        } catch let err {
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
-        }
-    }
-    
-    func deleteChapter(chapter: ChapterEntity, completion: @escaping (Bool) -> Void) {
-        guard let manga = chapter.manga else {return}
-        let count = manga.chapters?.count
-        deleteEntity(entity: chapter)
-        if count == 1 {
-            deleteEntity(entity: manga)
-            completion(true)
-        }
-    }
 }

@@ -38,23 +38,3 @@ struct MangaListView_Previews: PreviewProvider {
 }
 
 
-//struct MangaListCard: View {
-//    let manga: MangaModel
-//
-//    var body: some View {
-//        HStack {
-//            if let cover = manga.cover {
-//                CustomAsyncImage(url: cover.coverUrl)
-//                    .aspectRatio(contentMode: .fit)
-//                    .clipped()
-//                    .frame(width: 200, height: 200, alignment: .center)
-//                    .cornerRadius(5)
-//                VStack {
-//                    Text(manga.title)
-//                        .shadow(radius: 10)
-//                }
-//                Spacer()
-//            }
-//        }
-//    }
-//}

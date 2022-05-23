@@ -22,6 +22,16 @@ extension View {
     
 }
 
+extension Float {
+    func toString() -> String {
+        if self.rounded(.up) == self.rounded(.down) {
+            return String(format: "%.0f", self)
+        } else {
+            return String(format: "%.2f", self)
+        }
+    }
+}
+
 extension ChapterEntity {
     
     func translateChapterModel(model: ChapterModel) {

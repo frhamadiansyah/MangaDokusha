@@ -34,12 +34,12 @@ struct MangaListCard: View {
                         .shadow(radius: 10)
                     
                 }
-                if let chapterCount = vm.entity?.chapters?.count {
-                    if chapterCount <= 1 {
-                        Text("\(chapterCount) downloaded chapter")
+                if vm.entity != nil {
+                    if vm.count <= 1 {
+                        Text("\(vm.count) downloaded chapter")
                             .font(.footnote)
                     } else {
-                        Text("\(chapterCount) downloaded chapters")
+                        Text("\(vm.count) downloaded chapters")
                             .font(.footnote)
                     }
                     
@@ -48,6 +48,9 @@ struct MangaListCard: View {
             }
             
             Spacer()
+        }
+        .onAppear {
+            vm.updateChapterCount()
         }
     }
 }

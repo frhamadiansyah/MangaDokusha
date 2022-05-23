@@ -11,6 +11,7 @@
 		75829156282F9F3C007D01B3 /* ReadDownloadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829155282F9F3C007D01B3 /* ReadDownloadedView.swift */; };
 		75829158282F9F61007D01B3 /* ReadDownloadedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75829157282F9F61007D01B3 /* ReadDownloadedViewModel.swift */; };
 		7582915A28326C6C007D01B3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582915928326C6C007D01B3 /* Navigator.swift */; };
+		7582915C2833BBF9007D01B3 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7582915B2833BBF9007D01B3 /* LocalFileManager.swift */; };
 		75A44F8D28044B2F00F07058 /* MangaDokushaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A44F8C28044B2F00F07058 /* MangaDokushaError.swift */; };
 		75A44F8F28049C2E00F07058 /* ListMangaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A44F8E28049C2E00F07058 /* ListMangaService.swift */; };
 		75A44F91280594C900F07058 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A44F90280594C800F07058 /* Extension+View.swift */; };
@@ -95,6 +96,7 @@
 		75829155282F9F3C007D01B3 /* ReadDownloadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDownloadedView.swift; sourceTree = "<group>"; };
 		75829157282F9F61007D01B3 /* ReadDownloadedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDownloadedViewModel.swift; sourceTree = "<group>"; };
 		7582915928326C6C007D01B3 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		7582915B2833BBF9007D01B3 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		75A44F8C28044B2F00F07058 /* MangaDokushaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaDokushaError.swift; sourceTree = "<group>"; };
 		75A44F8E28049C2E00F07058 /* ListMangaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMangaService.swift; sourceTree = "<group>"; };
 		75A44F90280594C800F07058 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
@@ -349,6 +351,7 @@
 				75BDB2F728009E4700C00EE7 /* ReadChapterService.swift */,
 				75A44F8E28049C2E00F07058 /* ListMangaService.swift */,
 				75B4CEB3282E22F6003D7EA5 /* CoreDataManager.swift */,
+				7582915B2833BBF9007D01B3 /* LocalFileManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				75BDB2F6280093A700C00EE7 /* HomeBaseView.swift in Sources */,
 				75D8841228229B43005A86D6 /* ChapterModel.swift in Sources */,
 				75829156282F9F3C007D01B3 /* ReadDownloadedView.swift in Sources */,
+				7582915C2833BBF9007D01B3 /* LocalFileManager.swift in Sources */,
 				75B4CEA8282CC93A003D7EA5 /* TagsView.swift in Sources */,
 				75A44F91280594C900F07058 /* Extension+View.swift in Sources */,
 				75BDB2B327FDD1EB00C00EE7 /* ContentView.swift in Sources */,
@@ -685,6 +689,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -745,6 +750,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
