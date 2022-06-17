@@ -64,7 +64,9 @@ struct ContentView: View {
                 Text("Author")
                     .font(.headline)
                 NavigationLink {
-//                    MangaListView(vm: MangaListViewModel(authorId: author.id))
+                    BaseView {
+                        MangaListView(vm: MangaListViewModel(creator: author))
+                    }
                 } label: {
                     Text(author.name)
                         .font(.subheadline)
@@ -77,7 +79,9 @@ struct ContentView: View {
                 Text("Artist")
                     .font(.headline)
                 NavigationLink {
-//                    MangaListView(vm: MangaListViewModel(artistId: artist.Id))
+                    BaseView {
+                        MangaListView(vm: MangaListViewModel(creator: artist))
+                    }
                 } label: {
                     Text(artist.name)
                         .font(.subheadline)

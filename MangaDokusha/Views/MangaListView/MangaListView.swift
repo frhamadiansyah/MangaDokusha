@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct MangaListView: View {
-    @StateObject var vm: MangaListViewModel = MangaListViewModel()
+    @StateObject var vm: MangaListViewModel
+    
+    init(vm: MangaListViewModel = MangaListViewModel()) {
+        _vm = StateObject(wrappedValue: vm)
+    }
     
     var body: some View {
         List {

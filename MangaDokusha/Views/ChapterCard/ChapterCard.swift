@@ -32,8 +32,9 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                vm.downloadChapter()
-                print("\(vm.chapter.chapter) downloaded!!!")
+                Task(priority: .background) {
+                    await vm.downloadChapter()
+                }
             } label: {
                 if vm.isDownloaded {
                     Image(systemName: "arrow.down.circle.fill")
@@ -52,10 +53,8 @@ struct ChapterCard: View {
             .buttonStyle(PlainButtonStyle())
 
         }
-        .onAppear {
-            Task {
-                await vm.checkIfDownloaded()
-            }
+        .task {
+            await vm.checkIfDownloaded()
         }
     }
 }

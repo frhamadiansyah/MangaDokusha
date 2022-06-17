@@ -28,9 +28,41 @@ class MangaListViewModel: BaseViewModel {
         newSearchManga()
     }
     
+    init(creator: CreatorModel) {
+        super.init()
+        let request = getAuthorOrArtist(creator.id)
+        getMangaList(request: request)
+    }
+    
+    init(model: MangaModel, isArtist: Bool) {
+        super.init()
+        if isArtist {
+            if let id = model.artist?.id {
+                let request = getAuthorOrArtist(id)
+                getMangaList(request: request)
+            } else {
+                error = .noMangaFound
+                showError.toggle()
+            }
+        } else {
+            if let id = model.author?.id {
+                let request = getAuthorOrArtist(id)
+                getMangaList(request: request)
+            } else {
+                error = .noMangaFound
+                showError.toggle()
+            }
+        }
+    }
+    
     func getMangaListRequest(id: [String]) -> URLRequest {
         return mangaListService.generateListMangaRequest(mangaIds: id)
     }
+    
+    func getAuthorOrArtist(_ id: String) -> URLRequest {
+        return mangaListService.generateListMangaRequestByArtist(artistIds: [id])
+    }
+    
     
     
     func newSearchManga() {

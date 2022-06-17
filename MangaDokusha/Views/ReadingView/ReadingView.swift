@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct ReadingView: View {
     @ObservedObject var vm: ReadChapterViewModel
-    @Environment(\.presentationMode) var presentationMode
+    @State var uiTabarController: UITabBarController?
+//    @Environment(\.presentationMode) var presentationMode
     
     init(vm: ReadChapterViewModel) {
         self.vm = vm
@@ -28,6 +30,13 @@ struct ReadingView: View {
         .handleError(error: vm.error, showError: $vm.showError) { }
         .navigationTitle("Chapter \(vm.currentChapter?.chapter.toString() ?? "0")")
         .navigationBarTitleDisplayMode(.inline)
+        .introspectTabBarController { (UITabBarController) in
+            UITabBarController.tabBar.isHidden = true
+            uiTabarController = UITabBarController
+        }
+        .onDisappear{
+            uiTabarController?.tabBar.isHidden = false
+        }
         .onAppear(perform: {
             let req = vm.getChapterImageRequest()
             vm.loadChapterImageUrl(request: req)

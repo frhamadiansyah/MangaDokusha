@@ -20,9 +20,10 @@ struct DownloadsChapterView: View {
             Section {
                 ForEach(vm.chapters) { chapter in
                     Navigator(.offlineReading(chapter)) {
-                        HStack {
-                            Text("\(chapter.chapter.toString()) :")
+                        Label {
                             Text("\(chapter.chapterTitle ?? "")")
+                        } icon: {
+                            Text("\(chapter.chapter.toString()) :")
                         }
                     }
                 }
@@ -43,11 +44,8 @@ struct DownloadsChapterView: View {
         .handleError(error: vm.error, showError: $vm.showError) {
             self.presentationMode.wrappedValue.dismiss()
         }
-        .onAppear {
-            Task {
-                await vm.getChapters()
-            }
-//            vm.getChapter()
+        .task {
+            await vm.getChapters()
         }
         .navigationTitle(vm.mangaTitle)
 

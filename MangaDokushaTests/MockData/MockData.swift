@@ -33,13 +33,13 @@ class MockData {
                 print(error.localizedDescription)
             }
         }
+        let aa: MangaDexResponse? = getMockData(type: .chapter)
         return nil
     }
     
     static func getMockData<T:Decodable>(type: MockDataType) -> T? {
         if let data = readLocalFile(forName: type.rawValue) {
             do {
-//                let response = try JSONDecoder().decode(MangaDexResponse.self, from: data)
                 let result = try JSONDecoder().decode(T.self, from: data)
                 return result
             } catch let error {

@@ -45,4 +45,10 @@ struct ReadChapterService {
             })
             .eraseToAnyPublisher()
     }
+    
+    func getChapterImageModel(_ request: URLRequest) async throws -> ReadChapterModel {
+        let (data, _) = try await URLSession.shared.data(from: request.url!)
+        let response = try JSONDecoder().decode(MangaDexResponse.self, from: data)
+        return ReadChapterModel(response)
+    }
 }

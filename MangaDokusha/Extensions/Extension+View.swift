@@ -22,6 +22,16 @@ extension View {
     
 }
 
+extension UIImage {
+    func isLandscape() -> Bool {
+        if self.size.width > self.size.height {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
 extension Float {
     func toString() -> String {
         if self.rounded(.up) == self.rounded(.down) {

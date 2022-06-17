@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class ChapterViewModel: BaseViewModel {
     
@@ -35,44 +36,34 @@ class ChapterViewModel: BaseViewModel {
         return readChapterService.getReadChapterRequest(chapterId: chapter.id)
     }
     
-    func loadChapterImageUrl(request: URLRequest, completion: @escaping ([String], [String]) -> Void) {
-        imageUrls = []
-        readChapterService.getChapterImageModel(request: request)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-                completion([], [])
-            } receiveValue: { model in
-                self.imageUrls.append(contentsOf: model.saverImageUrls)
-                self.fileNames.append(contentsOf: model.saverFileName)
-                completion(model.saverImageUrls, model.saverFileName)
-            }.store(in: &cancel)
-    }
-    
     
     func loadItems(from urlString: String) async throws -> Data {
         let (data, _) = try await URLSession.shared.data(from: URL(string: urlString)!)
         return data
     }
     
-
-    @MainActor
-    func downloadChapter() {
-        isLoading = true
+    func downloadImagesModels() async throws -> ReadChapterModel {
         let request = getChapterImageRequest()
-        loadChapterImageUrl(request: request) { array, filename  in
-            if array.count > 0 {
-                Task(priority: .background) {
-                    await self.addChapterr(pageUrls: array, fileName: filename)
-                    self.isLoading = false
-                    self.isDownloaded = true
-                }
-            }
+        let model = try await readChapterService.getChapterImageModel(request)
+        return model
+    }
+    
+    @MainActor
+    func downloadChapter() async {
+        isLoading = true
+        do {
+            let model = try await downloadImagesModels()
+            await addChapter(pageUrls: model.saverImageUrls, fileName: model.saverFileName)
+            self.isLoading = false
+            self.isDownloaded = true
+        } catch {
+            self.isLoading = false
+            basicHandleError(error)
         }
     }
 
     
-    @MainActor
-    func addChapterr(pageUrls: [String], fileName: [String]) async {
+    func addChapter(pageUrls: [String], fileName: [String]) async {
         let newChapter = ChapterEntity(context: manager.context)
         
         newChapter.translateChapterModel(model: chapter)
@@ -92,10 +83,9 @@ class ChapterViewModel: BaseViewModel {
             
             do {
                 let data = try await loadItems(from: url)
-//                fileManager.saveImage(data: data, name: name)
                 fileManager.saveImage(data: data, name: name, chapter: chapter.id, manga: manga.id)
             } catch {
-                print("GAGAL")
+                basicHandleError(error)
             }
             
             newChapter.addToPages(page)
@@ -114,7 +104,8 @@ class ChapterViewModel: BaseViewModel {
         do {
             try await manager.save2()
         } catch {
-           basicHandleError(error)
+            self.isLoading = false
+            basicHandleError(error)
         }
         
         
@@ -137,17 +128,6 @@ class ChapterViewModel: BaseViewModel {
             basicHandleError(error)
         }
         
-        
-        do {
-            let chapterExist = try manager.context.fetch(request)
-            if !chapterExist.isEmpty {
-                self.isDownloaded = true
-            }
-        } catch let error {
-            print("Error fetching : \(error.localizedDescription)")
-            self.error = MangaDokushaError.otherError(error)
-            self.showError = true
-        }
 
     }
     
@@ -168,40 +148,6 @@ class ChapterViewModel: BaseViewModel {
                 throw MangaDokushaError.noMangaFound
             }
             
-        }
-    }
-    
-    func getMangaFromPersistence() -> MangaEntity? {
-        
-        let request = NSFetchRequest<MangaEntity>(entityName: "MangaEntity")
-        request.fetchLimit = 1
-        
-        guard let manga = manga else {return nil}
-        
-        let filter = NSPredicate(format: "id == %@", manga.id)
-        request.predicate = filter
-        
-        do {
-            let coreManga = try manager.context.fetch(request)
-            if !coreManga.isEmpty {
-                return coreManga.first
-            }
-        } catch let err {
-            print("Error fetching : \(err.localizedDescription)")
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
-        }
-        return nil
-    }
-    
-    func save(completion: @escaping (Bool) -> Void) {
-        do {
-            try manager.save()
-            completion(true)
-        } catch let err {
-            self.error = MangaDokushaError.otherError(err)
-            self.showError = true
-            completion(false)
         }
     }
     
