@@ -31,6 +31,13 @@ struct ListMangaService {
             URLQueryItem(name: "includes[]", value: "cover_art"),
             URLQueryItem(name: "includes[]", value: "author"),
             URLQueryItem(name: "includes[]", value: "artist"),
+            
+            URLQueryItem(name: "availableTranslatedLanguage[]", value: "en"),
+            
+            //excluded tags
+            URLQueryItem(name: "excludedTags[]", value: "5920b825-4181-4a17-beeb-9918b0ff7a30"),
+            URLQueryItem(name: "excludedTags[]", value: "2d1f5d56-a1e5-4d0d-a961-2193588b08ec"),
+            
     
         ]
         return components

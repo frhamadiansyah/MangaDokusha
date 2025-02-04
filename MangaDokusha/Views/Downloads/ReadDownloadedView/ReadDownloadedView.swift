@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Introspect
+import SwiftUIIntrospect
 
 struct ReadDownloadedView: View {
     @StateObject var vm: ReadDownloadedViewModel
@@ -30,10 +30,10 @@ struct ReadDownloadedView: View {
             vm.getPages()
         }
         .ignoresSafeArea(.all, edges: .bottom)
-        .introspectTabBarController { (UITabBarController) in
-            UITabBarController.tabBar.isHidden = true
-            uiTabarController = UITabBarController
-        }
+        .introspect(.tabView, on: .iOS(.v18), customize: { tabview in
+            tabview.tabBar.isHidden = true
+            uiTabarController = tabview
+        })
         .onDisappear{
             uiTabarController?.tabBar.isHidden = false
         }

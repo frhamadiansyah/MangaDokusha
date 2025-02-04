@@ -35,7 +35,6 @@ class DownloadsViewModel: BaseViewModel {
         
         let sort = NSSortDescriptor(keyPath: \MangaEntity.title, ascending: true)
         request.sortDescriptors = [sort]
-        
         return try await manager.context.perform {
             return try request.execute()
         }

@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
+import netfox
 
 @main
 struct MangaDokushaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             TabBarView()
-//            firstView()
-            
-
         }
+    }
+}
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        print("Your code here")
+        NFX.sharedInstance().start()
+        return true
     }
 }

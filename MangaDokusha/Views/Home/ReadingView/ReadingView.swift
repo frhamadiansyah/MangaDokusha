@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-import Introspect
+import SwiftUIIntrospect
+import Zoomable
 
 struct ReadingView: View {
     @ObservedObject var vm: ReadChapterViewModel
@@ -22,7 +23,7 @@ struct ReadingView: View {
             ScrollViewReader { value in
                 LazyVStack(spacing: 0) {
                     ForEach(vm.imageUrls, id:\.self) { image in
-                        CustomAsyncImage(url: image)
+                        CustomAsyncImage(url: image).zoomable()
                     }
                 }
             }
@@ -30,10 +31,10 @@ struct ReadingView: View {
         .handleError(error: vm.error, showError: $vm.showError) { }
         .navigationTitle("Chapter \(vm.currentChapter?.chapter.toString() ?? "0")")
         .navigationBarTitleDisplayMode(.inline)
-        .introspectTabBarController { (UITabBarController) in
-            UITabBarController.tabBar.isHidden = true
-            uiTabarController = UITabBarController
-        }
+        .introspect(.tabView, on: .iOS(.v18), customize: { tabview in
+            tabview.tabBar.isHidden = true
+            uiTabarController = tabview
+        })
         .onDisappear{
             uiTabarController?.tabBar.isHidden = false
         }

@@ -27,9 +27,9 @@ class LocalFileManager {
         
         do {
             try data.write(to: path)
-            print("✅ success saving")
+            print("✅ success saving \(name)")
         } catch {
-            print("❌ error saving : \(error)")
+            print("❌ error saving \(name): \(error)")
         }
         
     }

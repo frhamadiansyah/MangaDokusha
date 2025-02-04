@@ -30,5 +30,9 @@ let mangaIds = [
     "b5b21ca1-bba5-4b9a-8cd1-6248f731650b",
     "8847f905-550d-4fe6-bcda-ac2b896789c7",
     "4141c5dc-c525-4df5-afd7-cc7d192a832f",
-    "32d76d19-8a05-4db0-9fc2-e0b0648fe9d0"
+    "6b27cbd8-4cc6-40ca-b010-928da4540be8",
+    "32fdfe9b-6e11-4a13-9e36-dcd8ea77b4e4",
+    "87ffa375-bd2c-49ba-ba0c-6d78ea07c342",
+    "e83c326b-921b-45ff-bc0c-d667bbfe64cc",
+    
 ]

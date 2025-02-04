@@ -32,23 +32,24 @@ struct ChapterCard: View {
             Spacer()
             
             Button {
-                Task(priority: .background) {
+                Task(priority: .userInitiated) {
                     await vm.downloadChapter()
                 }
             } label: {
                 if vm.isDownloaded {
                     Image(systemName: "arrow.down.circle.fill")
-                        .padding(10)
+                        .padding(20)
                         .foregroundColor(.green)
                 } else if vm.isLoading {
                     ProgressView()
-                        .padding(10)
+                        .padding(20)
                 } else {
                     Image(systemName: "arrow.down.circle")
-                        .padding(10)
+                        .padding(20)
                 }
                 
             }
+//            .padding(.horizontal, 10)
             .disabled(vm.isDownloaded)
             .buttonStyle(PlainButtonStyle())
 

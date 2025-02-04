@@ -10,6 +10,8 @@ import SwiftUI
 struct DownloadsView: View {
     @StateObject var vm = DownloadsViewModel()
     @State private var confirmDelete = false
+    @State private var confirmDeleteTitle = false
+    @State private var mangaIndex: IndexSet = IndexSet()
 
     var body: some View {
         NavigationView {
@@ -22,10 +24,21 @@ struct DownloadsView: View {
                     }
                 }
                 .onDelete { index in
-                    Task {
-                        await vm.deleteItems(offsets: index)
-                    }
+                    mangaIndex = index
+                    confirmDeleteTitle.toggle()
 
+                }
+                .alert(isPresented: $confirmDeleteTitle) {
+                    Alert(
+                        title: Text("Are you sure you want to delete this manga?"),
+                        message: Text("There is no undo"),
+                        primaryButton: .destructive(Text("Delete")) {
+                            Task {
+                                await vm.deleteItems(offsets: mangaIndex)
+                            }
+                        },
+                        secondaryButton: .cancel()
+                    )
                 }
                 
             }

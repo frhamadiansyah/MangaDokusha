@@ -37,6 +37,10 @@ struct DownloadsChapterView: View {
                 Navigator(.listChapter(MangaModel(id: vm.entity.id ?? "", title: "", description: ""))) {
                     Text("See All Chapters")
                 }
+                
+                Navigator(.content(MangaModel(id: vm.entity.id ?? "", title: "", description: ""))) {
+                    Text("See Content")
+                }
 
             }
             

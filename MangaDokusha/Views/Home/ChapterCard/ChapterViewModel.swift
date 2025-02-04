@@ -58,11 +58,12 @@ class ChapterViewModel: BaseViewModel {
             self.isDownloaded = true
         } catch {
             self.isLoading = false
+            self.isDownloaded = false
             basicHandleError(error)
         }
     }
 
-    
+    @MainActor
     func addChapter(pageUrls: [String], fileName: [String]) async {
         let newChapter = ChapterEntity(context: manager.context)
         
@@ -85,7 +86,9 @@ class ChapterViewModel: BaseViewModel {
                 let data = try await loadItems(from: url)
                 fileManager.saveImage(data: data, name: name, chapter: chapter.id, manga: manga.id)
             } catch {
-                basicHandleError(error)
+//                DispatchQueue.main.async {
+                self.basicHandleError(error)
+//                }
             }
             
             newChapter.addToPages(page)
@@ -103,9 +106,12 @@ class ChapterViewModel: BaseViewModel {
         
         do {
             try await manager.save2()
+            print("🎊 Chapter \(newChapter.chapter) saved! 🎊")
         } catch {
+//            DispatchQueue.main.async {
             self.isLoading = false
-            basicHandleError(error)
+            self.basicHandleError(error)
+//            }
         }
         
         
@@ -120,6 +126,7 @@ class ChapterViewModel: BaseViewModel {
         do {
             try await manager.context.perform {
                 let result = try request.execute()
+                
                 if !result.isEmpty {
                     self.isDownloaded = true
                 }

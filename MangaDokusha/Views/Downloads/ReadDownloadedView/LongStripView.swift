@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Zoomable
 
 struct LongStripView: View {
     @ObservedObject var vm: ReadDownloadedViewModel
@@ -16,7 +17,7 @@ struct LongStripView: View {
                     ForEach(vm.images, id:\.self) { image in
                         Image(uiImage: image)
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .aspectRatio(contentMode: .fit).zoomable()
                     }
                 }
             }
