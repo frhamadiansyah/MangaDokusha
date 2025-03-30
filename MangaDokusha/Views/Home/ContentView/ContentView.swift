@@ -34,6 +34,18 @@ struct ContentView: View {
                     authorAndArtistView(author: author, artist: artist)
                     
                     goToListChapterView(mangaDetail: detail)
+                    
+                    Button {
+                        vm.toggleFavorite()
+                    } label: {
+                        if vm.isFavorite {
+                            Text("Remove From Favorite")
+                        } else {
+                            Text("Add to Favorite")
+                        }
+                        
+                    }
+
 
                     TagsView(title: "Content Rating", tags: [detail.contentRating.rawValue], color: detail.contentRating.getColor())
                     
@@ -55,6 +67,7 @@ struct ContentView: View {
         .onAppear {
             let urlReq = vm.getDetailMangaRequest(mangaId: vm.mangaId)
             vm.getDetailManga(urlRequest: urlReq)
+            vm.checkIfFavorite()
         }
     }
     

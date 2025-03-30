@@ -12,6 +12,7 @@ class ContentViewModel: BaseViewModel {
     var mangaService: MangaService = MangaService(apiService: APIService.shared)
     
     @Published var mangaModel: MangaModel?
+    @Published var isFavorite: Bool = false
     
     var mangaId: String
     
@@ -31,11 +32,34 @@ class ContentViewModel: BaseViewModel {
     
     func getDetailManga(urlRequest: URLRequest) {
         mangaService.getManga(request: urlRequest)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-            } receiveValue: { model in
-                self.mangaModel = model
+            .sink { [weak self] error in
+                self?.basicHandleCompletionError(error: error)
+            } receiveValue: { [weak self] model in
+                self?.mangaModel = model
             }.store(in: &cancel)
+    }
+    
+    func checkIfFavorite() {
+        let listFavoriteManga = UserDefaults.standard.array(forKey: "favorites") as? [String] ?? []
+        if !listFavoriteManga.filter({$0 == mangaId}).isEmpty {
+            isFavorite = true
+        } else {
+            isFavorite = false
+        }
+    }
+    
+    func toggleFavorite() {
+        var listFavoriteManga = UserDefaults.standard.array(forKey: "favorites") as? [String] ?? []
+        if !listFavoriteManga.filter({$0 == mangaId}).isEmpty {
+            UserDefaults.standard.set(listFavoriteManga.filter({$0 != mangaId}), forKey: "favorites")
+            isFavorite = false
+        } else {
+            listFavoriteManga.append(mangaId)
+            UserDefaults.standard.set(listFavoriteManga, forKey: "favorites")
+            isFavorite = true
+        }
+        
+        
     }
     
 }

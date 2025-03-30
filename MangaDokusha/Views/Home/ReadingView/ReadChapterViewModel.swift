@@ -32,10 +32,10 @@ class ReadChapterViewModel: BaseViewModel {
     func loadChapterImageUrl(request: URLRequest) {
         imageUrls = []
         readChapterService.getChapterImageModel(request: request)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-            } receiveValue: { model in
-                self.imageUrls.append(contentsOf: model.saverImageUrls)
+            .sink { [weak self] error in
+                self?.basicHandleCompletionError(error: error)
+            } receiveValue: { [weak self] model in
+                self?.imageUrls.append(contentsOf: model.saverImageUrls)
             }.store(in: &cancel)
     }
 }

@@ -10,7 +10,7 @@ import Combine
 import UIKit
 
 class MangaListViewModel: BaseViewModel {
-    @Published var mangaList: [MangaModel] = [] 
+    @Published var mangaList: [MangaModel] = []
     
     var mangaListService = ListMangaService(apiService: APIService.shared)
     
@@ -72,10 +72,11 @@ class MangaListViewModel: BaseViewModel {
             .map({ (string) -> String in
                 return string
             })
-            .sink { result in
+            .sink { [weak self] result in
+                guard let self = self else { return }
                 self.resetParameter()
                 if result.isEmpty {
-                    let req = self.getMangaListRequest(id: mangaIds)
+                    let req = self.loadFavorites()
                     self.currentRequest = req
                     self.getMangaList(request: req)
                 } else {
@@ -86,11 +87,18 @@ class MangaListViewModel: BaseViewModel {
             .store(in: &cancel)
     }
     
+    func loadFavorites() -> URLRequest {
+        let favIds = UserDefaults.standard.array(forKey: "favorites") as? [String] ?? []
+        return getMangaListRequest(id: favIds)
+        
+    }
+    
     func getMangaList(request: URLRequest) {
         mangaListService.getListManga(request: request)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-            } receiveValue: { models in
+            .sink { [weak self] error in
+                self?.basicHandleCompletionError(error: error)
+            } receiveValue: { [weak self] models in
+                guard let self else { return }
                 self.isLoading = false
                 if models.isEmpty {
                     self.error = .noMangaFound

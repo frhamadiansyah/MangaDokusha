@@ -52,10 +52,10 @@ class ListChapterViewModel: BaseViewModel {
         let request = getChaptersRequest(id: manga.id, limit: limit, offset: offset, ascending: isAscending)
         
         listChapterService.getListChapter(request: request)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-            } receiveValue: { models in
-                self.listChapter.append(contentsOf: models)
+            .sink { [weak self] error in
+                self?.basicHandleCompletionError(error: error)
+            } receiveValue: { [weak self] models in
+                self?.listChapter.append(contentsOf: models)
             }.store(in: &cancel)
 
     }
@@ -83,11 +83,11 @@ class ListChapterViewModel: BaseViewModel {
         guard let manga = currentManga else { return }
         let request = getChaptersRequest(id: manga.id, limit: limit, offset: offset, ascending: isAscending)
         listChapterService.getListChapter(request: request)
-            .sink { error in
-                self.basicHandleCompletionError(error: error)
-            } receiveValue: { models in
-                self.listChapter.append(contentsOf: models)
-                self.isLoading = false
+            .sink { [weak self] error in
+                self?.basicHandleCompletionError(error: error)
+            } receiveValue: { [weak self] models in
+                self?.listChapter.append(contentsOf: models)
+                self?.isLoading = false
             }.store(in: &cancel)
 
     }
